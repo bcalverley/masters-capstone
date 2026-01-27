@@ -42,6 +42,7 @@ CAPTURE_PATH = CAPTURE_DIR / "inventory_1.jpg"
 IMG_SIZE = (64, 64)
 BATCH_SIZE = 12
 EPOCHS = 25
+CONFIDENCE_THRESHOLD = 0.70
 
 # Pokémon card aspect ratio
 CARD_ASPECT = 88 / 63

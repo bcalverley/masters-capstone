@@ -40,6 +40,28 @@ def train_model():
     )
 
     print("\n===== TRAINING MODEL =====\n")
+    MODEL_PATH = "card_model.keras"
+
     cnn.fit(training_set, epochs=EPOCHS)
+    cnn.save(MODEL_PATH)
 
     return cnn, training_set
+
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from config import TRAINING_DIR, IMG_SIZE, BATCH_SIZE
+
+
+def get_training_set():
+    
+    datagen = ImageDataGenerator(rescale=1./255)
+
+    training_set = datagen.flow_from_directory(
+        TRAINING_DIR,
+        target_size=IMG_SIZE,
+        batch_size=BATCH_SIZE,
+        class_mode="sparse",
+        shuffle=False
+    )
+
+    return training_set
+
