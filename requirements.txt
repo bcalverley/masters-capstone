@@ -1,0 +1,7 @@
+tensorflow
+opencv-python
+numpy
+keras
+supabase
+python-dotenv
+scipy
