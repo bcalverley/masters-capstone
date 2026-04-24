@@ -52,7 +52,7 @@ def capture_image_with_buttons():
 
         # Draw a guide rectangle (centered)
         h, w, _ = frame.shape
-        box_w, box_h = int(w * 0.6), int(h * 0.6)
+        box_w, box_h = int(w * 0.6), int(h * 0.9)
         x1 = (w - box_w) // 2
         y1 = (h - box_h) // 2
         x2 = x1 + box_w

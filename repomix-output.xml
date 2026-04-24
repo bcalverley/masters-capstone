@@ -1,0 +1,3419 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+batch_results_20260305_100740.csv
+batch_results_20260305_112835.csv
+batch_test.py
+camera_capture.py
+card_model.keras
+config.py
+database.py
+evaluation_set/JTG 1/JTG 1.jpg
+evaluation_set/JTG 10/JTG 10.jpg
+evaluation_set/JTG 100/JTG 100.jpg
+evaluation_set/JTG 101/JTG 101.jpg
+evaluation_set/JTG 102/JTG 102.jpg
+evaluation_set/JTG 103/JTG 103.jpg
+evaluation_set/JTG 104/JTG 104.jpg
+evaluation_set/JTG 105/JTG 105.jpg
+evaluation_set/JTG 106/JTG 106.jpg
+evaluation_set/JTG 107/JTG 107.jpg
+evaluation_set/JTG 108/JTG 108.jpg
+evaluation_set/JTG 109/JTG 109.jpg
+evaluation_set/JTG 11/JTG 11.jpg
+evaluation_set/JTG 110/JTG 110.jpg
+evaluation_set/JTG 111/JTG 111.jpg
+evaluation_set/JTG 112/JTG 112.jpg
+evaluation_set/JTG 113/JTG 113.jpg
+evaluation_set/JTG 114/JTG 114.jpg
+evaluation_set/JTG 115/JTG 115.jpg
+evaluation_set/JTG 116/JTG 116.jpg
+evaluation_set/JTG 117/JTG 117.jpg
+evaluation_set/JTG 118/JTG 118.jpg
+evaluation_set/JTG 119/JTG 119.jpg
+evaluation_set/JTG 12/JTG 12.jpg
+evaluation_set/JTG 120/JTG 120.jpg
+evaluation_set/JTG 121/JTG 121.jpg
+evaluation_set/JTG 122/JTG 122.jpg
+evaluation_set/JTG 123/JTG 123.jpg
+evaluation_set/JTG 124/JTG 124.jpg
+evaluation_set/JTG 125/JTG 125.jpg
+evaluation_set/JTG 126/JTG 126.jpg
+evaluation_set/JTG 127/JTG 127.jpg
+evaluation_set/JTG 128/JTG 128.jpg
+evaluation_set/JTG 129/JTG 129.jpg
+evaluation_set/JTG 13/JTG 13.jpg
+evaluation_set/JTG 130/JTG 130.jpg
+evaluation_set/JTG 131/JTG 131.jpg
+evaluation_set/JTG 132/JTG 132.jpg
+evaluation_set/JTG 133/JTG 133.jpg
+evaluation_set/JTG 134/JTG 134.jpg
+evaluation_set/JTG 135/JTG 135.jpg
+evaluation_set/JTG 136/JTG 136.jpg
+evaluation_set/JTG 137/JTG 137.jpg
+evaluation_set/JTG 138/JTG 138.jpg
+evaluation_set/JTG 139/JTG 139.jpg
+evaluation_set/JTG 14/JTG 14.jpg
+evaluation_set/JTG 140/JTG 140.jpg
+evaluation_set/JTG 141/JTG 141.jpg
+evaluation_set/JTG 142/JTG 142.jpg
+evaluation_set/JTG 143/JTG 143.jpg
+evaluation_set/JTG 144/JTG 144.jpg
+evaluation_set/JTG 145/JTG 145.jpg
+evaluation_set/JTG 146/JTG 146.jpg
+evaluation_set/JTG 147/JTG 147.jpg
+evaluation_set/JTG 148/JTG 148.jpg
+evaluation_set/JTG 149/JTG 149.jpg
+evaluation_set/JTG 15/JTG 15.jpg
+evaluation_set/JTG 150/JTG 150.jpg
+evaluation_set/JTG 151/JTG 151.jpg
+evaluation_set/JTG 152/JTG 152.jpg
+evaluation_set/JTG 153/JTG 153.jpg
+evaluation_set/JTG 154/JTG 154.jpg
+evaluation_set/JTG 155/JTG 155.jpg
+evaluation_set/JTG 156/JTG 156.jpg
+evaluation_set/JTG 157/JTG 157.jpg
+evaluation_set/JTG 158/JTG 158.jpg
+evaluation_set/JTG 159/JTG 159.jpg
+evaluation_set/JTG 16/JTG 16.jpg
+evaluation_set/JTG 160/JTG 160.jpg
+evaluation_set/JTG 161/JTG 161.jpg
+evaluation_set/JTG 162/JTG 162.jpg
+evaluation_set/JTG 163/JTG 163.jpg
+evaluation_set/JTG 164/JTG 164.jpg
+evaluation_set/JTG 165/JTG 165.jpg
+evaluation_set/JTG 166/JTG 166.jpg
+evaluation_set/JTG 167/JTG 167.jpg
+evaluation_set/JTG 168/JTG 168.jpg
+evaluation_set/JTG 169/JTG 169.jpg
+evaluation_set/JTG 17/JTG 17.jpg
+evaluation_set/JTG 170/JTG 170.jpg
+evaluation_set/JTG 171/JTG 171.jpg
+evaluation_set/JTG 172/JTG 172.jpg
+evaluation_set/JTG 173/JTG 173.jpg
+evaluation_set/JTG 174/JTG 174.jpg
+evaluation_set/JTG 175/JTG 175.jpg
+evaluation_set/JTG 176/JTG 176.jpg
+evaluation_set/JTG 177/JTG 177.jpg
+evaluation_set/JTG 178/JTG 178.jpg
+evaluation_set/JTG 179/JTG 179.jpg
+evaluation_set/JTG 18/JTG 18.jpg
+evaluation_set/JTG 180/JTG 180.jpg
+evaluation_set/JTG 181/JTG 181.jpg
+evaluation_set/JTG 182/JTG 182.jpg
+evaluation_set/JTG 183/JTG 183.jpg
+evaluation_set/JTG 184/JTG 184.jpg
+evaluation_set/JTG 185/JTG 185.jpg
+evaluation_set/JTG 186/JTG 186.jpg
+evaluation_set/JTG 187/JTG 187.jpg
+evaluation_set/JTG 188/JTG 188.jpg
+evaluation_set/JTG 189/JTG 189.jpg
+evaluation_set/JTG 19/JTG 19.jpg
+evaluation_set/JTG 190/JTG 190.jpg
+evaluation_set/JTG 2/JTG 2.jpg
+evaluation_set/JTG 20/JTG 20.jpg
+evaluation_set/JTG 21/JTG 21.jpg
+evaluation_set/JTG 22/JTG 22.jpg
+evaluation_set/JTG 23/JTG 23.jpg
+evaluation_set/JTG 24/JTG 24.jpg
+evaluation_set/JTG 25/JTG 25.jpg
+evaluation_set/JTG 26/JTG 26.jpg
+evaluation_set/JTG 27/JTG 27.jpg
+evaluation_set/JTG 28/JTG 28.jpg
+evaluation_set/JTG 29/JTG 29.jpg
+evaluation_set/JTG 3/JTG 3.jpg
+evaluation_set/JTG 30/JTG 30.jpg
+evaluation_set/JTG 31/JTG 31.jpg
+evaluation_set/JTG 32/JTG 32.jpg
+evaluation_set/JTG 33/JTG 33.jpg
+evaluation_set/JTG 34/JTG 34.jpg
+evaluation_set/JTG 35/JTG 35.jpg
+evaluation_set/JTG 36/JTG 36.jpg
+evaluation_set/JTG 37/JTG 37.jpg
+evaluation_set/JTG 38/JTG 38.jpg
+evaluation_set/JTG 39/JTG 39.jpg
+evaluation_set/JTG 4/JTG 4.jpg
+evaluation_set/JTG 40/JTG 40.jpg
+evaluation_set/JTG 41/JTG 41.jpg
+evaluation_set/JTG 42/JTG 42.jpg
+evaluation_set/JTG 43/JTG 43.jpg
+evaluation_set/JTG 44/JTG 44.jpg
+evaluation_set/JTG 45/JTG 45.jpg
+evaluation_set/JTG 46/JTG 46.jpg
+evaluation_set/JTG 47/JTG 47.jpg
+evaluation_set/JTG 48/JTG 48.jpg
+evaluation_set/JTG 49/JTG 49.jpg
+evaluation_set/JTG 5/JTG 5.jpg
+evaluation_set/JTG 50/JTG 50.jpg
+evaluation_set/JTG 51/JTG 51.jpg
+evaluation_set/JTG 52/JTG 52.jpg
+evaluation_set/JTG 53/JTG 53.jpg
+evaluation_set/JTG 54/JTG 54.jpg
+evaluation_set/JTG 55/JTG 55.jpg
+evaluation_set/JTG 56/JTG 56.jpg
+evaluation_set/JTG 57/JTG 57.jpg
+evaluation_set/JTG 58/JTG 58.jpg
+evaluation_set/JTG 59/JTG 59.jpg
+evaluation_set/JTG 6/JTG 6.jpg
+evaluation_set/JTG 60/JTG 60.jpg
+evaluation_set/JTG 61/JTG 61.jpg
+evaluation_set/JTG 62/JTG 62.jpg
+evaluation_set/JTG 63/JTG 63.jpg
+evaluation_set/JTG 64/JTG 64.jpg
+evaluation_set/JTG 65/JTG 65.jpg
+evaluation_set/JTG 66/JTG 66.jpg
+evaluation_set/JTG 67/JTG 67.jpg
+evaluation_set/JTG 68/JTG 68.jpg
+evaluation_set/JTG 69/JTG 69.jpg
+evaluation_set/JTG 7/JTG 7.jpg
+evaluation_set/JTG 70/JTG 70.jpg
+evaluation_set/JTG 71/JTG 71.jpg
+evaluation_set/JTG 72/JTG 72.jpg
+evaluation_set/JTG 73/JTG 73.jpg
+evaluation_set/JTG 74/JTG 74.jpg
+evaluation_set/JTG 75/JTG 75.jpg
+evaluation_set/JTG 76/JTG 76.jpg
+evaluation_set/JTG 77/JTG 77.jpg
+evaluation_set/JTG 78/JTG 78.jpg
+evaluation_set/JTG 79/JTG 79.jpg
+evaluation_set/JTG 8/JTG 8.jpg
+evaluation_set/JTG 80/JTG 80.jpg
+evaluation_set/JTG 81/JTG 81.jpg
+evaluation_set/JTG 82/JTG 82.jpg
+evaluation_set/JTG 83/JTG 83.jpg
+evaluation_set/JTG 84/JTG 84.jpg
+evaluation_set/JTG 85/JTG 85.jpg
+evaluation_set/JTG 86/JTG 86.jpg
+evaluation_set/JTG 87/JTG 87.jpg
+evaluation_set/JTG 88/JTG 88.jpg
+evaluation_set/JTG 89/JTG 89.jpg
+evaluation_set/JTG 9/JTG 9.jpg
+evaluation_set/JTG 90/JTG 90.jpg
+evaluation_set/JTG 91/JTG 91.jpg
+evaluation_set/JTG 92/JTG 92.jpg
+evaluation_set/JTG 93/JTG 93.jpg
+evaluation_set/JTG 94/JTG 94.jpg
+evaluation_set/JTG 95/JTG 95.jpg
+evaluation_set/JTG 96/JTG 96.jpg
+evaluation_set/JTG 97/JTG 97.jpg
+evaluation_set/JTG 98/JTG 98.jpg
+evaluation_set/JTG 99/JTG 99.jpg
+evaluation_set/PRE 1/PRE 1.jpg
+evaluation_set/PRE 10/PRE 10.jpg
+evaluation_set/PRE 100/PRE 100.jpg
+evaluation_set/PRE 101/PRE 101.jpg
+evaluation_set/PRE 102/PRE 102.jpg
+evaluation_set/PRE 103/PRE 103.jpg
+evaluation_set/PRE 104/PRE 104.jpg
+evaluation_set/PRE 105/PRE 105.jpg
+evaluation_set/PRE 106/PRE 106.jpg
+evaluation_set/PRE 107/PRE 107.jpg
+evaluation_set/PRE 108/PRE 108.jpg
+evaluation_set/PRE 109/PRE 109.jpg
+evaluation_set/PRE 11/PRE 11.jpg
+evaluation_set/PRE 110/PRE 110.jpg
+evaluation_set/PRE 111/PRE 111.jpg
+evaluation_set/PRE 112/PRE 112.jpg
+evaluation_set/PRE 113/PRE 113.jpg
+evaluation_set/PRE 114/PRE 114.jpg
+evaluation_set/PRE 115/PRE 115.jpg
+evaluation_set/PRE 116/PRE 116.jpg
+evaluation_set/PRE 117/PRE 117.jpg
+evaluation_set/PRE 118/PRE 118.jpg
+evaluation_set/PRE 119/PRE 119.jpg
+evaluation_set/PRE 12/PRE 12.jpg
+evaluation_set/PRE 120/PRE 120.jpg
+evaluation_set/PRE 121/PRE 121.jpg
+evaluation_set/PRE 122/PRE 122.jpg
+evaluation_set/PRE 123/PRE 123.jpg
+evaluation_set/PRE 124/PRE 124.jpg
+evaluation_set/PRE 125/PRE 125.jpg
+evaluation_set/PRE 126/PRE 126.jpg
+evaluation_set/PRE 127/PRE 127.jpg
+evaluation_set/PRE 128/PRE 128.jpg
+evaluation_set/PRE 129/PRE 129.jpg
+evaluation_set/PRE 13/PRE 13.jpg
+evaluation_set/PRE 130/PRE 130.jpg
+evaluation_set/PRE 131/PRE 131.jpg
+evaluation_set/PRE 132/PRE 132.jpg
+evaluation_set/PRE 133/PRE 133.jpg
+evaluation_set/PRE 134/PRE 134.jpg
+evaluation_set/PRE 135/PRE 135.jpg
+evaluation_set/PRE 136/PRE 136.jpg
+evaluation_set/PRE 137/PRE 137.jpg
+evaluation_set/PRE 138/PRE 138.jpg
+evaluation_set/PRE 139/PRE 139.jpg
+evaluation_set/PRE 14/PRE 14.jpg
+evaluation_set/PRE 140/PRE 140.jpg
+evaluation_set/PRE 141/PRE 141.jpg
+evaluation_set/PRE 142/PRE 142.jpg
+evaluation_set/PRE 143/PRE 143.jpg
+evaluation_set/PRE 144/PRE 144.jpg
+evaluation_set/PRE 145/PRE 145.jpg
+evaluation_set/PRE 146/PRE 146.jpg
+evaluation_set/PRE 147/PRE 147.jpg
+evaluation_set/PRE 148/PRE 148.jpg
+evaluation_set/PRE 149/PRE 149.jpg
+evaluation_set/PRE 15/PRE 15.jpg
+evaluation_set/PRE 150/PRE 150.jpg
+evaluation_set/PRE 151/PRE 151.jpg
+evaluation_set/PRE 152/PRE 152.jpg
+evaluation_set/PRE 153/PRE 153.jpg
+evaluation_set/PRE 154/PRE 154.jpg
+evaluation_set/PRE 155/PRE 155.jpg
+evaluation_set/PRE 156/PRE 156.jpg
+evaluation_set/PRE 157/PRE 157.jpg
+evaluation_set/PRE 158/PRE 158.jpg
+evaluation_set/PRE 159/PRE 159.jpg
+evaluation_set/PRE 16/PRE 16.jpg
+evaluation_set/PRE 160/PRE 160.jpg
+evaluation_set/PRE 161/PRE 161.jpg
+evaluation_set/PRE 162/PRE 162.jpg
+evaluation_set/PRE 163/PRE 163.jpg
+evaluation_set/PRE 164/PRE 164.jpg
+evaluation_set/PRE 165/PRE 165.jpg
+evaluation_set/PRE 166/PRE 166.jpg
+evaluation_set/PRE 167/PRE 167.jpg
+evaluation_set/PRE 168/PRE 168.jpg
+evaluation_set/PRE 169/PRE 169.jpg
+evaluation_set/PRE 17/PRE 17.jpg
+evaluation_set/PRE 170/PRE 170.jpg
+evaluation_set/PRE 171/PRE 171.jpg
+evaluation_set/PRE 172/PRE 172.jpg
+evaluation_set/PRE 173/PRE 173.jpg
+evaluation_set/PRE 174/PRE 174.jpg
+evaluation_set/PRE 175/PRE 175.jpg
+evaluation_set/PRE 176/PRE 176.jpg
+evaluation_set/PRE 177/PRE 177.jpg
+evaluation_set/PRE 178/PRE 178.jpg
+evaluation_set/PRE 179/PRE 179.jpg
+evaluation_set/PRE 18/PRE 18.jpg
+evaluation_set/PRE 180/PRE 180.jpg
+evaluation_set/PRE 19/PRE 19.jpg
+evaluation_set/PRE 2/PRE 2.jpg
+evaluation_set/PRE 20/PRE 20.jpg
+evaluation_set/PRE 21/PRE 21.jpg
+evaluation_set/PRE 22/PRE 22.jpg
+evaluation_set/PRE 23/PRE 23.jpg
+evaluation_set/PRE 24/PRE 24.jpg
+evaluation_set/PRE 25/PRE 25.jpg
+evaluation_set/PRE 26/PRE 26.jpg
+evaluation_set/PRE 27/PRE 27.jpg
+evaluation_set/PRE 28/PRE 28.jpg
+evaluation_set/PRE 29/PRE 29.jpg
+evaluation_set/PRE 3/PRE 3.jpg
+evaluation_set/PRE 30/PRE 30.jpg
+evaluation_set/PRE 31/PRE 31.jpg
+evaluation_set/PRE 32/PRE 32.jpg
+evaluation_set/PRE 33/PRE 33.jpg
+evaluation_set/PRE 34/PRE 34.jpg
+evaluation_set/PRE 35/PRE 35.jpg
+evaluation_set/PRE 36/PRE 36.jpg
+evaluation_set/PRE 37/PRE 37.jpg
+evaluation_set/PRE 38/PRE 38.jpg
+evaluation_set/PRE 39/PRE 39.jpg
+evaluation_set/PRE 4/PRE 4.jpg
+evaluation_set/PRE 40/PRE 40.jpg
+evaluation_set/PRE 41/PRE 41.jpg
+evaluation_set/PRE 42/PRE 42.jpg
+evaluation_set/PRE 43/PRE 43.jpg
+evaluation_set/PRE 44/PRE 44.jpg
+evaluation_set/PRE 45/PRE 45.jpg
+evaluation_set/PRE 46/PRE 46.jpg
+evaluation_set/PRE 47/PRE 47.jpg
+evaluation_set/PRE 48/PRE 48.jpg
+evaluation_set/PRE 49/PRE 49.jpg
+evaluation_set/PRE 5/PRE 5.jpg
+evaluation_set/PRE 50/PRE 50.jpg
+evaluation_set/PRE 51/PRE 51.jpg
+evaluation_set/PRE 52/PRE 52.jpg
+evaluation_set/PRE 53/PRE 53.jpg
+evaluation_set/PRE 54/PRE 54.jpg
+evaluation_set/PRE 55/PRE 55.jpg
+evaluation_set/PRE 56/PRE 56.jpg
+evaluation_set/PRE 57/PRE 57.jpg
+evaluation_set/PRE 58/PRE 58.jpg
+evaluation_set/PRE 59/PRE 59.jpg
+evaluation_set/PRE 6/PRE 6.jpg
+evaluation_set/PRE 60/PRE 60.jpg
+evaluation_set/PRE 61/PRE 61.jpg
+evaluation_set/PRE 62/PRE 62.jpg
+evaluation_set/PRE 63/PRE 63.jpg
+evaluation_set/PRE 64/PRE 64.jpg
+evaluation_set/PRE 65/PRE 65.jpg
+evaluation_set/PRE 66/PRE 66.jpg
+evaluation_set/PRE 67/PRE 67.jpg
+evaluation_set/PRE 68/PRE 68.jpg
+evaluation_set/PRE 69/PRE 69.jpg
+evaluation_set/PRE 7/PRE 7.jpg
+evaluation_set/PRE 70/PRE 70.jpg
+evaluation_set/PRE 71/PRE 71.jpg
+evaluation_set/PRE 72/PRE 72.jpg
+evaluation_set/PRE 73/PRE 73.jpg
+evaluation_set/PRE 74/PRE 74.jpg
+evaluation_set/PRE 75/PRE 75.jpg
+evaluation_set/PRE 76/PRE 76.jpg
+evaluation_set/PRE 77/PRE 77.jpg
+evaluation_set/PRE 78/PRE 78.jpg
+evaluation_set/PRE 79/PRE 79.jpg
+evaluation_set/PRE 8/PRE 8.jpg
+evaluation_set/PRE 80/PRE 80.jpg
+evaluation_set/PRE 81/PRE 81.jpg
+evaluation_set/PRE 82/PRE 82.jpg
+evaluation_set/PRE 83/PRE 83.jpg
+evaluation_set/PRE 84/PRE 84.jpg
+evaluation_set/PRE 85/PRE 85.jpg
+evaluation_set/PRE 86/PRE 86.jpg
+evaluation_set/PRE 87/PRE 87.jpg
+evaluation_set/PRE 88/PRE 88.jpg
+evaluation_set/PRE 89/PRE 89.jpg
+evaluation_set/PRE 9/PRE 9.jpg
+evaluation_set/PRE 90/PRE 90.jpg
+evaluation_set/PRE 91/PRE 91.jpg
+evaluation_set/PRE 92/PRE 92.jpg
+evaluation_set/PRE 93/PRE 93.jpg
+evaluation_set/PRE 94/PRE 94.jpg
+evaluation_set/PRE 95/PRE 95.jpg
+evaluation_set/PRE 96/PRE 96.jpg
+evaluation_set/PRE 97/PRE 97.jpg
+evaluation_set/PRE 98/PRE 98.jpg
+evaluation_set/PRE 99/PRE 99.jpg
+evaluation_set/SCR 1/SCR 1.jpg
+evaluation_set/SCR 10/SCR 10.jpg
+evaluation_set/SCR 100/SCR 100.jpg
+evaluation_set/SCR 101/SCR 101.jpg
+evaluation_set/SCR 102/SCR 102.jpg
+evaluation_set/SCR 103/SCR 103.jpg
+evaluation_set/SCR 104/SCR 104.jpg
+evaluation_set/SCR 105/SCR 105.jpg
+evaluation_set/SCR 106/SCR 106.jpg
+evaluation_set/SCR 107/SCR 107.jpg
+evaluation_set/SCR 108/SCR 108.jpg
+evaluation_set/SCR 109/SCR 109.jpg
+evaluation_set/SCR 11/SCR 11.jpg
+evaluation_set/SCR 110/SCR 110.jpg
+evaluation_set/SCR 111/SCR 111.jpg
+evaluation_set/SCR 112/SCR 112.jpg
+evaluation_set/SCR 113/SCR 113.jpg
+evaluation_set/SCR 114/SCR 114.jpg
+evaluation_set/SCR 115/SCR 115.jpg
+evaluation_set/SCR 116/SCR 116.jpg
+evaluation_set/SCR 117/SCR 117.jpg
+evaluation_set/SCR 118/SCR 118.jpg
+evaluation_set/SCR 119/SCR 119.jpg
+evaluation_set/SCR 12/SCR 12.jpg
+evaluation_set/SCR 120/SCR 120.jpg
+evaluation_set/SCR 121/SCR 121.jpg
+evaluation_set/SCR 122/SCR 122.jpg
+evaluation_set/SCR 123/SCR 123.jpg
+evaluation_set/SCR 124/SCR 124.jpg
+evaluation_set/SCR 125/SCR 125.jpg
+evaluation_set/SCR 126/SCR 126.jpg
+evaluation_set/SCR 127/SCR 127.jpg
+evaluation_set/SCR 128/SCR 128.jpg
+evaluation_set/SCR 129/SCR 129.jpg
+evaluation_set/SCR 13/SCR 13.jpg
+evaluation_set/SCR 130/SCR 130.jpg
+evaluation_set/SCR 131/SCR 131.jpg
+evaluation_set/SCR 132/SCR 132.jpg
+evaluation_set/SCR 133/SCR 133.jpg
+evaluation_set/SCR 134/SCR 134.jpg
+evaluation_set/SCR 135/SCR 135.jpg
+evaluation_set/SCR 136/SCR 136.jpg
+evaluation_set/SCR 137/SCR 137.jpg
+evaluation_set/SCR 138/SCR 138.jpg
+evaluation_set/SCR 139/SCR 139.jpg
+evaluation_set/SCR 14/SCR 14.jpg
+evaluation_set/SCR 140/SCR 140.jpg
+evaluation_set/SCR 141/SCR 141.jpg
+evaluation_set/SCR 142/SCR 142.jpg
+evaluation_set/SCR 143/SCR 143.jpg
+evaluation_set/SCR 144/SCR 144.jpg
+evaluation_set/SCR 145/SCR 145.jpg
+evaluation_set/SCR 146/SCR 146.jpg
+evaluation_set/SCR 147/SCR 147.jpg
+evaluation_set/SCR 148/SCR 148.jpg
+evaluation_set/SCR 149/SCR 149.jpg
+evaluation_set/SCR 15/SCR 15.jpg
+evaluation_set/SCR 150/SCR 150.jpg
+evaluation_set/SCR 151/SCR 151.jpg
+evaluation_set/SCR 152/SCR 152.jpg
+evaluation_set/SCR 153/SCR 153.jpg
+evaluation_set/SCR 154/SCR 154.jpg
+evaluation_set/SCR 155/SCR 155.jpg
+evaluation_set/SCR 156/SCR 156.jpg
+evaluation_set/SCR 157/SCR 157.jpg
+evaluation_set/SCR 158/SCR 158.jpg
+evaluation_set/SCR 159/SCR 159.jpg
+evaluation_set/SCR 16/SCR 16.jpg
+evaluation_set/SCR 160/SCR 160.jpg
+evaluation_set/SCR 161/SCR 161.jpg
+evaluation_set/SCR 162/SCR 162.jpg
+evaluation_set/SCR 163/SCR 163.jpg
+evaluation_set/SCR 164/SCR 164.jpg
+evaluation_set/SCR 165/SCR 165.jpg
+evaluation_set/SCR 166/SCR 166.jpg
+evaluation_set/SCR 167/SCR 167.jpg
+evaluation_set/SCR 168/SCR 168.jpg
+evaluation_set/SCR 169/SCR 169.jpg
+evaluation_set/SCR 17/SCR 17.jpg
+evaluation_set/SCR 170/SCR 170.jpg
+evaluation_set/SCR 171/SCR 171.jpg
+evaluation_set/SCR 172/SCR 172.jpg
+evaluation_set/SCR 173/SCR 173.jpg
+evaluation_set/SCR 174/SCR 174.jpg
+evaluation_set/SCR 175/SCR 175.jpg
+evaluation_set/SCR 18/SCR 18.jpg
+evaluation_set/SCR 19/SCR 19.jpg
+evaluation_set/SCR 2/SCR 2.jpg
+evaluation_set/SCR 20/SCR 20.jpg
+evaluation_set/SCR 21/SCR 21.jpg
+evaluation_set/SCR 22/SCR 22.jpg
+evaluation_set/SCR 23/SCR 23.jpg
+evaluation_set/SCR 24/SCR 24.jpg
+evaluation_set/SCR 25/SCR 25.jpg
+evaluation_set/SCR 26/SCR 26.jpg
+evaluation_set/SCR 27/SCR 27.jpg
+evaluation_set/SCR 28/SCR 28.jpg
+evaluation_set/SCR 29/SCR 29.jpg
+evaluation_set/SCR 3/SCR 3.jpg
+evaluation_set/SCR 30/SCR 30.jpg
+evaluation_set/SCR 31/SCR 31.jpg
+evaluation_set/SCR 32/SCR 32.jpg
+evaluation_set/SCR 33/SCR 33.jpg
+evaluation_set/SCR 34/SCR 34.jpg
+evaluation_set/SCR 35/SCR 35.jpg
+evaluation_set/SCR 36/SCR 36.jpg
+evaluation_set/SCR 37/SCR 37.jpg
+evaluation_set/SCR 38/SCR 38.jpg
+evaluation_set/SCR 39/SCR 39.jpg
+evaluation_set/SCR 4/SCR 4.jpg
+evaluation_set/SCR 40/SCR 40.jpg
+evaluation_set/SCR 41/SCR 41.jpg
+evaluation_set/SCR 42/SCR 42.jpg
+evaluation_set/SCR 43/SCR 43.jpg
+evaluation_set/SCR 44/SCR 44.jpg
+evaluation_set/SCR 45/SCR 45.jpg
+evaluation_set/SCR 46/SCR 46.jpg
+evaluation_set/SCR 47/SCR 47.jpg
+evaluation_set/SCR 48/SCR 48.jpg
+evaluation_set/SCR 49/SCR 49.jpg
+evaluation_set/SCR 5/SCR 5.jpg
+evaluation_set/SCR 50/SCR 50.jpg
+evaluation_set/SCR 51/SCR 51.jpg
+evaluation_set/SCR 52/SCR 52.jpg
+evaluation_set/SCR 53/SCR 53.jpg
+evaluation_set/SCR 54/SCR 54.jpg
+evaluation_set/SCR 55/SCR 55.jpg
+evaluation_set/SCR 56/SCR 56.jpg
+evaluation_set/SCR 57/SCR 57.jpg
+evaluation_set/SCR 58/SCR 58.jpg
+evaluation_set/SCR 59/SCR 59.jpg
+evaluation_set/SCR 6/SCR 6.jpg
+evaluation_set/SCR 60/SCR 60.jpg
+evaluation_set/SCR 61/SCR 61.jpg
+evaluation_set/SCR 62/SCR 62.jpg
+evaluation_set/SCR 63/SCR 63.jpg
+evaluation_set/SCR 64/SCR 64.jpg
+evaluation_set/SCR 65/SCR 65.jpg
+evaluation_set/SCR 66/SCR 66.jpg
+evaluation_set/SCR 67/SCR 67.jpg
+evaluation_set/SCR 68/SCR 68.jpg
+evaluation_set/SCR 69/SCR 69.jpg
+evaluation_set/SCR 7/SCR 7.jpg
+evaluation_set/SCR 70/SCR 70.jpg
+evaluation_set/SCR 71/SCR 71.jpg
+evaluation_set/SCR 72/SCR 72.jpg
+evaluation_set/SCR 73/SCR 73.jpg
+evaluation_set/SCR 74/SCR 74.jpg
+evaluation_set/SCR 75/SCR 75.jpg
+evaluation_set/SCR 76/SCR 76.jpg
+evaluation_set/SCR 77/SCR 77.jpg
+evaluation_set/SCR 78/SCR 78.jpg
+evaluation_set/SCR 79/SCR 79.jpg
+evaluation_set/SCR 8/SCR 8.jpg
+evaluation_set/SCR 80/SCR 80.jpg
+evaluation_set/SCR 81/SCR 81.jpg
+evaluation_set/SCR 82/SCR 82.jpg
+evaluation_set/SCR 83/SCR 83.jpg
+evaluation_set/SCR 84/SCR 84.jpg
+evaluation_set/SCR 85/SCR 85.jpg
+evaluation_set/SCR 86/SCR 86.jpg
+evaluation_set/SCR 87/SCR 87.jpg
+evaluation_set/SCR 88/SCR 88.jpg
+evaluation_set/SCR 89/SCR 89.jpg
+evaluation_set/SCR 9/SCR 9.jpg
+evaluation_set/SCR 90/SCR 90.jpg
+evaluation_set/SCR 91/SCR 91.jpg
+evaluation_set/SCR 92/SCR 92.jpg
+evaluation_set/SCR 93/SCR 93.jpg
+evaluation_set/SCR 94/SCR 94.jpg
+evaluation_set/SCR 95/SCR 95.jpg
+evaluation_set/SCR 96/SCR 96.jpg
+evaluation_set/SCR 97/SCR 97.jpg
+evaluation_set/SCR 98/SCR 98.jpg
+evaluation_set/SCR 99/SCR 99.jpg
+evaluation_set/SFA 1/SFA 1.jpg
+evaluation_set/SFA 10/SFA 10.jpg
+evaluation_set/SFA 11/SFA 11.jpg
+evaluation_set/SFA 12/SFA 12.jpg
+evaluation_set/SFA 13/SFA 13.jpg
+evaluation_set/SFA 14/SFA 14.jpg
+evaluation_set/SFA 15/SFA 15.jpg
+evaluation_set/SFA 16/SFA 16.jpg
+evaluation_set/SFA 17/SFA 17.jpg
+evaluation_set/SFA 18/SFA 18.jpg
+evaluation_set/SFA 19/SFA 19.jpg
+evaluation_set/SFA 2/SFA 2.jpg
+evaluation_set/SFA 20/SFA 20.jpg
+evaluation_set/SFA 21/SFA 21.jpg
+evaluation_set/SFA 22/SFA 22.jpg
+evaluation_set/SFA 23/SFA 23.jpg
+evaluation_set/SFA 24/SFA 24.jpg
+evaluation_set/SFA 25/SFA 25.jpg
+evaluation_set/SFA 26/SFA 26.jpg
+evaluation_set/SFA 27/SFA 27.jpg
+evaluation_set/SFA 28/SFA 28.jpg
+evaluation_set/SFA 29/SFA 29.jpg
+evaluation_set/SFA 3/SFA 3.jpg
+evaluation_set/SFA 30/SFA 30.jpg
+evaluation_set/SFA 31/SFA 31.jpg
+evaluation_set/SFA 32/SFA 32.jpg
+evaluation_set/SFA 33/SFA 33.jpg
+evaluation_set/SFA 34/SFA 34.jpg
+evaluation_set/SFA 35/SFA 35.jpg
+evaluation_set/SFA 36/SFA 36.jpg
+evaluation_set/SFA 37/SFA 37.jpg
+evaluation_set/SFA 38/SFA 38.jpg
+evaluation_set/SFA 39/SFA 39.jpg
+evaluation_set/SFA 4/SFA 4.jpg
+evaluation_set/SFA 40/SFA 40.jpg
+evaluation_set/SFA 41/SFA 41.jpg
+evaluation_set/SFA 42/SFA 42.jpg
+evaluation_set/SFA 43/SFA 43.jpg
+evaluation_set/SFA 44/SFA 44.jpg
+evaluation_set/SFA 45/SFA 45.jpg
+evaluation_set/SFA 46/SFA 46.jpg
+evaluation_set/SFA 47/SFA 47.jpg
+evaluation_set/SFA 48/SFA 48.jpg
+evaluation_set/SFA 49/SFA 49.jpg
+evaluation_set/SFA 5/SFA 5.jpg
+evaluation_set/SFA 50/SFA 50.jpg
+evaluation_set/SFA 51/SFA 51.jpg
+evaluation_set/SFA 52/SFA 52.jpg
+evaluation_set/SFA 53/SFA 53.jpg
+evaluation_set/SFA 54/SFA 54.jpg
+evaluation_set/SFA 55/SFA 55.jpg
+evaluation_set/SFA 56/SFA 56.jpg
+evaluation_set/SFA 57/SFA 57.jpg
+evaluation_set/SFA 58/SFA 58.jpg
+evaluation_set/SFA 59/SFA 59.jpg
+evaluation_set/SFA 6/SFA 6.jpg
+evaluation_set/SFA 60/SFA 60.jpg
+evaluation_set/SFA 61/SFA 61.jpg
+evaluation_set/SFA 62/SFA 62.jpg
+evaluation_set/SFA 63/SFA 63.jpg
+evaluation_set/SFA 64/SFA 64.jpg
+evaluation_set/SFA 65/SFA 65.jpg
+evaluation_set/SFA 66/SFA 66.jpg
+evaluation_set/SFA 67/SFA 67.jpg
+evaluation_set/SFA 68/SFA 68.jpg
+evaluation_set/SFA 69/SFA 69.jpg
+evaluation_set/SFA 7/SFA 7.jpg
+evaluation_set/SFA 70/SFA 70.jpg
+evaluation_set/SFA 71/SFA 71.jpg
+evaluation_set/SFA 72/SFA 72.jpg
+evaluation_set/SFA 73/SFA 73.jpg
+evaluation_set/SFA 74/SFA 74.jpg
+evaluation_set/SFA 75/SFA 75.jpg
+evaluation_set/SFA 76/SFA 76.jpg
+evaluation_set/SFA 77/SFA 77.jpg
+evaluation_set/SFA 78/SFA 78.jpg
+evaluation_set/SFA 79/SFA 79.jpg
+evaluation_set/SFA 8/SFA 8.jpg
+evaluation_set/SFA 80/SFA 80.jpg
+evaluation_set/SFA 81/SFA 81.jpg
+evaluation_set/SFA 82/SFA 82.jpg
+evaluation_set/SFA 83/SFA 83.jpg
+evaluation_set/SFA 84/SFA 84.jpg
+evaluation_set/SFA 85/SFA 85.jpg
+evaluation_set/SFA 86/SFA 86.jpg
+evaluation_set/SFA 87/SFA 87.jpg
+evaluation_set/SFA 88/SFA 88.jpg
+evaluation_set/SFA 89/SFA 89.jpg
+evaluation_set/SFA 9/SFA 9.jpg
+evaluation_set/SFA 90/SFA 90.jpg
+evaluation_set/SFA 91/SFA 91.jpg
+evaluation_set/SFA 92/SFA 92.jpg
+evaluation_set/SFA 93/SFA 93.jpg
+evaluation_set/SFA 94/SFA 94.jpg
+evaluation_set/SFA 95/SFA 95.jpg
+evaluation_set/SFA 96/SFA 96.jpg
+evaluation_set/SFA 97/SFA 97.jpg
+evaluation_set/SFA 98/SFA 98.jpg
+evaluation_set/SFA 99/SFA 99.jpg
+evaluation_set/SSP 1/SSP 1.jpg
+evaluation_set/SSP 10/SSP 10.jpg
+evaluation_set/SSP 100/SSP 100.jpg
+evaluation_set/SSP 101/SSP 101.jpg
+evaluation_set/SSP 102/SSP 102.jpg
+evaluation_set/SSP 103/SSP 103.jpg
+evaluation_set/SSP 104/SSP 104.jpg
+evaluation_set/SSP 105/SSP 105.jpg
+evaluation_set/SSP 106/SSP 106.jpg
+evaluation_set/SSP 107/SSP 107.jpg
+evaluation_set/SSP 108/SSP 108.jpg
+evaluation_set/SSP 109/SSP 109.jpg
+evaluation_set/SSP 11/SSP 11.jpg
+evaluation_set/SSP 110/SSP 110.jpg
+evaluation_set/SSP 111/SSP 111.jpg
+evaluation_set/SSP 112/SSP 112.jpg
+evaluation_set/SSP 113/SSP 113.jpg
+evaluation_set/SSP 114/SSP 114.jpg
+evaluation_set/SSP 115/SSP 115.jpg
+evaluation_set/SSP 116/SSP 116.jpg
+evaluation_set/SSP 117/SSP 117.jpg
+evaluation_set/SSP 118/SSP 118.jpg
+evaluation_set/SSP 119/SSP 119.jpg
+evaluation_set/SSP 12/SSP 12.jpg
+evaluation_set/SSP 120/SSP 120.jpg
+evaluation_set/SSP 121/SSP 121.jpg
+evaluation_set/SSP 122/SSP 122.jpg
+evaluation_set/SSP 123/SSP 123.jpg
+evaluation_set/SSP 124/SSP 124.jpg
+evaluation_set/SSP 125/SSP 125.jpg
+evaluation_set/SSP 126/SSP 126.jpg
+evaluation_set/SSP 127/SSP 127.jpg
+evaluation_set/SSP 128/SSP 128.jpg
+evaluation_set/SSP 129/SSP 129.jpg
+evaluation_set/SSP 13/SSP 13.jpg
+evaluation_set/SSP 130/SSP 130.jpg
+evaluation_set/SSP 131/SSP 131.jpg
+evaluation_set/SSP 132/SSP 132.jpg
+evaluation_set/SSP 133/SSP 133.jpg
+evaluation_set/SSP 134/SSP 134.jpg
+evaluation_set/SSP 135/SSP 135.jpg
+evaluation_set/SSP 136/SSP 136.jpg
+evaluation_set/SSP 137/SSP 137.jpg
+evaluation_set/SSP 138/SSP 138.jpg
+evaluation_set/SSP 139/SSP 139.jpg
+evaluation_set/SSP 14/SSP 14.jpg
+evaluation_set/SSP 140/SSP 140.jpg
+evaluation_set/SSP 141/SSP 141.jpg
+evaluation_set/SSP 142/SSP 142.jpg
+evaluation_set/SSP 143/SSP 143.jpg
+evaluation_set/SSP 144/SSP 144.jpg
+evaluation_set/SSP 145/SSP 145.jpg
+evaluation_set/SSP 146/SSP 146.jpg
+evaluation_set/SSP 147/SSP 147.jpg
+evaluation_set/SSP 148/SSP 148.jpg
+evaluation_set/SSP 149/SSP 149.jpg
+evaluation_set/SSP 15/SSP 15.jpg
+evaluation_set/SSP 150/SSP 150.jpg
+evaluation_set/SSP 151/SSP 151.jpg
+evaluation_set/SSP 152/SSP 152.jpg
+evaluation_set/SSP 153/SSP 153.jpg
+evaluation_set/SSP 154/SSP 154.jpg
+evaluation_set/SSP 155/SSP 155.jpg
+evaluation_set/SSP 156/SSP 156.jpg
+evaluation_set/SSP 157/SSP 157.jpg
+evaluation_set/SSP 158/SSP 158.jpg
+evaluation_set/SSP 159/SSP 159.jpg
+evaluation_set/SSP 16/SSP 16.jpg
+evaluation_set/SSP 160/SSP 160.jpg
+evaluation_set/SSP 161/SSP 161.jpg
+evaluation_set/SSP 162/SSP 162.jpg
+evaluation_set/SSP 163/SSP 163.jpg
+evaluation_set/SSP 164/SSP 164.jpg
+evaluation_set/SSP 165/SSP 165.jpg
+evaluation_set/SSP 166/SSP 166.jpg
+evaluation_set/SSP 167/SSP 167.jpg
+evaluation_set/SSP 168/SSP 168.jpg
+evaluation_set/SSP 169/SSP 169.jpg
+evaluation_set/SSP 17/SSP 17.jpg
+evaluation_set/SSP 170/SSP 170.jpg
+evaluation_set/SSP 171/SSP 171.jpg
+evaluation_set/SSP 172/SSP 172.jpg
+evaluation_set/SSP 173/SSP 173.jpg
+evaluation_set/SSP 174/SSP 174.jpg
+evaluation_set/SSP 175/SSP 175.jpg
+evaluation_set/SSP 176/SSP 176.jpg
+evaluation_set/SSP 177/SSP 177.jpg
+evaluation_set/SSP 178/SSP 178.jpg
+evaluation_set/SSP 179/SSP 179.jpg
+evaluation_set/SSP 18/SSP 18.jpg
+evaluation_set/SSP 180/SSP 180.jpg
+evaluation_set/SSP 181/SSP 181.jpg
+evaluation_set/SSP 182/SSP 182.jpg
+evaluation_set/SSP 183/SSP 183.jpg
+evaluation_set/SSP 184/SSP 184.jpg
+evaluation_set/SSP 185/SSP 185.jpg
+evaluation_set/SSP 186/SSP 186.jpg
+evaluation_set/SSP 187/SSP 187.jpg
+evaluation_set/SSP 188/SSP 188.jpg
+evaluation_set/SSP 189/SSP 189.jpg
+evaluation_set/SSP 19/SSP 19.jpg
+evaluation_set/SSP 190/SSP 190.jpg
+evaluation_set/SSP 191/SSP 191.jpg
+evaluation_set/SSP 192/SSP 192.jpg
+evaluation_set/SSP 193/SSP 193.jpg
+evaluation_set/SSP 194/SSP 194.jpg
+evaluation_set/SSP 195/SSP 195.jpg
+evaluation_set/SSP 196/SSP 196.jpg
+evaluation_set/SSP 197/SSP 197.jpg
+evaluation_set/SSP 198/SSP 198.jpg
+evaluation_set/SSP 199/SSP 199.jpg
+evaluation_set/SSP 2/SSP 2.jpg
+evaluation_set/SSP 20/SSP 20.jpg
+evaluation_set/SSP 200/SSP 200.jpg
+evaluation_set/SSP 201/SSP 201.jpg
+evaluation_set/SSP 202/SSP 202.jpg
+evaluation_set/SSP 203/SSP 203.jpg
+evaluation_set/SSP 204/SSP 204.jpg
+evaluation_set/SSP 205/SSP 205.jpg
+evaluation_set/SSP 206/SSP 206.jpg
+evaluation_set/SSP 207/SSP 207.jpg
+evaluation_set/SSP 208/SSP 208.jpg
+evaluation_set/SSP 209/SSP 209.jpg
+evaluation_set/SSP 21/SSP 21.jpg
+evaluation_set/SSP 210/SSP 210.jpg
+evaluation_set/SSP 211/SSP 211.jpg
+evaluation_set/SSP 212/SSP 212.jpg
+evaluation_set/SSP 213/SSP 213.jpg
+evaluation_set/SSP 214/SSP 214.jpg
+evaluation_set/SSP 215/SSP 215.jpg
+evaluation_set/SSP 216/SSP 216.jpg
+evaluation_set/SSP 217/SSP 217.jpg
+evaluation_set/SSP 218/SSP 218.jpg
+evaluation_set/SSP 219/SSP 219.jpg
+evaluation_set/SSP 22/SSP 22.jpg
+evaluation_set/SSP 220/SSP 220.jpg
+evaluation_set/SSP 221/SSP 221.jpg
+evaluation_set/SSP 222/SSP 222.jpg
+evaluation_set/SSP 223/SSP 223.jpg
+evaluation_set/SSP 224/SSP 224.jpg
+evaluation_set/SSP 225/SSP 225.jpg
+evaluation_set/SSP 226/SSP 226.jpg
+evaluation_set/SSP 227/SSP 227.jpg
+evaluation_set/SSP 228/SSP 228.jpg
+evaluation_set/SSP 229/SSP 229.jpg
+evaluation_set/SSP 23/SSP 23.jpg
+evaluation_set/SSP 230/SSP 230.jpg
+evaluation_set/SSP 231/SSP 231.jpg
+evaluation_set/SSP 232/SSP 232.jpg
+evaluation_set/SSP 233/SSP 233.jpg
+evaluation_set/SSP 234/SSP 234.jpg
+evaluation_set/SSP 235/SSP 235.jpg
+evaluation_set/SSP 236/SSP 236.jpg
+evaluation_set/SSP 237/SSP 237.jpg
+evaluation_set/SSP 238/SSP 238.jpg
+evaluation_set/SSP 239/SSP 239.jpg
+evaluation_set/SSP 24/SSP 24.jpg
+evaluation_set/SSP 240/SSP 240.jpg
+evaluation_set/SSP 241/SSP 241.jpg
+evaluation_set/SSP 242/SSP 242.jpg
+evaluation_set/SSP 243/SSP 243.jpg
+evaluation_set/SSP 244/SSP 244.jpg
+evaluation_set/SSP 245/SSP 245.jpg
+evaluation_set/SSP 246/SSP 246.jpg
+evaluation_set/SSP 247/SSP 247.jpg
+evaluation_set/SSP 248/SSP 248.jpg
+evaluation_set/SSP 249/SSP 249.jpg
+evaluation_set/SSP 25/SSP 25.jpg
+evaluation_set/SSP 250/SSP 250.jpg
+evaluation_set/SSP 251/SSP 251.jpg
+evaluation_set/SSP 252/SSP 252.jpg
+evaluation_set/SSP 26/SSP 26.jpg
+evaluation_set/SSP 27/SSP 27.jpg
+evaluation_set/SSP 28/SSP 28.jpg
+evaluation_set/SSP 29/SSP 29.jpg
+evaluation_set/SSP 3/SSP 3.jpg
+evaluation_set/SSP 30/SSP 30.jpg
+evaluation_set/SSP 31/SSP 31.jpg
+evaluation_set/SSP 32/SSP 32.jpg
+evaluation_set/SSP 33/SSP 33.jpg
+evaluation_set/SSP 34/SSP 34.jpg
+evaluation_set/SSP 35/SSP 35.jpg
+evaluation_set/SSP 36/SSP 36.jpg
+evaluation_set/SSP 37/SSP 37.jpg
+evaluation_set/SSP 38/SSP 38.jpg
+evaluation_set/SSP 39/SSP 39.jpg
+evaluation_set/SSP 4/SSP 4.jpg
+evaluation_set/SSP 40/SSP 40.jpg
+evaluation_set/SSP 41/SSP 41.jpg
+evaluation_set/SSP 42/SSP 42.jpg
+evaluation_set/SSP 43/SSP 43.jpg
+evaluation_set/SSP 44/SSP 44.jpg
+evaluation_set/SSP 45/SSP 45.jpg
+evaluation_set/SSP 46/SSP 46.jpg
+evaluation_set/SSP 47/SSP 47.jpg
+evaluation_set/SSP 48/SSP 48.jpg
+evaluation_set/SSP 49/SSP 49.jpg
+evaluation_set/SSP 5/SSP 5.jpg
+evaluation_set/SSP 50/SSP 50.jpg
+evaluation_set/SSP 51/SSP 51.jpg
+evaluation_set/SSP 52/SSP 52.jpg
+evaluation_set/SSP 53/SSP 53.jpg
+evaluation_set/SSP 54/SSP 54.jpg
+evaluation_set/SSP 55/SSP 55.jpg
+evaluation_set/SSP 56/SSP 56.jpg
+evaluation_set/SSP 57/SSP 57.jpg
+evaluation_set/SSP 58/SSP 58.jpg
+evaluation_set/SSP 59/SSP 59.jpg
+evaluation_set/SSP 6/SSP 6.jpg
+evaluation_set/SSP 60/SSP 60.jpg
+evaluation_set/SSP 61/SSP 61.jpg
+evaluation_set/SSP 62/SSP 62.jpg
+evaluation_set/SSP 63/SSP 63.jpg
+evaluation_set/SSP 64/SSP 64.jpg
+evaluation_set/SSP 65/SSP 65.jpg
+evaluation_set/SSP 66/SSP 66.jpg
+evaluation_set/SSP 67/SSP 67.jpg
+evaluation_set/SSP 68/SSP 68.jpg
+evaluation_set/SSP 69/SSP 69.jpg
+evaluation_set/SSP 7/SSP 7.jpg
+evaluation_set/SSP 70/SSP 70.jpg
+evaluation_set/SSP 71/SSP 71.jpg
+evaluation_set/SSP 72/SSP 72.jpg
+evaluation_set/SSP 73/SSP 73.jpg
+evaluation_set/SSP 74/SSP 74.jpg
+evaluation_set/SSP 75/SSP 75.jpg
+evaluation_set/SSP 76/SSP 76.jpg
+evaluation_set/SSP 77/SSP 77.jpg
+evaluation_set/SSP 78/SSP 78.jpg
+evaluation_set/SSP 79/SSP 79.jpg
+evaluation_set/SSP 8/SSP 8.jpg
+evaluation_set/SSP 80/SSP 80.jpg
+evaluation_set/SSP 81/SSP 81.jpg
+evaluation_set/SSP 82/SSP 82.jpg
+evaluation_set/SSP 83/SSP 83.jpg
+evaluation_set/SSP 84/SSP 84.jpg
+evaluation_set/SSP 85/SSP 85.jpg
+evaluation_set/SSP 86/SSP 86.jpg
+evaluation_set/SSP 87/SSP 87.jpg
+evaluation_set/SSP 88/SSP 88.jpg
+evaluation_set/SSP 89/SSP 89.jpg
+evaluation_set/SSP 9/SSP 9.jpg
+evaluation_set/SSP 90/SSP 90.jpg
+evaluation_set/SSP 91/SSP 91.jpg
+evaluation_set/SSP 92/SSP 92.jpg
+evaluation_set/SSP 93/SSP 93.jpg
+evaluation_set/SSP 94/SSP 94.jpg
+evaluation_set/SSP 95/SSP 95.jpg
+evaluation_set/SSP 96/SSP 96.jpg
+evaluation_set/SSP 97/SSP 97.jpg
+evaluation_set/SSP 98/SSP 98.jpg
+evaluation_set/SSP 99/SSP 99.jpg
+generate_evaluation_set.py
+gui_app.py
+predict.py
+README.txt
+requirements.txt
+standalones/JTG 81.jpg
+train.py
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="batch_results_20260305_100740.csv">
+filename,true_label,predicted_label,confidence,accepted,top1_correct,top3_correct
+JTG 1.jpg,JTG 1,JTG 1,0.999514102935791,1,1,1
+JTG 10.jpg,JTG 10,JTG 10,0.9997503161430359,1,1,1
+JTG 100.jpg,JTG 100,JTG 100,0.9999821186065674,1,1,1
+JTG 101.jpg,JTG 101,JTG 101,0.9958439469337463,1,1,1
+JTG 102.jpg,JTG 102,JTG 102,0.9998959302902222,1,1,1
+JTG 103.jpg,JTG 103,JTG 103,0.9998561143875122,1,1,1
+JTG 104.jpg,JTG 104,JTG 104,0.999988317489624,1,1,1
+JTG 105.jpg,JTG 105,JTG 105,0.9999997615814209,1,1,1
+JTG 106.jpg,JTG 106,JTG 106,0.9999984502792358,1,1,1
+JTG 107.jpg,JTG 107,JTG 107,0.9813870787620544,1,1,1
+JTG 108.jpg,JTG 108,JTG 108,1.0,1,1,1
+JTG 109.jpg,JTG 109,JTG 109,0.9997237324714661,1,1,1
+JTG 11.jpg,JTG 11,JTG 11,0.9999985694885254,1,1,1
+JTG 110.jpg,JTG 110,JTG 110,0.9985287189483643,1,1,1
+JTG 111.jpg,JTG 111,JTG 111,0.9998810291290283,1,1,1
+JTG 112.jpg,JTG 112,JTG 112,0.9179509282112122,1,1,1
+JTG 113.jpg,JTG 113,JTG 113,0.9999923706054688,1,1,1
+JTG 114.jpg,JTG 114,JTG 114,0.9999971389770508,1,1,1
+JTG 115.jpg,JTG 115,JTG 115,1.0,1,1,1
+JTG 116.jpg,JTG 116,JTG 116,0.9988570213317871,1,1,1
+JTG 117.jpg,JTG 117,JTG 117,0.9999732971191406,1,1,1
+JTG 118.jpg,JTG 118,JTG 118,0.9999135732650757,1,1,1
+JTG 119.jpg,JTG 119,JTG 119,0.980685830116272,1,1,1
+JTG 12.jpg,JTG 12,JTG 12,0.9998835325241089,1,1,1
+JTG 120.jpg,JTG 120,JTG 120,0.9999486207962036,1,1,1
+JTG 121.jpg,JTG 121,JTG 121,0.9999649524688721,1,1,1
+JTG 122.jpg,JTG 122,JTG 122,0.9996923208236694,1,1,1
+JTG 123.jpg,JTG 123,JTG 123,0.9999988079071045,1,1,1
+JTG 124.jpg,JTG 124,JTG 124,0.9996861219406128,1,1,1
+JTG 125.jpg,JTG 125,JTG 125,0.9995052814483643,1,1,1
+JTG 126.jpg,JTG 126,JTG 126,0.9772612452507019,1,1,1
+JTG 127.jpg,JTG 127,JTG 127,0.9999996423721313,1,1,1
+JTG 128.jpg,JTG 128,JTG 128,0.9999982118606567,1,1,1
+JTG 129.jpg,JTG 129,JTG 129,0.9997556805610657,1,1,1
+JTG 13.jpg,JTG 13,JTG 13,0.9996194839477539,1,1,1
+JTG 130.jpg,JTG 130,JTG 130,0.997626006603241,1,1,1
+JTG 131.jpg,JTG 131,JTG 131,0.9999563694000244,1,1,1
+JTG 132.jpg,JTG 132,JTG 132,0.9363555312156677,1,1,1
+JTG 133.jpg,JTG 133,JTG 133,0.9999960660934448,1,1,1
+JTG 134.jpg,JTG 134,JTG 134,0.9999815225601196,1,1,1
+JTG 135.jpg,JTG 135,JTG 135,0.999992847442627,1,1,1
+JTG 136.jpg,JTG 136,JTG 136,0.9999982118606567,1,1,1
+JTG 137.jpg,JTG 137,JTG 137,0.9999691247940063,1,1,1
+JTG 138.jpg,JTG 138,JTG 138,0.9999997615814209,1,1,1
+JTG 139.jpg,JTG 139,JTG 139,0.9997559189796448,1,1,1
+JTG 14.jpg,JTG 14,JTG 14,0.9998940229415894,1,1,1
+JTG 140.jpg,JTG 140,JTG 140,0.9808796048164368,1,1,1
+JTG 141.jpg,JTG 141,JTG 141,0.9980758428573608,1,1,1
+JTG 142.jpg,JTG 142,JTG 142,0.9996644258499146,1,1,1
+JTG 143.jpg,JTG 143,JTG 143,1.0,1,1,1
+JTG 144.jpg,JTG 144,JTG 144,0.9998917579650879,1,1,1
+JTG 145.jpg,JTG 145,JTG 145,0.9999983310699463,1,1,1
+JTG 146.jpg,JTG 146,JTG 146,0.9985295534133911,1,1,1
+JTG 147.jpg,JTG 147,JTG 147,0.9996808767318726,1,1,1
+JTG 148.jpg,JTG 148,JTG 148,0.9993534684181213,1,1,1
+JTG 149.jpg,JTG 149,JTG 149,0.9982821941375732,1,1,1
+JTG 15.jpg,JTG 15,JTG 15,0.9999995231628418,1,1,1
+JTG 150.jpg,JTG 150,JTG 150,0.9974385499954224,1,1,1
+JTG 151.jpg,JTG 151,JTG 151,0.9976798892021179,1,1,1
+JTG 152.jpg,JTG 152,JTG 152,0.9999997615814209,1,1,1
+JTG 153.jpg,JTG 153,JTG 153,0.8333585262298584,1,1,1
+JTG 154.jpg,JTG 154,JTG 154,0.9984163045883179,1,1,1
+JTG 155.jpg,JTG 155,JTG 155,0.9690625071525574,1,1,1
+JTG 156.jpg,JTG 156,JTG 156,0.9990084767341614,1,1,1
+JTG 157.jpg,JTG 157,JTG 157,1.0,1,1,1
+JTG 158.jpg,JTG 158,JTG 158,0.9998931884765625,1,1,1
+JTG 159.jpg,JTG 159,JTG 159,0.9966788291931152,1,1,1
+JTG 16.jpg,JTG 16,JTG 16,0.9998852014541626,1,1,1
+JTG 160.jpg,JTG 160,JTG 160,0.5671820044517517,0,0,0
+JTG 161.jpg,JTG 161,JTG 161,0.9999094009399414,1,1,1
+JTG 162.jpg,JTG 162,JTG 162,0.9938954710960388,1,1,1
+JTG 163.jpg,JTG 163,JTG 163,0.9993844032287598,1,1,1
+JTG 164.jpg,JTG 164,JTG 164,0.9999597072601318,1,1,1
+JTG 165.jpg,JTG 165,JTG 165,0.9792221188545227,1,1,1
+JTG 166.jpg,JTG 166,JTG 166,0.9999539852142334,1,1,1
+JTG 167.jpg,JTG 167,JTG 167,0.996122419834137,1,1,1
+JTG 168.jpg,JTG 168,JTG 168,0.9999997615814209,1,1,1
+JTG 169.jpg,JTG 169,JTG 169,0.9999064207077026,1,1,1
+JTG 17.jpg,JTG 17,JTG 17,0.9999531507492065,1,1,1
+JTG 170.jpg,JTG 170,JTG 170,0.9922629594802856,1,1,1
+JTG 171.jpg,JTG 171,JTG 171,0.9999537467956543,1,1,1
+JTG 172.jpg,JTG 172,JTG 172,0.9992515444755554,1,1,1
+JTG 173.jpg,JTG 173,JTG 173,0.9956684112548828,1,1,1
+JTG 174.jpg,JTG 174,JTG 174,1.0,1,1,1
+JTG 175.jpg,JTG 175,JTG 175,0.9999996423721313,1,1,1
+JTG 176.jpg,JTG 176,JTG 176,0.9999793767929077,1,1,1
+JTG 177.jpg,JTG 177,JTG 177,0.9998087286949158,1,1,1
+JTG 178.jpg,JTG 178,JTG 178,0.9893280863761902,1,1,1
+JTG 179.jpg,JTG 179,JTG 179,0.9999992847442627,1,1,1
+JTG 18.jpg,JTG 18,JTG 18,0.9999972581863403,1,1,1
+JTG 180.jpg,JTG 180,JTG 180,0.9999998807907104,1,1,1
+JTG 181.jpg,JTG 181,JTG 181,0.9999872446060181,1,1,1
+JTG 182.jpg,JTG 182,JTG 182,1.0,1,1,1
+JTG 183.jpg,JTG 183,JTG 183,0.9996895790100098,1,1,1
+JTG 184.jpg,JTG 184,JTG 184,0.999987006187439,1,1,1
+JTG 185.jpg,JTG 185,JTG 185,1.0,1,1,1
+JTG 186.jpg,JTG 186,JTG 186,0.9999896287918091,1,1,1
+JTG 187.jpg,JTG 187,JTG 187,0.9643301963806152,1,1,1
+JTG 188.jpg,JTG 188,JTG 188,0.9990637898445129,1,1,1
+JTG 189.jpg,JTG 189,JTG 189,0.9998776912689209,1,1,1
+JTG 19.jpg,JTG 19,JTG 19,0.9999879598617554,1,1,1
+JTG 190.jpg,JTG 190,JTG 190,0.9999954700469971,1,1,1
+JTG 2.jpg,JTG 2,JTG 2,0.9999908208847046,1,1,1
+JTG 20.jpg,JTG 20,JTG 20,0.9998190999031067,1,1,1
+JTG 21.jpg,JTG 21,JTG 21,0.9999977350234985,1,1,1
+JTG 22.jpg,JTG 22,JTG 22,0.9984644651412964,1,1,1
+JTG 23.jpg,JTG 23,JTG 23,0.9021925330162048,1,1,1
+JTG 24.jpg,JTG 24,JTG 24,0.9999725818634033,1,1,1
+JTG 25.jpg,JTG 25,JTG 25,0.9999154806137085,1,1,1
+JTG 26.jpg,JTG 26,JTG 26,0.9999608993530273,1,1,1
+JTG 27.jpg,JTG 27,JTG 27,0.9999985694885254,1,1,1
+JTG 28.jpg,JTG 28,JTG 28,1.0,1,1,1
+JTG 29.jpg,JTG 29,JTG 29,0.999940037727356,1,1,1
+JTG 3.jpg,JTG 3,JTG 3,0.9999089241027832,1,1,1
+JTG 30.jpg,JTG 30,JTG 30,0.999997615814209,1,1,1
+JTG 31.jpg,JTG 31,JTG 31,0.997018575668335,1,1,1
+JTG 32.jpg,JTG 32,JTG 32,0.9985424280166626,1,1,1
+JTG 33.jpg,JTG 33,JTG 33,0.999953031539917,1,1,1
+JTG 34.jpg,JTG 34,JTG 34,0.9999997615814209,1,1,1
+JTG 35.jpg,JTG 35,JTG 35,0.9999995231628418,1,1,1
+JTG 36.jpg,JTG 36,JTG 36,0.9984227418899536,1,1,1
+JTG 37.jpg,JTG 37,JTG 37,0.9998506307601929,1,1,1
+JTG 38.jpg,JTG 38,JTG 38,0.9999992847442627,1,1,1
+JTG 39.jpg,JTG 39,JTG 39,0.9921268224716187,1,1,1
+JTG 4.jpg,JTG 4,JTG 4,1.0,1,1,1
+JTG 40.jpg,JTG 40,JTG 40,0.9981502294540405,1,1,1
+JTG 41.jpg,JTG 41,JTG 41,0.9894634485244751,1,1,1
+JTG 42.jpg,JTG 42,JTG 42,0.9999204874038696,1,1,1
+JTG 43.jpg,JTG 43,JTG 43,0.9999998807907104,1,1,1
+JTG 44.jpg,JTG 44,JTG 44,0.999997615814209,1,1,1
+JTG 45.jpg,JTG 45,JTG 45,0.9996310472488403,1,1,1
+JTG 46.jpg,JTG 46,JTG 46,0.9999939203262329,1,1,1
+JTG 47.jpg,JTG 47,JTG 47,0.9995455145835876,1,1,1
+JTG 48.jpg,JTG 48,JTG 48,0.9994800686836243,1,1,1
+JTG 49.jpg,JTG 49,JTG 49,0.9998944997787476,1,1,1
+JTG 5.jpg,JTG 5,JTG 5,0.9998857975006104,1,1,1
+JTG 50.jpg,JTG 50,JTG 50,0.9994677901268005,1,1,1
+JTG 51.jpg,JTG 51,JTG 51,0.9999961853027344,1,1,1
+JTG 52.jpg,JTG 52,JTG 52,0.999968409538269,1,1,1
+JTG 53.jpg,JTG 53,JTG 53,0.9999934434890747,1,1,1
+JTG 54.jpg,JTG 54,JTG 54,0.9999929666519165,1,1,1
+JTG 55.jpg,JTG 55,JTG 55,0.9999996423721313,1,1,1
+JTG 56.jpg,JTG 56,JTG 56,0.9989196062088013,1,1,1
+JTG 57.jpg,JTG 57,JTG 57,0.9999860525131226,1,1,1
+JTG 58.jpg,JTG 58,JTG 58,0.9994727969169617,1,1,1
+JTG 59.jpg,JTG 59,JTG 59,0.9999103546142578,1,1,1
+JTG 6.jpg,JTG 6,JTG 6,0.9956346154212952,1,1,1
+JTG 60.jpg,JTG 60,JTG 60,0.9999133348464966,1,1,1
+JTG 61.jpg,JTG 61,JTG 61,0.9995027780532837,1,1,1
+JTG 62.jpg,JTG 62,JTG 62,0.9987702965736389,1,1,1
+JTG 63.jpg,JTG 63,JTG 63,0.9999971389770508,1,1,1
+JTG 64.jpg,JTG 64,JTG 64,0.9999997615814209,1,1,1
+JTG 65.jpg,JTG 65,JTG 65,0.9999877214431763,1,1,1
+JTG 66.jpg,JTG 66,JTG 66,0.999273955821991,1,1,1
+JTG 67.jpg,JTG 67,JTG 67,0.9999901056289673,1,1,1
+JTG 68.jpg,JTG 68,JTG 68,0.8767327666282654,1,1,1
+JTG 69.jpg,JTG 69,JTG 69,0.9999963045120239,1,1,1
+JTG 7.jpg,JTG 7,JTG 7,0.9999135732650757,1,1,1
+JTG 70.jpg,JTG 70,JTG 70,0.9996380805969238,1,1,1
+JTG 71.jpg,JTG 71,JTG 71,0.9995695948600769,1,1,1
+JTG 72.jpg,JTG 72,JTG 72,0.9980180263519287,1,1,1
+JTG 73.jpg,JTG 73,JTG 73,0.9999887943267822,1,1,1
+JTG 74.jpg,JTG 74,JTG 74,0.9801109433174133,1,1,1
+JTG 75.jpg,JTG 75,JTG 75,0.9980621933937073,1,1,1
+JTG 76.jpg,JTG 76,JTG 76,0.9999121427536011,1,1,1
+JTG 77.jpg,JTG 77,JTG 77,0.9999632835388184,1,1,1
+JTG 78.jpg,JTG 78,JTG 78,0.9840598106384277,1,1,1
+JTG 79.jpg,JTG 79,JTG 79,0.9999641180038452,1,1,1
+JTG 8.jpg,JTG 8,JTG 8,0.9999327659606934,1,1,1
+JTG 80.jpg,JTG 80,JTG 80,0.9963024854660034,1,1,1
+JTG 81.jpg,JTG 81,JTG 81,0.9992929697036743,1,1,1
+JTG 82.jpg,JTG 82,JTG 82,0.9991828799247742,1,1,1
+JTG 83.jpg,JTG 83,JTG 83,0.9982672929763794,1,1,1
+JTG 84.jpg,JTG 84,JTG 84,0.9999865293502808,1,1,1
+JTG 85.jpg,JTG 85,JTG 85,0.9999680519104004,1,1,1
+JTG 86.jpg,JTG 86,JTG 86,0.9998835325241089,1,1,1
+JTG 87.jpg,JTG 87,JTG 87,0.9999985694885254,1,1,1
+JTG 88.jpg,JTG 88,JTG 88,0.9999876022338867,1,1,1
+JTG 89.jpg,JTG 89,JTG 89,0.999786913394928,1,1,1
+JTG 9.jpg,JTG 9,JTG 9,0.9999969005584717,1,1,1
+JTG 90.jpg,JTG 90,JTG 90,0.9999500513076782,1,1,1
+JTG 91.jpg,JTG 91,JTG 91,0.8380391001701355,1,1,1
+JTG 92.jpg,JTG 92,JTG 92,0.9999799728393555,1,1,1
+JTG 93.jpg,JTG 93,JTG 93,0.4827238917350769,0,0,0
+JTG 94.jpg,JTG 94,JTG 94,0.8907008171081543,1,1,1
+JTG 95.jpg,JTG 95,JTG 95,0.9628989100456238,1,1,1
+JTG 96.jpg,JTG 96,JTG 96,0.9824321866035461,1,1,1
+JTG 97.jpg,JTG 97,JTG 97,0.9870697259902954,1,1,1
+JTG 98.jpg,JTG 98,JTG 98,0.9999960660934448,1,1,1
+JTG 99.jpg,JTG 99,JTG 99,0.9953101277351379,1,1,1
+PRE 1.jpg,PRE 1,PRE 1,0.9927029609680176,1,1,1
+PRE 10.jpg,PRE 10,PRE 10,0.9999932050704956,1,1,1
+PRE 100.jpg,PRE 100,PRE 100,0.9983876943588257,1,1,1
+PRE 101.jpg,PRE 101,PRE 101,0.9907318949699402,1,1,1
+PRE 102.jpg,PRE 102,PRE 102,0.9994219541549683,1,1,1
+PRE 103.jpg,PRE 103,PRE 103,0.9999151229858398,1,1,1
+PRE 104.jpg,PRE 104,PRE 104,0.9989702701568604,1,1,1
+PRE 105.jpg,PRE 105,PRE 105,0.8820016384124756,1,1,1
+PRE 106.jpg,PRE 106,PRE 106,0.9948810338973999,1,1,1
+PRE 107.jpg,PRE 107,PRE 107,0.9997336268424988,1,1,1
+PRE 108.jpg,PRE 108,PRE 108,0.999707043170929,1,1,1
+PRE 109.jpg,PRE 109,PRE 109,0.9997977614402771,1,1,1
+PRE 11.jpg,PRE 11,PRE 11,0.962627649307251,1,1,1
+PRE 110.jpg,PRE 110,PRE 110,0.630192756652832,0,0,0
+PRE 111.jpg,PRE 111,PRE 111,0.984833836555481,1,1,1
+PRE 112.jpg,PRE 112,PRE 112,0.9695461988449097,1,1,1
+PRE 113.jpg,PRE 113,PRE 113,0.9993559718132019,1,1,1
+PRE 114.jpg,PRE 114,PRE 114,0.999103307723999,1,1,1
+PRE 115.jpg,PRE 115,PRE 115,1.0,1,1,1
+PRE 116.jpg,PRE 116,PRE 116,0.6669571399688721,0,0,0
+PRE 117.jpg,PRE 117,PRE 117,0.9968320727348328,1,1,1
+PRE 118.jpg,PRE 118,PRE 118,0.999588668346405,1,1,1
+PRE 119.jpg,PRE 119,PRE 119,0.9985021352767944,1,1,1
+PRE 12.jpg,PRE 12,PRE 12,0.9999997615814209,1,1,1
+PRE 120.jpg,PRE 120,PRE 120,0.9999552965164185,1,1,1
+PRE 121.jpg,PRE 121,PRE 121,0.9998574256896973,1,1,1
+PRE 122.jpg,PRE 122,PRE 122,0.9974754452705383,1,1,1
+PRE 123.jpg,PRE 123,PRE 123,0.9953221678733826,1,1,1
+PRE 124.jpg,PRE 124,PRE 124,0.9932205677032471,1,1,1
+PRE 125.jpg,PRE 125,PRE 125,0.9998761415481567,1,1,1
+PRE 126.jpg,PRE 126,PRE 126,0.9999914169311523,1,1,1
+PRE 127.jpg,PRE 127,PRE 127,0.9897027611732483,1,1,1
+PRE 128.jpg,PRE 128,PRE 128,0.9315701127052307,1,1,1
+PRE 129.jpg,PRE 129,SCR 142,0.5392568707466125,0,0,0
+PRE 13.jpg,PRE 13,PRE 13,0.9999150037765503,1,1,1
+PRE 130.jpg,PRE 130,PRE 130,0.9996800422668457,1,1,1
+PRE 131.jpg,PRE 131,PRE 131,0.9993091821670532,1,1,1
+PRE 132.jpg,PRE 132,PRE 132,1.0,1,1,1
+PRE 133.jpg,PRE 133,PRE 133,1.0,1,1,1
+PRE 134.jpg,PRE 134,PRE 134,0.9996943473815918,1,1,1
+PRE 135.jpg,PRE 135,PRE 135,0.9999992847442627,1,1,1
+PRE 136.jpg,PRE 136,PRE 136,0.999998927116394,1,1,1
+PRE 137.jpg,PRE 137,PRE 137,1.0,1,1,1
+PRE 138.jpg,PRE 138,PRE 138,0.9999985694885254,1,1,1
+PRE 139.jpg,PRE 139,PRE 139,1.0,1,1,1
+PRE 14.jpg,PRE 14,PRE 14,0.9999955892562866,1,1,1
+PRE 140.jpg,PRE 140,PRE 140,0.9919202327728271,1,1,1
+PRE 141.jpg,PRE 141,PRE 141,0.9998053908348083,1,1,1
+PRE 142.jpg,PRE 142,PRE 142,0.9999504089355469,1,1,1
+PRE 143.jpg,PRE 143,PRE 143,0.9999741315841675,1,1,1
+PRE 144.jpg,PRE 144,PRE 144,1.0,1,1,1
+PRE 145.jpg,PRE 145,PRE 145,0.9986684322357178,1,1,1
+PRE 146.jpg,PRE 146,PRE 146,1.0,1,1,1
+PRE 147.jpg,PRE 147,PRE 147,0.9999195337295532,1,1,1
+PRE 148.jpg,PRE 148,PRE 148,1.0,1,1,1
+PRE 149.jpg,PRE 149,PRE 149,1.0,1,1,1
+PRE 15.jpg,PRE 15,PRE 15,0.9353331327438354,1,1,1
+PRE 150.jpg,PRE 150,PRE 150,0.9971488118171692,1,1,1
+PRE 151.jpg,PRE 151,PRE 151,1.0,1,1,1
+PRE 152.jpg,PRE 152,PRE 152,0.9999862909317017,1,1,1
+PRE 153.jpg,PRE 153,PRE 153,0.9999819993972778,1,1,1
+PRE 154.jpg,PRE 154,PRE 154,0.9999886751174927,1,1,1
+PRE 155.jpg,PRE 155,PRE 155,0.9965493679046631,1,1,1
+PRE 156.jpg,PRE 156,PRE 156,0.9985918402671814,1,1,1
+PRE 157.jpg,PRE 157,PRE 157,0.9999890327453613,1,1,1
+PRE 158.jpg,PRE 158,PRE 158,0.9999920129776001,1,1,1
+PRE 159.jpg,PRE 159,PRE 159,0.999998927116394,1,1,1
+PRE 16.jpg,PRE 16,PRE 16,0.9999912977218628,1,1,1
+PRE 160.jpg,PRE 160,PRE 160,1.0,1,1,1
+PRE 161.jpg,PRE 161,PRE 161,0.9999730587005615,1,1,1
+PRE 162.jpg,PRE 162,PRE 162,0.9999943971633911,1,1,1
+PRE 163.jpg,PRE 163,PRE 163,0.999994158744812,1,1,1
+PRE 164.jpg,PRE 164,PRE 164,0.9999998807907104,1,1,1
+PRE 165.jpg,PRE 165,PRE 165,0.9999998807907104,1,1,1
+PRE 166.jpg,PRE 166,PRE 166,1.0,1,1,1
+PRE 167.jpg,PRE 167,PRE 167,0.9952057003974915,1,1,1
+PRE 168.jpg,PRE 168,PRE 168,0.999985933303833,1,1,1
+PRE 169.jpg,PRE 169,PRE 169,0.9903733730316162,1,1,1
+PRE 17.jpg,PRE 17,PRE 17,1.0,1,1,1
+PRE 170.jpg,PRE 170,PRE 170,0.9999234676361084,1,1,1
+PRE 171.jpg,PRE 171,PRE 171,0.9999948740005493,1,1,1
+PRE 172.jpg,PRE 172,PRE 172,0.9999994039535522,1,1,1
+PRE 173.jpg,PRE 173,PRE 173,0.9999986886978149,1,1,1
+PRE 174.jpg,PRE 174,PRE 174,0.9999022483825684,1,1,1
+PRE 175.jpg,PRE 175,PRE 175,0.9999889135360718,1,1,1
+PRE 176.jpg,PRE 176,PRE 176,0.994615375995636,1,1,1
+PRE 177.jpg,PRE 177,PRE 177,0.9242490530014038,1,1,1
+PRE 178.jpg,PRE 178,PRE 178,0.9972566962242126,1,1,1
+PRE 179.jpg,PRE 179,PRE 179,0.9939245581626892,1,1,1
+PRE 18.jpg,PRE 18,PRE 18,0.9999082088470459,1,1,1
+PRE 180.jpg,PRE 180,PRE 180,0.9972198009490967,1,1,1
+PRE 19.jpg,PRE 19,PRE 19,0.9990288019180298,1,1,1
+PRE 2.jpg,PRE 2,PRE 2,0.9990233182907104,1,1,1
+PRE 20.jpg,PRE 20,PRE 20,0.9970899820327759,1,1,1
+PRE 21.jpg,PRE 21,PRE 21,0.9989749193191528,1,1,1
+PRE 22.jpg,PRE 22,PRE 22,0.999656081199646,1,1,1
+PRE 23.jpg,PRE 23,PRE 23,0.9667816758155823,1,1,1
+PRE 24.jpg,PRE 24,PRE 24,0.9997615218162537,1,1,1
+PRE 25.jpg,PRE 25,PRE 25,0.9998290538787842,1,1,1
+PRE 26.jpg,PRE 26,PRE 26,0.9704287052154541,1,1,1
+PRE 27.jpg,PRE 27,PRE 27,0.9999922513961792,1,1,1
+PRE 28.jpg,PRE 28,PRE 28,0.8859774470329285,1,1,1
+PRE 29.jpg,PRE 29,PRE 29,0.9999665021896362,1,1,1
+PRE 3.jpg,PRE 3,PRE 3,0.9984295964241028,1,1,1
+PRE 30.jpg,PRE 30,PRE 30,0.9999954700469971,1,1,1
+PRE 31.jpg,PRE 31,PRE 31,0.9967580437660217,1,1,1
+PRE 32.jpg,PRE 32,PRE 32,1.0,1,1,1
+PRE 33.jpg,PRE 33,PRE 33,0.9996675252914429,1,1,1
+PRE 34.jpg,PRE 34,PRE 34,0.9846386313438416,1,1,1
+PRE 35.jpg,PRE 35,PRE 35,0.536474347114563,0,0,0
+PRE 36.jpg,PRE 36,PRE 36,0.5975437164306641,0,0,0
+PRE 37.jpg,PRE 37,SFA 20,0.9923874139785767,1,0,1
+PRE 38.jpg,PRE 38,PRE 38,0.9972370862960815,1,1,1
+PRE 39.jpg,PRE 39,PRE 39,0.9999929666519165,1,1,1
+PRE 4.jpg,PRE 4,PRE 4,0.9776135087013245,1,1,1
+PRE 40.jpg,PRE 40,PRE 40,0.9971518516540527,1,1,1
+PRE 41.jpg,PRE 41,PRE 41,0.9999972581863403,1,1,1
+PRE 42.jpg,PRE 42,PRE 42,0.9785071611404419,1,1,1
+PRE 43.jpg,PRE 43,PRE 43,0.9998501539230347,1,1,1
+PRE 44.jpg,PRE 44,PRE 44,0.9999735355377197,1,1,1
+PRE 45.jpg,PRE 45,PRE 45,0.9999209642410278,1,1,1
+PRE 46.jpg,PRE 46,SCR 71,0.7286926507949829,1,0,1
+PRE 47.jpg,PRE 47,PRE 47,0.9994400143623352,1,1,1
+PRE 48.jpg,PRE 48,PRE 48,0.9967442750930786,1,1,1
+PRE 49.jpg,PRE 49,PRE 49,0.9999784231185913,1,1,1
+PRE 5.jpg,PRE 5,PRE 5,0.9998795986175537,1,1,1
+PRE 50.jpg,PRE 50,PRE 50,0.999998927116394,1,1,1
+PRE 51.jpg,PRE 51,PRE 51,0.9999977350234985,1,1,1
+PRE 52.jpg,PRE 52,PRE 52,0.9961293935775757,1,1,1
+PRE 53.jpg,PRE 53,PRE 53,0.9996592998504639,1,1,1
+PRE 54.jpg,PRE 54,PRE 54,0.9999988079071045,1,1,1
+PRE 55.jpg,PRE 55,PRE 55,0.9994412064552307,1,1,1
+PRE 56.jpg,PRE 56,PRE 56,0.9999995231628418,1,1,1
+PRE 57.jpg,PRE 57,PRE 57,0.9999761581420898,1,1,1
+PRE 58.jpg,PRE 58,PRE 58,0.9997949004173279,1,1,1
+PRE 59.jpg,PRE 59,PRE 59,0.9481427073478699,1,1,1
+PRE 6.jpg,PRE 6,PRE 6,0.9907795190811157,1,1,1
+PRE 60.jpg,PRE 60,PRE 60,1.0,1,1,1
+PRE 61.jpg,PRE 61,PRE 61,0.5767336487770081,0,0,0
+PRE 62.jpg,PRE 62,PRE 62,0.9914050102233887,1,1,1
+PRE 63.jpg,PRE 63,PRE 63,0.9997361302375793,1,1,1
+PRE 64.jpg,PRE 64,PRE 64,0.9999998807907104,1,1,1
+PRE 65.jpg,PRE 65,PRE 65,0.9999998807907104,1,1,1
+PRE 66.jpg,PRE 66,PRE 66,0.9957972764968872,1,1,1
+PRE 67.jpg,PRE 67,PRE 67,0.9999934434890747,1,1,1
+PRE 68.jpg,PRE 68,PRE 68,0.9999980926513672,1,1,1
+PRE 69.jpg,PRE 69,PRE 69,0.7056484818458557,1,1,1
+PRE 7.jpg,PRE 7,PRE 7,0.9923641681671143,1,1,1
+PRE 70.jpg,PRE 70,SCR 107,0.9717023372650146,1,0,1
+PRE 71.jpg,PRE 71,PRE 71,0.9839868545532227,1,1,1
+PRE 72.jpg,PRE 72,PRE 72,0.9811404943466187,1,1,1
+PRE 73.jpg,PRE 73,PRE 73,0.9999947547912598,1,1,1
+PRE 74.jpg,PRE 74,PRE 74,0.9975234866142273,1,1,1
+PRE 75.jpg,PRE 75,PRE 75,0.9999979734420776,1,1,1
+PRE 76.jpg,PRE 76,PRE 76,0.9975495934486389,1,1,1
+PRE 77.jpg,PRE 77,PRE 77,0.9753797054290771,1,1,1
+PRE 78.jpg,PRE 78,SCR 115,0.9869379997253418,1,0,1
+PRE 79.jpg,PRE 79,PRE 79,0.9990823268890381,1,1,1
+PRE 8.jpg,PRE 8,PRE 8,0.9981398582458496,1,1,1
+PRE 80.jpg,PRE 80,PRE 80,0.9999998807907104,1,1,1
+PRE 81.jpg,PRE 81,PRE 81,1.0,1,1,1
+PRE 82.jpg,PRE 82,PRE 82,1.0,1,1,1
+PRE 83.jpg,PRE 83,PRE 83,0.9988548755645752,1,1,1
+PRE 84.jpg,PRE 84,PRE 84,0.9974021911621094,1,1,1
+PRE 85.jpg,PRE 85,PRE 85,0.9723772406578064,1,1,1
+PRE 86.jpg,PRE 86,PRE 86,0.999975323677063,1,1,1
+PRE 87.jpg,PRE 87,PRE 87,0.9999774694442749,1,1,1
+PRE 88.jpg,PRE 88,PRE 88,0.9989326596260071,1,1,1
+PRE 89.jpg,PRE 89,PRE 89,0.9999985694885254,1,1,1
+PRE 9.jpg,PRE 9,PRE 9,0.5746889114379883,0,0,0
+PRE 90.jpg,PRE 90,PRE 90,0.9999951124191284,1,1,1
+PRE 91.jpg,PRE 91,PRE 91,0.9999769926071167,1,1,1
+PRE 92.jpg,PRE 92,PRE 92,0.849686324596405,1,1,1
+PRE 93.jpg,PRE 93,PRE 93,0.9912768602371216,1,1,1
+PRE 94.jpg,PRE 94,PRE 94,0.961712121963501,1,1,1
+PRE 95.jpg,PRE 95,SFA 55,0.9924038052558899,1,0,1
+PRE 96.jpg,PRE 96,PRE 96,0.9999908208847046,1,1,1
+PRE 97.jpg,PRE 97,PRE 97,0.9974587559700012,1,1,1
+PRE 98.jpg,PRE 98,PRE 98,0.999992847442627,1,1,1
+PRE 99.jpg,PRE 99,PRE 99,0.9936512112617493,1,1,1
+SCR 1.jpg,SCR 1,SCR 1,0.9975429773330688,1,1,1
+SCR 10.jpg,SCR 10,SCR 10,0.9993435740470886,1,1,1
+SCR 100.jpg,SCR 100,SCR 100,0.9991825222969055,1,1,1
+SCR 101.jpg,SCR 101,SCR 101,0.9999992847442627,1,1,1
+SCR 102.jpg,SCR 102,SCR 102,0.9991570711135864,1,1,1
+SCR 103.jpg,SCR 103,SCR 103,0.9999970197677612,1,1,1
+SCR 104.jpg,SCR 104,SCR 104,1.0,1,1,1
+SCR 105.jpg,SCR 105,SCR 105,0.9999961853027344,1,1,1
+SCR 106.jpg,SCR 106,SCR 106,0.9999194145202637,1,1,1
+SCR 107.jpg,SCR 107,SCR 107,0.9874013066291809,1,1,1
+SCR 108.jpg,SCR 108,SCR 108,0.9998549222946167,1,1,1
+SCR 109.jpg,SCR 109,SCR 109,1.0,1,1,1
+SCR 11.jpg,SCR 11,SCR 11,0.9890973567962646,1,1,1
+SCR 110.jpg,SCR 110,SCR 110,0.9999493360519409,1,1,1
+SCR 111.jpg,SCR 111,SCR 111,0.9999867677688599,1,1,1
+SCR 112.jpg,SCR 112,SCR 112,0.9999877214431763,1,1,1
+SCR 113.jpg,SCR 113,SCR 113,0.9966615438461304,1,1,1
+SCR 114.jpg,SCR 114,SCR 114,0.9999998807907104,1,1,1
+SCR 115.jpg,SCR 115,SCR 115,0.9927988052368164,1,1,1
+SCR 116.jpg,SCR 116,SCR 116,0.9994391798973083,1,1,1
+SCR 117.jpg,SCR 117,SCR 117,0.9999892711639404,1,1,1
+SCR 118.jpg,SCR 118,SCR 118,0.9623660445213318,1,1,1
+SCR 119.jpg,SCR 119,SCR 119,0.9999799728393555,1,1,1
+SCR 12.jpg,SCR 12,SCR 12,0.7921737432479858,1,1,1
+SCR 120.jpg,SCR 120,SCR 120,0.9999608993530273,1,1,1
+SCR 121.jpg,SCR 121,SCR 121,0.9981499910354614,1,1,1
+SCR 122.jpg,SCR 122,SCR 122,0.9980846643447876,1,1,1
+SCR 123.jpg,SCR 123,SCR 123,0.9999986886978149,1,1,1
+SCR 124.jpg,SCR 124,SCR 124,0.9999991655349731,1,1,1
+SCR 125.jpg,SCR 125,SCR 125,0.9999995231628418,1,1,1
+SCR 126.jpg,SCR 126,SCR 126,0.9956316947937012,1,1,1
+SCR 127.jpg,SCR 127,SCR 127,0.9999995231628418,1,1,1
+SCR 128.jpg,SCR 128,SCR 128,0.9939384460449219,1,1,1
+SCR 129.jpg,SCR 129,SCR 129,0.9989566802978516,1,1,1
+SCR 13.jpg,SCR 13,SCR 13,0.9997220635414124,1,1,1
+SCR 130.jpg,SCR 130,SCR 130,0.9999889135360718,1,1,1
+SCR 131.jpg,SCR 131,PRE 94,0.755416214466095,1,0,1
+SCR 132.jpg,SCR 132,PRE 100,0.8683510422706604,1,0,1
+SCR 133.jpg,SCR 133,SCR 133,0.6140420436859131,0,0,0
+SCR 134.jpg,SCR 134,SCR 134,0.9999910593032837,1,1,1
+SCR 135.jpg,SCR 135,SCR 135,0.6434137225151062,0,0,0
+SCR 136.jpg,SCR 136,SCR 136,0.9979808926582336,1,1,1
+SCR 137.jpg,SCR 137,SCR 137,0.9999198913574219,1,1,1
+SCR 138.jpg,SCR 138,SCR 138,0.997295081615448,1,1,1
+SCR 139.jpg,SCR 139,SCR 139,0.9019944667816162,1,1,1
+SCR 14.jpg,SCR 14,SCR 14,0.5322837233543396,0,0,0
+SCR 140.jpg,SCR 140,SCR 140,0.9942569136619568,1,1,1
+SCR 141.jpg,SCR 141,SCR 141,0.9984222650527954,1,1,1
+SCR 142.jpg,SCR 142,SCR 142,0.5888189673423767,0,0,0
+SCR 143.jpg,SCR 143,SCR 143,0.9994325041770935,1,1,1
+SCR 144.jpg,SCR 144,SCR 144,0.9907638430595398,1,1,1
+SCR 145.jpg,SCR 145,SCR 145,0.9997785687446594,1,1,1
+SCR 146.jpg,SCR 146,SCR 146,1.0,1,1,1
+SCR 147.jpg,SCR 147,SCR 147,0.9917837381362915,1,1,1
+SCR 148.jpg,SCR 148,SCR 148,0.9999996423721313,1,1,1
+SCR 149.jpg,SCR 149,SCR 149,0.9976231455802917,1,1,1
+SCR 15.jpg,SCR 15,SCR 15,0.9990352392196655,1,1,1
+SCR 150.jpg,SCR 150,SCR 150,0.9978748559951782,1,1,1
+SCR 151.jpg,SCR 151,SCR 151,0.9995506405830383,1,1,1
+SCR 152.jpg,SCR 152,SCR 152,0.9950429201126099,1,1,1
+SCR 153.jpg,SCR 153,SCR 153,0.9981493949890137,1,1,1
+SCR 154.jpg,SCR 154,SCR 154,0.9999340772628784,1,1,1
+SCR 155.jpg,SCR 155,SCR 155,1.0,1,1,1
+SCR 156.jpg,SCR 156,SCR 156,0.9999727010726929,1,1,1
+SCR 157.jpg,SCR 157,SCR 157,0.9985175728797913,1,1,1
+SCR 158.jpg,SCR 158,SCR 158,0.997347354888916,1,1,1
+SCR 159.jpg,SCR 159,SCR 159,0.9956156015396118,1,1,1
+SCR 16.jpg,SCR 16,SCR 16,0.9988725781440735,1,1,1
+SCR 160.jpg,SCR 160,SCR 160,0.9996503591537476,1,1,1
+SCR 161.jpg,SCR 161,SCR 161,0.999934196472168,1,1,1
+SCR 162.jpg,SCR 162,SCR 162,0.9999940395355225,1,1,1
+SCR 163.jpg,SCR 163,SCR 163,0.9999973773956299,1,1,1
+SCR 164.jpg,SCR 164,SCR 164,0.9999065399169922,1,1,1
+SCR 165.jpg,SCR 165,SCR 165,0.9999405145645142,1,1,1
+SCR 166.jpg,SCR 166,SCR 166,0.9996869564056396,1,1,1
+SCR 167.jpg,SCR 167,SCR 167,0.9998674392700195,1,1,1
+SCR 168.jpg,SCR 168,SCR 168,0.988104522228241,1,1,1
+SCR 169.jpg,SCR 169,SCR 169,0.9998608827590942,1,1,1
+SCR 17.jpg,SCR 17,SCR 17,0.9999533891677856,1,1,1
+SCR 170.jpg,SCR 170,SCR 170,0.9999586343765259,1,1,1
+SCR 171.jpg,SCR 171,SCR 171,0.9983909130096436,1,1,1
+SCR 172.jpg,SCR 172,SCR 172,0.9999991655349731,1,1,1
+SCR 173.jpg,SCR 173,SCR 173,0.5473200082778931,0,0,0
+SCR 174.jpg,SCR 174,SCR 174,0.999987006187439,1,1,1
+SCR 175.jpg,SCR 175,SCR 175,0.9999995231628418,1,1,1
+SCR 18.jpg,SCR 18,SCR 18,0.8889167904853821,1,1,1
+SCR 19.jpg,SCR 19,SCR 19,0.9994155168533325,1,1,1
+SCR 2.jpg,SCR 2,SCR 2,0.9997269511222839,1,1,1
+SCR 20.jpg,SCR 20,SCR 20,0.9997547268867493,1,1,1
+SCR 21.jpg,SCR 21,SCR 21,0.99962317943573,1,1,1
+SCR 22.jpg,SCR 22,SCR 22,0.9999052286148071,1,1,1
+SCR 23.jpg,SCR 23,SCR 23,0.9874310493469238,1,1,1
+SCR 24.jpg,SCR 24,SCR 24,0.9999992847442627,1,1,1
+SCR 25.jpg,SCR 25,SCR 25,0.9994691014289856,1,1,1
+SCR 26.jpg,SCR 26,SCR 26,0.9999605417251587,1,1,1
+SCR 27.jpg,SCR 27,SCR 27,0.9531470537185669,1,1,1
+SCR 28.jpg,SCR 28,SCR 28,0.9997671246528625,1,1,1
+SCR 29.jpg,SCR 29,SCR 29,0.999790608882904,1,1,1
+SCR 3.jpg,SCR 3,SCR 3,0.9996614456176758,1,1,1
+SCR 30.jpg,SCR 30,SCR 30,0.5123990178108215,0,0,0
+SCR 31.jpg,SCR 31,SCR 31,0.9967799782752991,1,1,1
+SCR 32.jpg,SCR 32,SCR 32,0.9974700212478638,1,1,1
+SCR 33.jpg,SCR 33,SCR 33,0.9962159991264343,1,1,1
+SCR 34.jpg,SCR 34,SCR 34,0.9997269511222839,1,1,1
+SCR 35.jpg,SCR 35,SCR 35,0.9996871948242188,1,1,1
+SCR 36.jpg,SCR 36,SCR 36,0.9999994039535522,1,1,1
+SCR 37.jpg,SCR 37,SCR 37,0.9731125831604004,1,1,1
+SCR 38.jpg,SCR 38,SCR 38,0.9997758269309998,1,1,1
+SCR 39.jpg,SCR 39,SCR 39,0.9868952631950378,1,1,1
+SCR 4.jpg,SCR 4,SCR 4,0.9823154807090759,1,1,1
+SCR 40.jpg,SCR 40,SCR 40,0.9996873140335083,1,1,1
+SCR 41.jpg,SCR 41,SCR 41,0.9999978542327881,1,1,1
+SCR 42.jpg,SCR 42,SCR 42,0.9724676609039307,1,1,1
+SCR 43.jpg,SCR 43,SCR 43,0.9999591112136841,1,1,1
+SCR 44.jpg,SCR 44,SCR 44,0.9999370574951172,1,1,1
+SCR 45.jpg,SCR 45,SCR 45,0.9999880790710449,1,1,1
+SCR 46.jpg,SCR 46,SCR 46,0.991024374961853,1,1,1
+SCR 47.jpg,SCR 47,SCR 47,0.9999774694442749,1,1,1
+SCR 48.jpg,SCR 48,SCR 48,0.745209813117981,1,1,1
+SCR 49.jpg,SCR 49,SCR 49,0.9998977184295654,1,1,1
+SCR 5.jpg,SCR 5,SCR 5,0.9931256771087646,1,1,1
+SCR 50.jpg,SCR 50,SCR 50,0.9905093908309937,1,1,1
+SCR 51.jpg,SCR 51,SCR 51,0.985538125038147,1,1,1
+SCR 52.jpg,SCR 52,SCR 52,0.989163875579834,1,1,1
+SCR 53.jpg,SCR 53,SCR 53,0.9994944334030151,1,1,1
+SCR 54.jpg,SCR 54,SCR 54,0.9985658526420593,1,1,1
+SCR 55.jpg,SCR 55,SCR 55,0.9994277358055115,1,1,1
+SCR 56.jpg,SCR 56,SCR 56,0.995049774646759,1,1,1
+SCR 57.jpg,SCR 57,SCR 57,0.9939289093017578,1,1,1
+SCR 58.jpg,SCR 58,SCR 58,0.9756494760513306,1,1,1
+SCR 59.jpg,SCR 59,SCR 59,0.9999978542327881,1,1,1
+SCR 6.jpg,SCR 6,SCR 6,0.9999949932098389,1,1,1
+SCR 60.jpg,SCR 60,SCR 60,0.9998847246170044,1,1,1
+SCR 61.jpg,SCR 61,SCR 61,0.9922917485237122,1,1,1
+SCR 62.jpg,SCR 62,SCR 62,0.9991210103034973,1,1,1
+SCR 63.jpg,SCR 63,SCR 63,0.9942008256912231,1,1,1
+SCR 64.jpg,SCR 64,SCR 64,0.984476625919342,1,1,1
+SCR 65.jpg,SCR 65,SCR 65,0.957632839679718,1,1,1
+SCR 66.jpg,SCR 66,SCR 66,0.9950153231620789,1,1,1
+SCR 67.jpg,SCR 67,SCR 67,0.9999747276306152,1,1,1
+SCR 68.jpg,SCR 68,SCR 68,0.99250328540802,1,1,1
+SCR 69.jpg,SCR 69,SCR 69,0.9921906590461731,1,1,1
+SCR 7.jpg,SCR 7,SCR 7,0.9550026655197144,1,1,1
+SCR 70.jpg,SCR 70,SCR 70,0.9998584985733032,1,1,1
+SCR 71.jpg,SCR 71,SCR 71,0.9118850827217102,1,1,1
+SCR 72.jpg,SCR 72,SCR 72,0.9999463558197021,1,1,1
+SCR 73.jpg,SCR 73,SCR 73,0.999262273311615,1,1,1
+SCR 74.jpg,SCR 74,SCR 74,0.9987830519676208,1,1,1
+SCR 75.jpg,SCR 75,SCR 75,0.9999227523803711,1,1,1
+SCR 76.jpg,SCR 76,SCR 76,0.9988445043563843,1,1,1
+SCR 77.jpg,SCR 77,SCR 77,0.9999954700469971,1,1,1
+SCR 78.jpg,SCR 78,SCR 78,0.9971760511398315,1,1,1
+SCR 79.jpg,SCR 79,SCR 79,0.9980301260948181,1,1,1
+SCR 8.jpg,SCR 8,SCR 8,0.9999868869781494,1,1,1
+SCR 80.jpg,SCR 80,SCR 80,0.9999982118606567,1,1,1
+SCR 81.jpg,SCR 81,SCR 81,0.9999918937683105,1,1,1
+SCR 82.jpg,SCR 82,SCR 82,0.9999997615814209,1,1,1
+SCR 83.jpg,SCR 83,SCR 83,0.9995269775390625,1,1,1
+SCR 84.jpg,SCR 84,SCR 84,0.9939883947372437,1,1,1
+SCR 85.jpg,SCR 85,SCR 85,0.9775225520133972,1,1,1
+SCR 86.jpg,SCR 86,SCR 86,0.9784441590309143,1,1,1
+SCR 87.jpg,SCR 87,SCR 87,0.9953033924102783,1,1,1
+SCR 88.jpg,SCR 88,SCR 88,0.9998395442962646,1,1,1
+SCR 89.jpg,SCR 89,SCR 89,0.9792671203613281,1,1,1
+SCR 9.jpg,SCR 9,SCR 9,0.9902688264846802,1,1,1
+SCR 90.jpg,SCR 90,SCR 90,0.9999624490737915,1,1,1
+SCR 91.jpg,SCR 91,SCR 91,0.6385042071342468,0,0,0
+SCR 92.jpg,SCR 92,SCR 92,0.5633853077888489,0,0,0
+SCR 93.jpg,SCR 93,SCR 93,0.9999998807907104,1,1,1
+SCR 94.jpg,SCR 94,SCR 94,0.7014362215995789,1,1,1
+SCR 95.jpg,SCR 95,SCR 95,0.9953892230987549,1,1,1
+SCR 96.jpg,SCR 96,SCR 96,0.999954104423523,1,1,1
+SCR 97.jpg,SCR 97,SCR 97,0.999990701675415,1,1,1
+SCR 98.jpg,SCR 98,SCR 98,0.9994922876358032,1,1,1
+SCR 99.jpg,SCR 99,SCR 99,0.9953741431236267,1,1,1
+SFA 1.jpg,SFA 1,SFA 1,0.9991355538368225,1,1,1
+SFA 10.jpg,SFA 10,SFA 10,0.9885749220848083,1,1,1
+SFA 11.jpg,SFA 11,SFA 11,0.9999935626983643,1,1,1
+SFA 12.jpg,SFA 12,SFA 12,0.9999850988388062,1,1,1
+SFA 13.jpg,SFA 13,SFA 13,0.9999986886978149,1,1,1
+SFA 14.jpg,SFA 14,SFA 14,0.9900151491165161,1,1,1
+SFA 15.jpg,SFA 15,SFA 15,0.9999986886978149,1,1,1
+SFA 16.jpg,SFA 16,SFA 16,1.0,1,1,1
+SFA 17.jpg,SFA 17,SFA 17,0.9999971389770508,1,1,1
+SFA 18.jpg,SFA 18,SFA 18,0.9690762758255005,1,1,1
+SFA 19.jpg,SFA 19,SFA 19,0.9727579355239868,1,1,1
+SFA 2.jpg,SFA 2,SFA 2,0.9999567270278931,1,1,1
+SFA 20.jpg,SFA 20,SFA 20,0.9995357990264893,1,1,1
+SFA 21.jpg,SFA 21,SFA 21,0.9999693632125854,1,1,1
+SFA 22.jpg,SFA 22,SFA 22,0.9999874830245972,1,1,1
+SFA 23.jpg,SFA 23,SFA 23,0.985194742679596,1,1,1
+SFA 24.jpg,SFA 24,SFA 24,0.9996961355209351,1,1,1
+SFA 25.jpg,SFA 25,PRE 54,0.9620921015739441,1,0,1
+SFA 26.jpg,SFA 26,SFA 26,0.9420986175537109,1,1,1
+SFA 27.jpg,SFA 27,SFA 27,0.9998629093170166,1,1,1
+SFA 28.jpg,SFA 28,SFA 28,0.9998998641967773,1,1,1
+SFA 29.jpg,SFA 29,SFA 29,0.9993709921836853,1,1,1
+SFA 3.jpg,SFA 3,SFA 3,0.999396800994873,1,1,1
+SFA 30.jpg,SFA 30,SFA 30,0.8896176815032959,1,1,1
+SFA 31.jpg,SFA 31,SFA 31,0.999904990196228,1,1,1
+SFA 32.jpg,SFA 32,SFA 32,0.9999998807907104,1,1,1
+SFA 33.jpg,SFA 33,SFA 33,0.9997401833534241,1,1,1
+SFA 34.jpg,SFA 34,SFA 34,0.9990230798721313,1,1,1
+SFA 35.jpg,SFA 35,SFA 35,0.9999861717224121,1,1,1
+SFA 36.jpg,SFA 36,SFA 36,0.9999994039535522,1,1,1
+SFA 37.jpg,SFA 37,SFA 37,0.9999979734420776,1,1,1
+SFA 38.jpg,SFA 38,SFA 38,0.9999990463256836,1,1,1
+SFA 39.jpg,SFA 39,SFA 39,0.9999916553497314,1,1,1
+SFA 4.jpg,SFA 4,SFA 4,0.9998923540115356,1,1,1
+SFA 40.jpg,SFA 40,SFA 40,0.9999998807907104,1,1,1
+SFA 41.jpg,SFA 41,SFA 41,0.9977891445159912,1,1,1
+SFA 42.jpg,SFA 42,SFA 42,0.9998939037322998,1,1,1
+SFA 43.jpg,SFA 43,SFA 43,0.9999997615814209,1,1,1
+SFA 44.jpg,SFA 44,SFA 44,0.9994822144508362,1,1,1
+SFA 45.jpg,SFA 45,SFA 45,0.9999997615814209,1,1,1
+SFA 46.jpg,SFA 46,SFA 46,0.9985499978065491,1,1,1
+SFA 47.jpg,SFA 47,SFA 47,0.9991950392723083,1,1,1
+SFA 48.jpg,SFA 48,SFA 48,0.9999974966049194,1,1,1
+SFA 49.jpg,SFA 49,SFA 49,0.9793201684951782,1,1,1
+SFA 5.jpg,SFA 5,SFA 5,0.9997614026069641,1,1,1
+SFA 50.jpg,SFA 50,SFA 50,0.994202196598053,1,1,1
+SFA 51.jpg,SFA 51,SFA 51,0.9975453019142151,1,1,1
+SFA 52.jpg,SFA 52,SFA 52,0.97440105676651,1,1,1
+SFA 53.jpg,SFA 53,SFA 53,1.0,1,1,1
+SFA 54.jpg,SFA 54,SFA 54,0.8492022752761841,1,1,1
+SFA 55.jpg,SFA 55,SFA 55,0.9999034404754639,1,1,1
+SFA 56.jpg,SFA 56,SFA 56,0.9999430179595947,1,1,1
+SFA 57.jpg,SFA 57,SFA 57,1.0,1,1,1
+SFA 58.jpg,SFA 58,SFA 58,0.5917597413063049,0,0,0
+SFA 59.jpg,SFA 59,SFA 59,0.9991912245750427,1,1,1
+SFA 6.jpg,SFA 6,SFA 6,0.9642341732978821,1,1,1
+SFA 60.jpg,SFA 60,SFA 60,0.8976158499717712,1,1,1
+SFA 61.jpg,SFA 61,SFA 61,0.9999998807907104,1,1,1
+SFA 62.jpg,SFA 62,SFA 62,0.8931307196617126,1,1,1
+SFA 63.jpg,SFA 63,SFA 63,0.999971866607666,1,1,1
+SFA 64.jpg,SFA 64,SFA 64,0.9999873638153076,1,1,1
+SFA 65.jpg,SFA 65,SFA 65,0.9999998807907104,1,1,1
+SFA 66.jpg,SFA 66,SFA 66,0.9999915361404419,1,1,1
+SFA 67.jpg,SFA 67,SFA 67,0.9990575909614563,1,1,1
+SFA 68.jpg,SFA 68,SFA 68,1.0,1,1,1
+SFA 69.jpg,SFA 69,SFA 69,1.0,1,1,1
+SFA 7.jpg,SFA 7,SFA 7,0.9996843338012695,1,1,1
+SFA 70.jpg,SFA 70,SFA 70,0.9985390901565552,1,1,1
+SFA 71.jpg,SFA 71,SFA 71,0.9829410910606384,1,1,1
+SFA 72.jpg,SFA 72,SFA 72,1.0,1,1,1
+SFA 73.jpg,SFA 73,SFA 73,0.9999984502792358,1,1,1
+SFA 74.jpg,SFA 74,SFA 74,0.9999997615814209,1,1,1
+SFA 75.jpg,SFA 75,SFA 75,1.0,1,1,1
+SFA 76.jpg,SFA 76,SFA 76,1.0,1,1,1
+SFA 77.jpg,SFA 77,SFA 77,1.0,1,1,1
+SFA 78.jpg,SFA 78,SFA 78,1.0,1,1,1
+SFA 79.jpg,SFA 79,SFA 79,1.0,1,1,1
+SFA 8.jpg,SFA 8,SFA 8,0.9997110962867737,1,1,1
+SFA 80.jpg,SFA 80,SFA 80,0.9994614720344543,1,1,1
+SFA 81.jpg,SFA 81,SFA 81,0.9999992847442627,1,1,1
+SFA 82.jpg,SFA 82,SFA 82,1.0,1,1,1
+SFA 83.jpg,SFA 83,SFA 83,1.0,1,1,1
+SFA 84.jpg,SFA 84,SFA 84,0.9999997615814209,1,1,1
+SFA 85.jpg,SFA 85,SFA 85,0.998387336730957,1,1,1
+SFA 86.jpg,SFA 86,SFA 86,1.0,1,1,1
+SFA 87.jpg,SFA 87,SFA 87,1.0,1,1,1
+SFA 88.jpg,SFA 88,SFA 88,0.9998098015785217,1,1,1
+SFA 89.jpg,SFA 89,SFA 89,0.9999998807907104,1,1,1
+SFA 9.jpg,SFA 9,SFA 9,1.0,1,1,1
+SFA 90.jpg,SFA 90,SFA 90,1.0,1,1,1
+SFA 91.jpg,SFA 91,SFA 91,1.0,1,1,1
+SFA 92.jpg,SFA 92,SFA 92,1.0,1,1,1
+SFA 93.jpg,SFA 93,SFA 93,1.0,1,1,1
+SFA 94.jpg,SFA 94,SFA 94,0.999991774559021,1,1,1
+SFA 95.jpg,SFA 95,SFA 95,0.9967592358589172,1,1,1
+SFA 96.jpg,SFA 96,SFA 96,0.999778687953949,1,1,1
+SFA 97.jpg,SFA 97,SFA 97,0.9999823570251465,1,1,1
+SFA 98.jpg,SFA 98,SFA 98,1.0,1,1,1
+SFA 99.jpg,SFA 99,SFA 99,0.9996432065963745,1,1,1
+SSP 1.jpg,SSP 1,SSP 1,0.988889217376709,1,1,1
+SSP 10.jpg,SSP 10,SSP 10,0.9999918937683105,1,1,1
+SSP 100.jpg,SSP 100,SSP 100,0.9989773035049438,1,1,1
+SSP 101.jpg,SSP 101,SSP 101,0.9999995231628418,1,1,1
+SSP 102.jpg,SSP 102,SSP 102,0.989544689655304,1,1,1
+SSP 103.jpg,SSP 103,SSP 103,0.9994534850120544,1,1,1
+SSP 104.jpg,SSP 104,SSP 104,0.9998955726623535,1,1,1
+SSP 105.jpg,SSP 105,SSP 105,0.9399795532226562,1,1,1
+SSP 106.jpg,SSP 106,SSP 106,1.0,1,1,1
+SSP 107.jpg,SSP 107,SSP 107,0.9977391958236694,1,1,1
+SSP 108.jpg,SSP 108,SSP 108,0.9986394047737122,1,1,1
+SSP 109.jpg,SSP 109,SSP 109,0.9999698400497437,1,1,1
+SSP 11.jpg,SSP 11,SSP 11,0.9999111890792847,1,1,1
+SSP 110.jpg,SSP 110,SSP 110,0.9999754428863525,1,1,1
+SSP 111.jpg,SSP 111,SSP 111,0.9999779462814331,1,1,1
+SSP 112.jpg,SSP 112,SSP 112,0.999997615814209,1,1,1
+SSP 113.jpg,SSP 113,SSP 113,0.999976396560669,1,1,1
+SSP 114.jpg,SSP 114,SSP 114,0.9998699426651001,1,1,1
+SSP 115.jpg,SSP 115,SSP 115,0.9993497729301453,1,1,1
+SSP 116.jpg,SSP 116,SSP 116,0.9999995231628418,1,1,1
+SSP 117.jpg,SSP 117,SSP 117,0.9998852014541626,1,1,1
+SSP 118.jpg,SSP 118,SSP 118,0.9996495246887207,1,1,1
+SSP 119.jpg,SSP 119,SSP 119,0.9999958276748657,1,1,1
+SSP 12.jpg,SSP 12,SSP 12,0.9993849992752075,1,1,1
+SSP 120.jpg,SSP 120,SSP 120,0.6761751174926758,0,0,0
+SSP 121.jpg,SSP 121,SSP 121,0.9999977350234985,1,1,1
+SSP 122.jpg,SSP 122,SSP 122,0.9999687671661377,1,1,1
+SSP 123.jpg,SSP 123,SSP 123,0.9999370574951172,1,1,1
+SSP 124.jpg,SSP 124,SSP 124,0.9991379976272583,1,1,1
+SSP 125.jpg,SSP 125,SSP 125,0.9999953508377075,1,1,1
+SSP 126.jpg,SSP 126,SSP 126,0.9999257326126099,1,1,1
+SSP 127.jpg,SSP 127,SSP 127,0.9992033839225769,1,1,1
+SSP 128.jpg,SSP 128,SSP 128,0.9999938011169434,1,1,1
+SSP 129.jpg,SSP 129,SSP 129,0.9999998807907104,1,1,1
+SSP 13.jpg,SSP 13,SSP 13,0.9080199599266052,1,1,1
+SSP 130.jpg,SSP 130,SSP 130,0.9997190833091736,1,1,1
+SSP 131.jpg,SSP 131,SSP 131,0.9998181462287903,1,1,1
+SSP 132.jpg,SSP 132,SSP 132,0.9997501969337463,1,1,1
+SSP 133.jpg,SSP 133,SSP 133,0.9995611310005188,1,1,1
+SSP 134.jpg,SSP 134,SSP 134,0.9976949095726013,1,1,1
+SSP 135.jpg,SSP 135,SSP 135,0.9999990463256836,1,1,1
+SSP 136.jpg,SSP 136,SSP 136,0.9999834299087524,1,1,1
+SSP 137.jpg,SSP 137,SSP 137,0.9993842840194702,1,1,1
+SSP 138.jpg,SSP 138,SSP 138,0.9998500347137451,1,1,1
+SSP 139.jpg,SSP 139,SSP 139,0.9953837990760803,1,1,1
+SSP 14.jpg,SSP 14,SSP 14,0.9999785423278809,1,1,1
+SSP 140.jpg,SSP 140,SSP 140,0.9936733245849609,1,1,1
+SSP 141.jpg,SSP 141,SSP 141,0.9996817111968994,1,1,1
+SSP 142.jpg,SSP 142,SSP 142,0.9999977350234985,1,1,1
+SSP 143.jpg,SSP 143,SSP 143,0.8539602756500244,1,1,1
+SSP 144.jpg,SSP 144,SSP 144,0.9959512948989868,1,1,1
+SSP 145.jpg,SSP 145,SSP 145,0.9396417140960693,1,1,1
+SSP 146.jpg,SSP 146,SSP 146,0.9938670992851257,1,1,1
+SSP 147.jpg,SSP 147,SSP 147,0.9999791383743286,1,1,1
+SSP 148.jpg,SSP 148,SSP 148,0.9824544787406921,1,1,1
+SSP 149.jpg,SSP 149,SSP 149,0.998289167881012,1,1,1
+SSP 15.jpg,SSP 15,SSP 15,1.0,1,1,1
+SSP 150.jpg,SSP 150,SSP 150,0.8673884868621826,1,1,1
+SSP 151.jpg,SSP 151,SSP 151,0.999962568283081,1,1,1
+SSP 152.jpg,SSP 152,SSP 152,0.999932050704956,1,1,1
+SSP 153.jpg,SSP 153,SSP 153,0.9996706247329712,1,1,1
+SSP 154.jpg,SSP 154,SSP 154,0.9951391220092773,1,1,1
+SSP 155.jpg,SSP 155,SSP 155,0.9998134970664978,1,1,1
+SSP 156.jpg,SSP 156,SSP 156,0.9999871253967285,1,1,1
+SSP 157.jpg,SSP 157,SSP 157,0.9998947381973267,1,1,1
+SSP 158.jpg,SSP 158,SSP 158,0.9999271631240845,1,1,1
+SSP 159.jpg,SSP 159,SSP 159,0.9999946355819702,1,1,1
+SSP 16.jpg,SSP 16,JTG 66,0.7346277832984924,1,0,1
+SSP 160.jpg,SSP 160,SSP 160,0.9999891519546509,1,1,1
+SSP 161.jpg,SSP 161,SSP 161,0.999998927116394,1,1,1
+SSP 162.jpg,SSP 162,PRE 116,0.5565009713172913,0,0,0
+SSP 163.jpg,SSP 163,SSP 163,0.9862352013587952,1,1,1
+SSP 164.jpg,SSP 164,SSP 164,0.6164115071296692,0,0,0
+SSP 165.jpg,SSP 165,SSP 165,0.9972846508026123,1,1,1
+SSP 166.jpg,SSP 166,SSP 166,0.9749456644058228,1,1,1
+SSP 167.jpg,SSP 167,SSP 167,0.9984866380691528,1,1,1
+SSP 168.jpg,SSP 168,SSP 168,0.9996968507766724,1,1,1
+SSP 169.jpg,SSP 169,SSP 169,1.0,1,1,1
+SSP 17.jpg,SSP 17,SSP 17,0.9997275471687317,1,1,1
+SSP 170.jpg,SSP 170,SSP 170,0.9998983144760132,1,1,1
+SSP 171.jpg,SSP 171,SSP 171,0.999897837638855,1,1,1
+SSP 172.jpg,SSP 172,SSP 172,0.9851638078689575,1,1,1
+SSP 173.jpg,SSP 173,SSP 173,0.9999799728393555,1,1,1
+SSP 174.jpg,SSP 174,SSP 174,0.999756395816803,1,1,1
+SSP 175.jpg,SSP 175,SSP 175,1.0,1,1,1
+SSP 176.jpg,SSP 176,SSP 176,0.9349191784858704,1,1,1
+SSP 177.jpg,SSP 177,SSP 177,0.999650239944458,1,1,1
+SSP 178.jpg,SSP 178,SSP 178,0.9407501816749573,1,1,1
+SSP 179.jpg,SSP 179,SSP 179,0.9810211658477783,1,1,1
+SSP 18.jpg,SSP 18,SSP 18,0.9999970197677612,1,1,1
+SSP 180.jpg,SSP 180,SSP 180,0.998578667640686,1,1,1
+SSP 181.jpg,SSP 181,SSP 181,0.999976634979248,1,1,1
+SSP 182.jpg,SSP 182,SSP 182,0.8373736143112183,1,1,1
+SSP 183.jpg,SSP 183,SSP 183,0.9571195244789124,1,1,1
+SSP 184.jpg,SSP 184,SSP 184,0.8812501430511475,1,1,1
+SSP 185.jpg,SSP 185,SSP 185,0.9998319149017334,1,1,1
+SSP 186.jpg,SSP 186,SSP 186,0.6728823781013489,0,0,0
+SSP 187.jpg,SSP 187,SSP 187,0.9992389678955078,1,1,1
+SSP 188.jpg,SSP 188,SSP 188,0.9988007545471191,1,1,1
+SSP 189.jpg,SSP 189,SSP 189,0.999568521976471,1,1,1
+SSP 19.jpg,SSP 19,SSP 19,0.8859802484512329,1,1,1
+SSP 190.jpg,SSP 190,SSP 190,0.9996960163116455,1,1,1
+SSP 191.jpg,SSP 191,SSP 191,0.9999951124191284,1,1,1
+SSP 192.jpg,SSP 192,SSP 192,0.9991258978843689,1,1,1
+SSP 193.jpg,SSP 193,SSP 193,0.9999783039093018,1,1,1
+SSP 194.jpg,SSP 194,SSP 194,1.0,1,1,1
+SSP 195.jpg,SSP 195,SSP 195,0.9999438524246216,1,1,1
+SSP 196.jpg,SSP 196,SSP 196,1.0,1,1,1
+SSP 197.jpg,SSP 197,SSP 197,1.0,1,1,1
+SSP 198.jpg,SSP 198,SSP 198,0.9999810457229614,1,1,1
+SSP 199.jpg,SSP 199,SSP 199,0.9972643852233887,1,1,1
+SSP 2.jpg,SSP 2,SSP 2,0.9998568296432495,1,1,1
+SSP 20.jpg,SSP 20,SSP 20,0.9999593496322632,1,1,1
+SSP 200.jpg,SSP 200,SSP 200,0.999876856803894,1,1,1
+SSP 201.jpg,SSP 201,SSP 201,0.9495911002159119,1,1,1
+SSP 202.jpg,SSP 202,SSP 202,0.9999963045120239,1,1,1
+SSP 203.jpg,SSP 203,SSP 203,0.9988272786140442,1,1,1
+SSP 204.jpg,SSP 204,SSP 204,1.0,1,1,1
+SSP 205.jpg,SSP 205,SSP 205,0.9997020363807678,1,1,1
+SSP 206.jpg,SSP 206,SSP 206,1.0,1,1,1
+SSP 207.jpg,SSP 207,SSP 207,0.9999992847442627,1,1,1
+SSP 208.jpg,SSP 208,SSP 208,0.9999972581863403,1,1,1
+SSP 209.jpg,SSP 209,SSP 209,0.9999837875366211,1,1,1
+SSP 21.jpg,SSP 21,SSP 21,0.9997691512107849,1,1,1
+SSP 210.jpg,SSP 210,SSP 210,0.9993880987167358,1,1,1
+SSP 211.jpg,SSP 211,SSP 211,0.999715268611908,1,1,1
+SSP 212.jpg,SSP 212,SSP 212,0.9997249245643616,1,1,1
+SSP 213.jpg,SSP 213,SSP 213,0.9999985694885254,1,1,1
+SSP 214.jpg,SSP 214,SSP 214,0.9491154551506042,1,1,1
+SSP 215.jpg,SSP 215,SSP 215,0.9998750686645508,1,1,1
+SSP 216.jpg,SSP 216,SSP 216,1.0,1,1,1
+SSP 217.jpg,SSP 217,SSP 217,0.9997407793998718,1,1,1
+SSP 218.jpg,SSP 218,SSP 218,0.9998456239700317,1,1,1
+SSP 219.jpg,SSP 219,SSP 219,0.9999997615814209,1,1,1
+SSP 22.jpg,SSP 22,SSP 22,0.9980192184448242,1,1,1
+SSP 220.jpg,SSP 220,SSP 220,0.9995940327644348,1,1,1
+SSP 221.jpg,SSP 221,SSP 221,0.9997228980064392,1,1,1
+SSP 222.jpg,SSP 222,SSP 222,0.9960516095161438,1,1,1
+SSP 223.jpg,SSP 223,SSP 223,0.9998346567153931,1,1,1
+SSP 224.jpg,SSP 224,SSP 224,0.9990205764770508,1,1,1
+SSP 225.jpg,SSP 225,SSP 225,0.9998487234115601,1,1,1
+SSP 226.jpg,SSP 226,SSP 226,0.9977042078971863,1,1,1
+SSP 227.jpg,SSP 227,SSP 227,1.0,1,1,1
+SSP 228.jpg,SSP 228,SSP 228,0.9999229907989502,1,1,1
+SSP 229.jpg,SSP 229,SSP 229,0.9999992847442627,1,1,1
+SSP 23.jpg,SSP 23,SSP 23,0.9999997615814209,1,1,1
+SSP 230.jpg,SSP 230,SSP 230,1.0,1,1,1
+SSP 231.jpg,SSP 231,SSP 231,0.9999998807907104,1,1,1
+SSP 232.jpg,SSP 232,SSP 232,0.9999996423721313,1,1,1
+SSP 233.jpg,SSP 233,SSP 233,0.9990994930267334,1,1,1
+SSP 234.jpg,SSP 234,SSP 234,0.9986984729766846,1,1,1
+SSP 235.jpg,SSP 235,SSP 235,0.9999991655349731,1,1,1
+SSP 236.jpg,SSP 236,SSP 236,0.9999884366989136,1,1,1
+SSP 237.jpg,SSP 237,SSP 237,0.9998877048492432,1,1,1
+SSP 238.jpg,SSP 238,SSP 238,0.9987792372703552,1,1,1
+SSP 239.jpg,SSP 239,SSP 239,0.9999980926513672,1,1,1
+SSP 24.jpg,SSP 24,SSP 24,0.9999841451644897,1,1,1
+SSP 240.jpg,SSP 240,SSP 240,0.9999897480010986,1,1,1
+SSP 241.jpg,SSP 241,SSP 241,0.9999996423721313,1,1,1
+SSP 242.jpg,SSP 242,SSP 242,0.9999654293060303,1,1,1
+SSP 243.jpg,SSP 243,SSP 243,0.9999020099639893,1,1,1
+SSP 244.jpg,SSP 244,SSP 244,0.9999998807907104,1,1,1
+SSP 245.jpg,SSP 245,SSP 245,0.9998514652252197,1,1,1
+SSP 246.jpg,SSP 246,SSP 246,0.9997904896736145,1,1,1
+SSP 247.jpg,SSP 247,SSP 247,0.999993085861206,1,1,1
+SSP 248.jpg,SSP 248,SSP 248,0.9887552857398987,1,1,1
+SSP 249.jpg,SSP 249,SSP 249,1.0,1,1,1
+SSP 25.jpg,SSP 25,SSP 25,0.9996232986450195,1,1,1
+SSP 250.jpg,SSP 250,SSP 250,1.0,1,1,1
+SSP 251.jpg,SSP 251,SSP 251,0.9970430731773376,1,1,1
+SSP 252.jpg,SSP 252,SSP 252,1.0,1,1,1
+SSP 26.jpg,SSP 26,SSP 26,0.9924184083938599,1,1,1
+SSP 27.jpg,SSP 27,SSP 27,0.9998915195465088,1,1,1
+SSP 28.jpg,SSP 28,SSP 28,0.9798954725265503,1,1,1
+SSP 29.jpg,SSP 29,SSP 29,0.999942421913147,1,1,1
+SSP 3.jpg,SSP 3,SSP 3,0.9441186785697937,1,1,1
+SSP 30.jpg,SSP 30,SSP 30,0.9889839291572571,1,1,1
+SSP 31.jpg,SSP 31,SSP 31,0.9994798302650452,1,1,1
+SSP 32.jpg,SSP 32,SSP 32,0.9999985694885254,1,1,1
+SSP 33.jpg,SSP 33,SSP 33,0.9999970197677612,1,1,1
+SSP 34.jpg,SSP 34,SSP 34,0.999537467956543,1,1,1
+SSP 35.jpg,SSP 35,SSP 35,0.9999946355819702,1,1,1
+SSP 36.jpg,SSP 36,SSP 36,0.9999998807907104,1,1,1
+SSP 37.jpg,SSP 37,SSP 37,0.991557240486145,1,1,1
+SSP 38.jpg,SSP 38,SSP 38,0.9938527345657349,1,1,1
+SSP 39.jpg,SSP 39,SSP 39,0.9999691247940063,1,1,1
+SSP 4.jpg,SSP 4,SSP 4,0.9999754428863525,1,1,1
+SSP 40.jpg,SSP 40,SSP 40,0.999991774559021,1,1,1
+SSP 41.jpg,SSP 41,SSP 41,0.9794948101043701,1,1,1
+SSP 42.jpg,SSP 42,SSP 42,0.9999971389770508,1,1,1
+SSP 43.jpg,SSP 43,SSP 43,0.9999818801879883,1,1,1
+SSP 44.jpg,SSP 44,SSP 44,0.9964742064476013,1,1,1
+SSP 45.jpg,SSP 45,SSP 45,1.0,1,1,1
+SSP 46.jpg,SSP 46,SSP 46,0.8687843680381775,1,1,1
+SSP 47.jpg,SSP 47,SSP 47,0.9972701668739319,1,1,1
+SSP 48.jpg,SSP 48,SSP 48,1.0,1,1,1
+SSP 49.jpg,SSP 49,SSP 49,0.9998010993003845,1,1,1
+SSP 5.jpg,SSP 5,SSP 5,0.9997087121009827,1,1,1
+SSP 50.jpg,SSP 50,SSP 50,0.9999972581863403,1,1,1
+SSP 51.jpg,SSP 51,SSP 51,0.9978926777839661,1,1,1
+SSP 52.jpg,SSP 52,SSP 52,0.999718964099884,1,1,1
+SSP 53.jpg,SSP 53,SSP 53,0.9999998807907104,1,1,1
+SSP 54.jpg,SSP 54,SSP 54,0.9999902248382568,1,1,1
+SSP 55.jpg,SSP 55,SSP 55,0.9999514818191528,1,1,1
+SSP 56.jpg,SSP 56,SSP 56,0.9974460601806641,1,1,1
+SSP 57.jpg,SSP 57,SSP 57,0.9995765089988708,1,1,1
+SSP 58.jpg,SSP 58,SSP 58,0.9903097748756409,1,1,1
+SSP 59.jpg,SSP 59,SSP 59,0.9996722936630249,1,1,1
+SSP 6.jpg,SSP 6,SSP 6,1.0,1,1,1
+SSP 60.jpg,SSP 60,SSP 60,0.9998331069946289,1,1,1
+SSP 61.jpg,SSP 61,SSP 61,0.9327324628829956,1,1,1
+SSP 62.jpg,SSP 62,SSP 62,0.9999407529830933,1,1,1
+SSP 63.jpg,SSP 63,SSP 63,0.9991531372070312,1,1,1
+SSP 64.jpg,SSP 64,SSP 64,0.9999167919158936,1,1,1
+SSP 65.jpg,SSP 65,SSP 65,0.9984877109527588,1,1,1
+SSP 66.jpg,SSP 66,SSP 66,0.9998199343681335,1,1,1
+SSP 67.jpg,SSP 67,SSP 67,0.9996576309204102,1,1,1
+SSP 68.jpg,SSP 68,SSP 68,0.9999936819076538,1,1,1
+SSP 69.jpg,SSP 69,SSP 69,0.9894202947616577,1,1,1
+SSP 7.jpg,SSP 7,SSP 7,0.9998779296875,1,1,1
+SSP 70.jpg,SSP 70,SSP 70,0.9969757795333862,1,1,1
+SSP 71.jpg,SSP 71,SSP 71,0.8263360261917114,1,1,1
+SSP 72.jpg,SSP 72,SSP 72,0.9977414608001709,1,1,1
+SSP 73.jpg,SSP 73,SSP 73,0.9999173879623413,1,1,1
+SSP 74.jpg,SSP 74,SSP 74,0.9962533712387085,1,1,1
+SSP 75.jpg,SSP 75,SSP 75,0.9988549947738647,1,1,1
+SSP 76.jpg,SSP 76,SSP 76,0.9999691247940063,1,1,1
+SSP 77.jpg,SSP 77,SSP 77,0.9999871253967285,1,1,1
+SSP 78.jpg,SSP 78,SSP 78,0.9879865050315857,1,1,1
+SSP 79.jpg,SSP 79,SSP 79,0.9999032020568848,1,1,1
+SSP 8.jpg,SSP 8,SSP 8,0.999927282333374,1,1,1
+SSP 80.jpg,SSP 80,SSP 80,0.9998880624771118,1,1,1
+SSP 81.jpg,SSP 81,SSP 81,0.9999833106994629,1,1,1
+SSP 82.jpg,SSP 82,SSP 82,0.957964301109314,1,1,1
+SSP 83.jpg,SSP 83,SSP 83,0.9999980926513672,1,1,1
+SSP 84.jpg,SSP 84,SSP 84,0.9993195533752441,1,1,1
+SSP 85.jpg,SSP 85,SSP 85,0.9992029070854187,1,1,1
+SSP 86.jpg,SSP 86,SSP 86,0.9999856948852539,1,1,1
+SSP 87.jpg,SSP 87,SSP 87,0.999549925327301,1,1,1
+SSP 88.jpg,SSP 88,SSP 88,0.9839047789573669,1,1,1
+SSP 89.jpg,SSP 89,SSP 89,0.9998565912246704,1,1,1
+SSP 9.jpg,SSP 9,SSP 9,0.9999967813491821,1,1,1
+SSP 90.jpg,SSP 90,SSP 90,0.9997710585594177,1,1,1
+SSP 91.jpg,SSP 91,SSP 91,0.7357125878334045,1,1,1
+SSP 92.jpg,SSP 92,SSP 92,0.9999903440475464,1,1,1
+SSP 93.jpg,SSP 93,SSP 93,0.9993425011634827,1,1,1
+SSP 94.jpg,SSP 94,SSP 94,0.9983944296836853,1,1,1
+SSP 95.jpg,SSP 95,SSP 95,0.9998880624771118,1,1,1
+SSP 96.jpg,SSP 96,SSP 96,0.9990112781524658,1,1,1
+SSP 97.jpg,SSP 97,SSP 97,0.9999998807907104,1,1,1
+SSP 98.jpg,SSP 98,SSP 98,0.9847533702850342,1,1,1
+SSP 99.jpg,SSP 99,SSP 99,0.9999890327453613,1,1,1
+</file>
+
+<file path="batch_results_20260305_112835.csv">
+filename,true_label,predicted_label,confidence,accepted,top1_correct,top3_correct
+JTG 1.jpg,JTG 1,JTG 1,0.999514102935791,1,1,1
+JTG 10.jpg,JTG 10,JTG 10,0.9997503161430359,1,1,1
+JTG 100.jpg,JTG 100,JTG 100,0.9999821186065674,1,1,1
+JTG 101.jpg,JTG 101,JTG 101,0.9958439469337463,1,1,1
+JTG 102.jpg,JTG 102,JTG 102,0.9998959302902222,1,1,1
+JTG 103.jpg,JTG 103,JTG 103,0.9998561143875122,1,1,1
+JTG 104.jpg,JTG 104,JTG 104,0.999988317489624,1,1,1
+JTG 105.jpg,JTG 105,JTG 105,0.9999997615814209,1,1,1
+JTG 106.jpg,JTG 106,JTG 106,0.9999984502792358,1,1,1
+JTG 107.jpg,JTG 107,JTG 107,0.9813870787620544,1,1,1
+JTG 108.jpg,JTG 108,JTG 108,1.0,1,1,1
+JTG 109.jpg,JTG 109,JTG 109,0.9997237324714661,1,1,1
+JTG 11.jpg,JTG 11,JTG 11,0.9999985694885254,1,1,1
+JTG 110.jpg,JTG 110,JTG 110,0.9985287189483643,1,1,1
+JTG 111.jpg,JTG 111,JTG 111,0.9998810291290283,1,1,1
+JTG 112.jpg,JTG 112,JTG 112,0.9179509282112122,1,1,1
+JTG 113.jpg,JTG 113,JTG 113,0.9999923706054688,1,1,1
+JTG 114.jpg,JTG 114,JTG 114,0.9999971389770508,1,1,1
+JTG 115.jpg,JTG 115,JTG 115,1.0,1,1,1
+JTG 116.jpg,JTG 116,JTG 116,0.9988570213317871,1,1,1
+JTG 117.jpg,JTG 117,JTG 117,0.9999732971191406,1,1,1
+JTG 118.jpg,JTG 118,JTG 118,0.9999135732650757,1,1,1
+JTG 119.jpg,JTG 119,JTG 119,0.980685830116272,1,1,1
+JTG 12.jpg,JTG 12,JTG 12,0.9998835325241089,1,1,1
+JTG 120.jpg,JTG 120,JTG 120,0.9999486207962036,1,1,1
+JTG 121.jpg,JTG 121,JTG 121,0.9999649524688721,1,1,1
+JTG 122.jpg,JTG 122,JTG 122,0.9996923208236694,1,1,1
+JTG 123.jpg,JTG 123,JTG 123,0.9999988079071045,1,1,1
+JTG 124.jpg,JTG 124,JTG 124,0.9996861219406128,1,1,1
+JTG 125.jpg,JTG 125,JTG 125,0.9995052814483643,1,1,1
+JTG 126.jpg,JTG 126,JTG 126,0.9772612452507019,1,1,1
+JTG 127.jpg,JTG 127,JTG 127,0.9999996423721313,1,1,1
+JTG 128.jpg,JTG 128,JTG 128,0.9999982118606567,1,1,1
+JTG 129.jpg,JTG 129,JTG 129,0.9997556805610657,1,1,1
+JTG 13.jpg,JTG 13,JTG 13,0.9996194839477539,1,1,1
+JTG 130.jpg,JTG 130,JTG 130,0.997626006603241,1,1,1
+JTG 131.jpg,JTG 131,JTG 131,0.9999563694000244,1,1,1
+JTG 132.jpg,JTG 132,JTG 132,0.9363555312156677,1,1,1
+JTG 133.jpg,JTG 133,JTG 133,0.9999960660934448,1,1,1
+JTG 134.jpg,JTG 134,JTG 134,0.9999815225601196,1,1,1
+JTG 135.jpg,JTG 135,JTG 135,0.999992847442627,1,1,1
+JTG 136.jpg,JTG 136,JTG 136,0.9999982118606567,1,1,1
+JTG 137.jpg,JTG 137,JTG 137,0.9999691247940063,1,1,1
+JTG 138.jpg,JTG 138,JTG 138,0.9999997615814209,1,1,1
+JTG 139.jpg,JTG 139,JTG 139,0.9997559189796448,1,1,1
+JTG 14.jpg,JTG 14,JTG 14,0.9998940229415894,1,1,1
+JTG 140.jpg,JTG 140,JTG 140,0.9808796048164368,1,1,1
+JTG 141.jpg,JTG 141,JTG 141,0.9980758428573608,1,1,1
+JTG 142.jpg,JTG 142,JTG 142,0.9996644258499146,1,1,1
+JTG 143.jpg,JTG 143,JTG 143,1.0,1,1,1
+JTG 144.jpg,JTG 144,JTG 144,0.9998917579650879,1,1,1
+JTG 145.jpg,JTG 145,JTG 145,0.9999983310699463,1,1,1
+JTG 146.jpg,JTG 146,JTG 146,0.9985295534133911,1,1,1
+JTG 147.jpg,JTG 147,JTG 147,0.9996808767318726,1,1,1
+JTG 148.jpg,JTG 148,JTG 148,0.9993534684181213,1,1,1
+JTG 149.jpg,JTG 149,JTG 149,0.9982821941375732,1,1,1
+JTG 15.jpg,JTG 15,JTG 15,0.9999995231628418,1,1,1
+JTG 150.jpg,JTG 150,JTG 150,0.9974385499954224,1,1,1
+JTG 151.jpg,JTG 151,JTG 151,0.9976798892021179,1,1,1
+JTG 152.jpg,JTG 152,JTG 152,0.9999997615814209,1,1,1
+JTG 153.jpg,JTG 153,JTG 153,0.8333585262298584,1,1,1
+JTG 154.jpg,JTG 154,JTG 154,0.9984163045883179,1,1,1
+JTG 155.jpg,JTG 155,JTG 155,0.9690625071525574,1,1,1
+JTG 156.jpg,JTG 156,JTG 156,0.9990084767341614,1,1,1
+JTG 157.jpg,JTG 157,JTG 157,1.0,1,1,1
+JTG 158.jpg,JTG 158,JTG 158,0.9998931884765625,1,1,1
+JTG 159.jpg,JTG 159,JTG 159,0.9966788291931152,1,1,1
+JTG 16.jpg,JTG 16,JTG 16,0.9998852014541626,1,1,1
+JTG 160.jpg,JTG 160,JTG 160,0.5671820044517517,0,0,0
+JTG 161.jpg,JTG 161,JTG 161,0.9999094009399414,1,1,1
+JTG 162.jpg,JTG 162,JTG 162,0.9938954710960388,1,1,1
+JTG 163.jpg,JTG 163,JTG 163,0.9993844032287598,1,1,1
+JTG 164.jpg,JTG 164,JTG 164,0.9999597072601318,1,1,1
+JTG 165.jpg,JTG 165,JTG 165,0.9792221188545227,1,1,1
+JTG 166.jpg,JTG 166,JTG 166,0.9999539852142334,1,1,1
+JTG 167.jpg,JTG 167,JTG 167,0.996122419834137,1,1,1
+JTG 168.jpg,JTG 168,JTG 168,0.9999997615814209,1,1,1
+JTG 169.jpg,JTG 169,JTG 169,0.9999064207077026,1,1,1
+JTG 17.jpg,JTG 17,JTG 17,0.9999531507492065,1,1,1
+JTG 170.jpg,JTG 170,JTG 170,0.9922629594802856,1,1,1
+JTG 171.jpg,JTG 171,JTG 171,0.9999537467956543,1,1,1
+JTG 172.jpg,JTG 172,JTG 172,0.9992515444755554,1,1,1
+JTG 173.jpg,JTG 173,JTG 173,0.9956684112548828,1,1,1
+JTG 174.jpg,JTG 174,JTG 174,1.0,1,1,1
+JTG 175.jpg,JTG 175,JTG 175,0.9999996423721313,1,1,1
+JTG 176.jpg,JTG 176,JTG 176,0.9999793767929077,1,1,1
+JTG 177.jpg,JTG 177,JTG 177,0.9998087286949158,1,1,1
+JTG 178.jpg,JTG 178,JTG 178,0.9893280863761902,1,1,1
+JTG 179.jpg,JTG 179,JTG 179,0.9999992847442627,1,1,1
+JTG 18.jpg,JTG 18,JTG 18,0.9999972581863403,1,1,1
+JTG 180.jpg,JTG 180,JTG 180,0.9999998807907104,1,1,1
+JTG 181.jpg,JTG 181,JTG 181,0.9999872446060181,1,1,1
+JTG 182.jpg,JTG 182,JTG 182,1.0,1,1,1
+JTG 183.jpg,JTG 183,JTG 183,0.9996895790100098,1,1,1
+JTG 184.jpg,JTG 184,JTG 184,0.999987006187439,1,1,1
+JTG 185.jpg,JTG 185,JTG 185,1.0,1,1,1
+JTG 186.jpg,JTG 186,JTG 186,0.9999896287918091,1,1,1
+JTG 187.jpg,JTG 187,JTG 187,0.9643301963806152,1,1,1
+JTG 188.jpg,JTG 188,JTG 188,0.9990637898445129,1,1,1
+JTG 189.jpg,JTG 189,JTG 189,0.9998776912689209,1,1,1
+JTG 19.jpg,JTG 19,JTG 19,0.9999879598617554,1,1,1
+JTG 190.jpg,JTG 190,JTG 190,0.9999954700469971,1,1,1
+JTG 2.jpg,JTG 2,JTG 2,0.9999908208847046,1,1,1
+JTG 20.jpg,JTG 20,JTG 20,0.9998190999031067,1,1,1
+JTG 21.jpg,JTG 21,JTG 21,0.9999977350234985,1,1,1
+JTG 22.jpg,JTG 22,JTG 22,0.9984644651412964,1,1,1
+JTG 23.jpg,JTG 23,JTG 23,0.9021925330162048,1,1,1
+JTG 24.jpg,JTG 24,JTG 24,0.9999725818634033,1,1,1
+JTG 25.jpg,JTG 25,JTG 25,0.9999154806137085,1,1,1
+JTG 26.jpg,JTG 26,JTG 26,0.9999608993530273,1,1,1
+JTG 27.jpg,JTG 27,JTG 27,0.9999985694885254,1,1,1
+JTG 28.jpg,JTG 28,JTG 28,1.0,1,1,1
+JTG 29.jpg,JTG 29,JTG 29,0.999940037727356,1,1,1
+JTG 3.jpg,JTG 3,JTG 3,0.9999089241027832,1,1,1
+JTG 30.jpg,JTG 30,JTG 30,0.999997615814209,1,1,1
+JTG 31.jpg,JTG 31,JTG 31,0.997018575668335,1,1,1
+JTG 32.jpg,JTG 32,JTG 32,0.9985424280166626,1,1,1
+JTG 33.jpg,JTG 33,JTG 33,0.999953031539917,1,1,1
+JTG 34.jpg,JTG 34,JTG 34,0.9999997615814209,1,1,1
+JTG 35.jpg,JTG 35,JTG 35,0.9999995231628418,1,1,1
+JTG 36.jpg,JTG 36,JTG 36,0.9984227418899536,1,1,1
+JTG 37.jpg,JTG 37,JTG 37,0.9998506307601929,1,1,1
+JTG 38.jpg,JTG 38,JTG 38,0.9999992847442627,1,1,1
+JTG 39.jpg,JTG 39,JTG 39,0.9921268224716187,1,1,1
+JTG 4.jpg,JTG 4,JTG 4,1.0,1,1,1
+JTG 40.jpg,JTG 40,JTG 40,0.9981502294540405,1,1,1
+JTG 41.jpg,JTG 41,JTG 41,0.9894634485244751,1,1,1
+JTG 42.jpg,JTG 42,JTG 42,0.9999204874038696,1,1,1
+JTG 43.jpg,JTG 43,JTG 43,0.9999998807907104,1,1,1
+JTG 44.jpg,JTG 44,JTG 44,0.999997615814209,1,1,1
+JTG 45.jpg,JTG 45,JTG 45,0.9996310472488403,1,1,1
+JTG 46.jpg,JTG 46,JTG 46,0.9999939203262329,1,1,1
+JTG 47.jpg,JTG 47,JTG 47,0.9995455145835876,1,1,1
+JTG 48.jpg,JTG 48,JTG 48,0.9994800686836243,1,1,1
+JTG 49.jpg,JTG 49,JTG 49,0.9998944997787476,1,1,1
+JTG 5.jpg,JTG 5,JTG 5,0.9998857975006104,1,1,1
+JTG 50.jpg,JTG 50,JTG 50,0.9994677901268005,1,1,1
+JTG 51.jpg,JTG 51,JTG 51,0.9999961853027344,1,1,1
+JTG 52.jpg,JTG 52,JTG 52,0.999968409538269,1,1,1
+JTG 53.jpg,JTG 53,JTG 53,0.9999934434890747,1,1,1
+JTG 54.jpg,JTG 54,JTG 54,0.9999929666519165,1,1,1
+JTG 55.jpg,JTG 55,JTG 55,0.9999996423721313,1,1,1
+JTG 56.jpg,JTG 56,JTG 56,0.9989196062088013,1,1,1
+JTG 57.jpg,JTG 57,JTG 57,0.9999860525131226,1,1,1
+JTG 58.jpg,JTG 58,JTG 58,0.9994727969169617,1,1,1
+JTG 59.jpg,JTG 59,JTG 59,0.9999103546142578,1,1,1
+JTG 6.jpg,JTG 6,JTG 6,0.9956346154212952,1,1,1
+JTG 60.jpg,JTG 60,JTG 60,0.9999133348464966,1,1,1
+JTG 61.jpg,JTG 61,JTG 61,0.9995027780532837,1,1,1
+JTG 62.jpg,JTG 62,JTG 62,0.9987702965736389,1,1,1
+JTG 63.jpg,JTG 63,JTG 63,0.9999971389770508,1,1,1
+JTG 64.jpg,JTG 64,JTG 64,0.9999997615814209,1,1,1
+JTG 65.jpg,JTG 65,JTG 65,0.9999877214431763,1,1,1
+JTG 66.jpg,JTG 66,JTG 66,0.999273955821991,1,1,1
+JTG 67.jpg,JTG 67,JTG 67,0.9999901056289673,1,1,1
+JTG 68.jpg,JTG 68,JTG 68,0.8767327666282654,1,1,1
+JTG 69.jpg,JTG 69,JTG 69,0.9999963045120239,1,1,1
+JTG 7.jpg,JTG 7,JTG 7,0.9999135732650757,1,1,1
+JTG 70.jpg,JTG 70,JTG 70,0.9996380805969238,1,1,1
+JTG 71.jpg,JTG 71,JTG 71,0.9995695948600769,1,1,1
+JTG 72.jpg,JTG 72,JTG 72,0.9980180263519287,1,1,1
+JTG 73.jpg,JTG 73,JTG 73,0.9999887943267822,1,1,1
+JTG 74.jpg,JTG 74,JTG 74,0.9801109433174133,1,1,1
+JTG 75.jpg,JTG 75,JTG 75,0.9980621933937073,1,1,1
+JTG 76.jpg,JTG 76,JTG 76,0.9999121427536011,1,1,1
+JTG 77.jpg,JTG 77,JTG 77,0.9999632835388184,1,1,1
+JTG 78.jpg,JTG 78,JTG 78,0.9840598106384277,1,1,1
+JTG 79.jpg,JTG 79,JTG 79,0.9999641180038452,1,1,1
+JTG 8.jpg,JTG 8,JTG 8,0.9999327659606934,1,1,1
+JTG 80.jpg,JTG 80,JTG 80,0.9963024854660034,1,1,1
+JTG 81.jpg,JTG 81,JTG 81,0.9992929697036743,1,1,1
+JTG 82.jpg,JTG 82,JTG 82,0.9991828799247742,1,1,1
+JTG 83.jpg,JTG 83,JTG 83,0.9982672929763794,1,1,1
+JTG 84.jpg,JTG 84,JTG 84,0.9999865293502808,1,1,1
+JTG 85.jpg,JTG 85,JTG 85,0.9999680519104004,1,1,1
+JTG 86.jpg,JTG 86,JTG 86,0.9998835325241089,1,1,1
+JTG 87.jpg,JTG 87,JTG 87,0.9999985694885254,1,1,1
+JTG 88.jpg,JTG 88,JTG 88,0.9999876022338867,1,1,1
+JTG 89.jpg,JTG 89,JTG 89,0.999786913394928,1,1,1
+JTG 9.jpg,JTG 9,JTG 9,0.9999969005584717,1,1,1
+JTG 90.jpg,JTG 90,JTG 90,0.9999500513076782,1,1,1
+JTG 91.jpg,JTG 91,JTG 91,0.8380391001701355,1,1,1
+JTG 92.jpg,JTG 92,JTG 92,0.9999799728393555,1,1,1
+JTG 93.jpg,JTG 93,JTG 93,0.4827238917350769,0,0,0
+JTG 94.jpg,JTG 94,JTG 94,0.8907008171081543,1,1,1
+JTG 95.jpg,JTG 95,JTG 95,0.9628989100456238,1,1,1
+JTG 96.jpg,JTG 96,JTG 96,0.9824321866035461,1,1,1
+JTG 97.jpg,JTG 97,JTG 97,0.9870697259902954,1,1,1
+JTG 98.jpg,JTG 98,JTG 98,0.9999960660934448,1,1,1
+JTG 99.jpg,JTG 99,JTG 99,0.9953101277351379,1,1,1
+PRE 1.jpg,PRE 1,PRE 1,0.9927029609680176,1,1,1
+PRE 10.jpg,PRE 10,PRE 10,0.9999932050704956,1,1,1
+PRE 100.jpg,PRE 100,PRE 100,0.9983876943588257,1,1,1
+PRE 101.jpg,PRE 101,PRE 101,0.9907318949699402,1,1,1
+PRE 102.jpg,PRE 102,PRE 102,0.9994219541549683,1,1,1
+PRE 103.jpg,PRE 103,PRE 103,0.9999151229858398,1,1,1
+PRE 104.jpg,PRE 104,PRE 104,0.9989702701568604,1,1,1
+PRE 105.jpg,PRE 105,PRE 105,0.8820016384124756,1,1,1
+PRE 106.jpg,PRE 106,PRE 106,0.9948810338973999,1,1,1
+PRE 107.jpg,PRE 107,PRE 107,0.9997336268424988,1,1,1
+PRE 108.jpg,PRE 108,PRE 108,0.999707043170929,1,1,1
+PRE 109.jpg,PRE 109,PRE 109,0.9997977614402771,1,1,1
+PRE 11.jpg,PRE 11,PRE 11,0.962627649307251,1,1,1
+PRE 110.jpg,PRE 110,PRE 110,0.630192756652832,0,0,0
+PRE 111.jpg,PRE 111,PRE 111,0.984833836555481,1,1,1
+PRE 112.jpg,PRE 112,PRE 112,0.9695461988449097,1,1,1
+PRE 113.jpg,PRE 113,PRE 113,0.9993559718132019,1,1,1
+PRE 114.jpg,PRE 114,PRE 114,0.999103307723999,1,1,1
+PRE 115.jpg,PRE 115,PRE 115,1.0,1,1,1
+PRE 116.jpg,PRE 116,PRE 116,0.6669571399688721,0,0,0
+PRE 117.jpg,PRE 117,PRE 117,0.9968320727348328,1,1,1
+PRE 118.jpg,PRE 118,PRE 118,0.999588668346405,1,1,1
+PRE 119.jpg,PRE 119,PRE 119,0.9985021352767944,1,1,1
+PRE 12.jpg,PRE 12,PRE 12,0.9999997615814209,1,1,1
+PRE 120.jpg,PRE 120,PRE 120,0.9999552965164185,1,1,1
+PRE 121.jpg,PRE 121,PRE 121,0.9998574256896973,1,1,1
+PRE 122.jpg,PRE 122,PRE 122,0.9974754452705383,1,1,1
+PRE 123.jpg,PRE 123,PRE 123,0.9953221678733826,1,1,1
+PRE 124.jpg,PRE 124,PRE 124,0.9932205677032471,1,1,1
+PRE 125.jpg,PRE 125,PRE 125,0.9998761415481567,1,1,1
+PRE 126.jpg,PRE 126,PRE 126,0.9999914169311523,1,1,1
+PRE 127.jpg,PRE 127,PRE 127,0.9897027611732483,1,1,1
+PRE 128.jpg,PRE 128,PRE 128,0.9315701127052307,1,1,1
+PRE 129.jpg,PRE 129,SCR 142,0.5392568707466125,0,0,0
+PRE 13.jpg,PRE 13,PRE 13,0.9999150037765503,1,1,1
+PRE 130.jpg,PRE 130,PRE 130,0.9996800422668457,1,1,1
+PRE 131.jpg,PRE 131,PRE 131,0.9993091821670532,1,1,1
+PRE 132.jpg,PRE 132,PRE 132,1.0,1,1,1
+PRE 133.jpg,PRE 133,PRE 133,1.0,1,1,1
+PRE 134.jpg,PRE 134,PRE 134,0.9996943473815918,1,1,1
+PRE 135.jpg,PRE 135,PRE 135,0.9999992847442627,1,1,1
+PRE 136.jpg,PRE 136,PRE 136,0.999998927116394,1,1,1
+PRE 137.jpg,PRE 137,PRE 137,1.0,1,1,1
+PRE 138.jpg,PRE 138,PRE 138,0.9999985694885254,1,1,1
+PRE 139.jpg,PRE 139,PRE 139,1.0,1,1,1
+PRE 14.jpg,PRE 14,PRE 14,0.9999955892562866,1,1,1
+PRE 140.jpg,PRE 140,PRE 140,0.9919202327728271,1,1,1
+PRE 141.jpg,PRE 141,PRE 141,0.9998053908348083,1,1,1
+PRE 142.jpg,PRE 142,PRE 142,0.9999504089355469,1,1,1
+PRE 143.jpg,PRE 143,PRE 143,0.9999741315841675,1,1,1
+PRE 144.jpg,PRE 144,PRE 144,1.0,1,1,1
+PRE 145.jpg,PRE 145,PRE 145,0.9986684322357178,1,1,1
+PRE 146.jpg,PRE 146,PRE 146,1.0,1,1,1
+PRE 147.jpg,PRE 147,PRE 147,0.9999195337295532,1,1,1
+PRE 148.jpg,PRE 148,PRE 148,1.0,1,1,1
+PRE 149.jpg,PRE 149,PRE 149,1.0,1,1,1
+PRE 15.jpg,PRE 15,PRE 15,0.9353331327438354,1,1,1
+PRE 150.jpg,PRE 150,PRE 150,0.9971488118171692,1,1,1
+PRE 151.jpg,PRE 151,PRE 151,1.0,1,1,1
+PRE 152.jpg,PRE 152,PRE 152,0.9999862909317017,1,1,1
+PRE 153.jpg,PRE 153,PRE 153,0.9999819993972778,1,1,1
+PRE 154.jpg,PRE 154,PRE 154,0.9999886751174927,1,1,1
+PRE 155.jpg,PRE 155,PRE 155,0.9965493679046631,1,1,1
+PRE 156.jpg,PRE 156,PRE 156,0.9985918402671814,1,1,1
+PRE 157.jpg,PRE 157,PRE 157,0.9999890327453613,1,1,1
+PRE 158.jpg,PRE 158,PRE 158,0.9999920129776001,1,1,1
+PRE 159.jpg,PRE 159,PRE 159,0.999998927116394,1,1,1
+PRE 16.jpg,PRE 16,PRE 16,0.9999912977218628,1,1,1
+PRE 160.jpg,PRE 160,PRE 160,1.0,1,1,1
+PRE 161.jpg,PRE 161,PRE 161,0.9999730587005615,1,1,1
+PRE 162.jpg,PRE 162,PRE 162,0.9999943971633911,1,1,1
+PRE 163.jpg,PRE 163,PRE 163,0.999994158744812,1,1,1
+PRE 164.jpg,PRE 164,PRE 164,0.9999998807907104,1,1,1
+PRE 165.jpg,PRE 165,PRE 165,0.9999998807907104,1,1,1
+PRE 166.jpg,PRE 166,PRE 166,1.0,1,1,1
+PRE 167.jpg,PRE 167,PRE 167,0.9952057003974915,1,1,1
+PRE 168.jpg,PRE 168,PRE 168,0.999985933303833,1,1,1
+PRE 169.jpg,PRE 169,PRE 169,0.9903733730316162,1,1,1
+PRE 17.jpg,PRE 17,PRE 17,1.0,1,1,1
+PRE 170.jpg,PRE 170,PRE 170,0.9999234676361084,1,1,1
+PRE 171.jpg,PRE 171,PRE 171,0.9999948740005493,1,1,1
+PRE 172.jpg,PRE 172,PRE 172,0.9999994039535522,1,1,1
+PRE 173.jpg,PRE 173,PRE 173,0.9999986886978149,1,1,1
+PRE 174.jpg,PRE 174,PRE 174,0.9999022483825684,1,1,1
+PRE 175.jpg,PRE 175,PRE 175,0.9999889135360718,1,1,1
+PRE 176.jpg,PRE 176,PRE 176,0.994615375995636,1,1,1
+PRE 177.jpg,PRE 177,PRE 177,0.9242490530014038,1,1,1
+PRE 178.jpg,PRE 178,PRE 178,0.9972566962242126,1,1,1
+PRE 179.jpg,PRE 179,PRE 179,0.9939245581626892,1,1,1
+PRE 18.jpg,PRE 18,PRE 18,0.9999082088470459,1,1,1
+PRE 180.jpg,PRE 180,PRE 180,0.9972198009490967,1,1,1
+PRE 19.jpg,PRE 19,PRE 19,0.9990288019180298,1,1,1
+PRE 2.jpg,PRE 2,PRE 2,0.9990233182907104,1,1,1
+PRE 20.jpg,PRE 20,PRE 20,0.9970899820327759,1,1,1
+PRE 21.jpg,PRE 21,PRE 21,0.9989749193191528,1,1,1
+PRE 22.jpg,PRE 22,PRE 22,0.999656081199646,1,1,1
+PRE 23.jpg,PRE 23,PRE 23,0.9667816758155823,1,1,1
+PRE 24.jpg,PRE 24,PRE 24,0.9997615218162537,1,1,1
+PRE 25.jpg,PRE 25,PRE 25,0.9998290538787842,1,1,1
+PRE 26.jpg,PRE 26,PRE 26,0.9704287052154541,1,1,1
+PRE 27.jpg,PRE 27,PRE 27,0.9999922513961792,1,1,1
+PRE 28.jpg,PRE 28,PRE 28,0.8859774470329285,1,1,1
+PRE 29.jpg,PRE 29,PRE 29,0.9999665021896362,1,1,1
+PRE 3.jpg,PRE 3,PRE 3,0.9984295964241028,1,1,1
+PRE 30.jpg,PRE 30,PRE 30,0.9999954700469971,1,1,1
+PRE 31.jpg,PRE 31,PRE 31,0.9967580437660217,1,1,1
+PRE 32.jpg,PRE 32,PRE 32,1.0,1,1,1
+PRE 33.jpg,PRE 33,PRE 33,0.9996675252914429,1,1,1
+PRE 34.jpg,PRE 34,PRE 34,0.9846386313438416,1,1,1
+PRE 35.jpg,PRE 35,PRE 35,0.536474347114563,0,0,0
+PRE 36.jpg,PRE 36,PRE 36,0.5975437164306641,0,0,0
+PRE 37.jpg,PRE 37,SFA 20,0.9923874139785767,1,0,1
+PRE 38.jpg,PRE 38,PRE 38,0.9972370862960815,1,1,1
+PRE 39.jpg,PRE 39,PRE 39,0.9999929666519165,1,1,1
+PRE 4.jpg,PRE 4,PRE 4,0.9776135087013245,1,1,1
+PRE 40.jpg,PRE 40,PRE 40,0.9971518516540527,1,1,1
+PRE 41.jpg,PRE 41,PRE 41,0.9999972581863403,1,1,1
+PRE 42.jpg,PRE 42,PRE 42,0.9785071611404419,1,1,1
+PRE 43.jpg,PRE 43,PRE 43,0.9998501539230347,1,1,1
+PRE 44.jpg,PRE 44,PRE 44,0.9999735355377197,1,1,1
+PRE 45.jpg,PRE 45,PRE 45,0.9999209642410278,1,1,1
+PRE 46.jpg,PRE 46,SCR 71,0.7286926507949829,1,0,1
+PRE 47.jpg,PRE 47,PRE 47,0.9994400143623352,1,1,1
+PRE 48.jpg,PRE 48,PRE 48,0.9967442750930786,1,1,1
+PRE 49.jpg,PRE 49,PRE 49,0.9999784231185913,1,1,1
+PRE 5.jpg,PRE 5,PRE 5,0.9998795986175537,1,1,1
+PRE 50.jpg,PRE 50,PRE 50,0.999998927116394,1,1,1
+PRE 51.jpg,PRE 51,PRE 51,0.9999977350234985,1,1,1
+PRE 52.jpg,PRE 52,PRE 52,0.9961293935775757,1,1,1
+PRE 53.jpg,PRE 53,PRE 53,0.9996592998504639,1,1,1
+PRE 54.jpg,PRE 54,PRE 54,0.9999988079071045,1,1,1
+PRE 55.jpg,PRE 55,PRE 55,0.9994412064552307,1,1,1
+PRE 56.jpg,PRE 56,PRE 56,0.9999995231628418,1,1,1
+PRE 57.jpg,PRE 57,PRE 57,0.9999761581420898,1,1,1
+PRE 58.jpg,PRE 58,PRE 58,0.9997949004173279,1,1,1
+PRE 59.jpg,PRE 59,PRE 59,0.9481427073478699,1,1,1
+PRE 6.jpg,PRE 6,PRE 6,0.9907795190811157,1,1,1
+PRE 60.jpg,PRE 60,PRE 60,1.0,1,1,1
+PRE 61.jpg,PRE 61,PRE 61,0.5767336487770081,0,0,0
+PRE 62.jpg,PRE 62,PRE 62,0.9914050102233887,1,1,1
+PRE 63.jpg,PRE 63,PRE 63,0.9997361302375793,1,1,1
+PRE 64.jpg,PRE 64,PRE 64,0.9999998807907104,1,1,1
+PRE 65.jpg,PRE 65,PRE 65,0.9999998807907104,1,1,1
+PRE 66.jpg,PRE 66,PRE 66,0.9957972764968872,1,1,1
+PRE 67.jpg,PRE 67,PRE 67,0.9999934434890747,1,1,1
+PRE 68.jpg,PRE 68,PRE 68,0.9999980926513672,1,1,1
+PRE 69.jpg,PRE 69,PRE 69,0.7056484818458557,1,1,1
+PRE 7.jpg,PRE 7,PRE 7,0.9923641681671143,1,1,1
+PRE 70.jpg,PRE 70,SCR 107,0.9717023372650146,1,0,1
+PRE 71.jpg,PRE 71,PRE 71,0.9839868545532227,1,1,1
+PRE 72.jpg,PRE 72,PRE 72,0.9811404943466187,1,1,1
+PRE 73.jpg,PRE 73,PRE 73,0.9999947547912598,1,1,1
+PRE 74.jpg,PRE 74,PRE 74,0.9975234866142273,1,1,1
+PRE 75.jpg,PRE 75,PRE 75,0.9999979734420776,1,1,1
+PRE 76.jpg,PRE 76,PRE 76,0.9975495934486389,1,1,1
+PRE 77.jpg,PRE 77,PRE 77,0.9753797054290771,1,1,1
+PRE 78.jpg,PRE 78,SCR 115,0.9869379997253418,1,0,1
+PRE 79.jpg,PRE 79,PRE 79,0.9990823268890381,1,1,1
+PRE 8.jpg,PRE 8,PRE 8,0.9981398582458496,1,1,1
+PRE 80.jpg,PRE 80,PRE 80,0.9999998807907104,1,1,1
+PRE 81.jpg,PRE 81,PRE 81,1.0,1,1,1
+PRE 82.jpg,PRE 82,PRE 82,1.0,1,1,1
+PRE 83.jpg,PRE 83,PRE 83,0.9988548755645752,1,1,1
+PRE 84.jpg,PRE 84,PRE 84,0.9974021911621094,1,1,1
+PRE 85.jpg,PRE 85,PRE 85,0.9723772406578064,1,1,1
+PRE 86.jpg,PRE 86,PRE 86,0.999975323677063,1,1,1
+PRE 87.jpg,PRE 87,PRE 87,0.9999774694442749,1,1,1
+PRE 88.jpg,PRE 88,PRE 88,0.9989326596260071,1,1,1
+PRE 89.jpg,PRE 89,PRE 89,0.9999985694885254,1,1,1
+PRE 9.jpg,PRE 9,PRE 9,0.5746889114379883,0,0,0
+PRE 90.jpg,PRE 90,PRE 90,0.9999951124191284,1,1,1
+PRE 91.jpg,PRE 91,PRE 91,0.9999769926071167,1,1,1
+PRE 92.jpg,PRE 92,PRE 92,0.849686324596405,1,1,1
+PRE 93.jpg,PRE 93,PRE 93,0.9912768602371216,1,1,1
+PRE 94.jpg,PRE 94,PRE 94,0.961712121963501,1,1,1
+PRE 95.jpg,PRE 95,SFA 55,0.9924038052558899,1,0,1
+PRE 96.jpg,PRE 96,PRE 96,0.9999908208847046,1,1,1
+PRE 97.jpg,PRE 97,PRE 97,0.9974587559700012,1,1,1
+PRE 98.jpg,PRE 98,PRE 98,0.999992847442627,1,1,1
+PRE 99.jpg,PRE 99,PRE 99,0.9936512112617493,1,1,1
+SCR 1.jpg,SCR 1,SCR 1,0.9975429773330688,1,1,1
+SCR 10.jpg,SCR 10,SCR 10,0.9993435740470886,1,1,1
+SCR 100.jpg,SCR 100,SCR 100,0.9991825222969055,1,1,1
+SCR 101.jpg,SCR 101,SCR 101,0.9999992847442627,1,1,1
+SCR 102.jpg,SCR 102,SCR 102,0.9991570711135864,1,1,1
+SCR 103.jpg,SCR 103,SCR 103,0.9999970197677612,1,1,1
+SCR 104.jpg,SCR 104,SCR 104,1.0,1,1,1
+SCR 105.jpg,SCR 105,SCR 105,0.9999961853027344,1,1,1
+SCR 106.jpg,SCR 106,SCR 106,0.9999194145202637,1,1,1
+SCR 107.jpg,SCR 107,SCR 107,0.9874013066291809,1,1,1
+SCR 108.jpg,SCR 108,SCR 108,0.9998549222946167,1,1,1
+SCR 109.jpg,SCR 109,SCR 109,1.0,1,1,1
+SCR 11.jpg,SCR 11,SCR 11,0.9890973567962646,1,1,1
+SCR 110.jpg,SCR 110,SCR 110,0.9999493360519409,1,1,1
+SCR 111.jpg,SCR 111,SCR 111,0.9999867677688599,1,1,1
+SCR 112.jpg,SCR 112,SCR 112,0.9999877214431763,1,1,1
+SCR 113.jpg,SCR 113,SCR 113,0.9966615438461304,1,1,1
+SCR 114.jpg,SCR 114,SCR 114,0.9999998807907104,1,1,1
+SCR 115.jpg,SCR 115,SCR 115,0.9927988052368164,1,1,1
+SCR 116.jpg,SCR 116,SCR 116,0.9994391798973083,1,1,1
+SCR 117.jpg,SCR 117,SCR 117,0.9999892711639404,1,1,1
+SCR 118.jpg,SCR 118,SCR 118,0.9623660445213318,1,1,1
+SCR 119.jpg,SCR 119,SCR 119,0.9999799728393555,1,1,1
+SCR 12.jpg,SCR 12,SCR 12,0.7921737432479858,1,1,1
+SCR 120.jpg,SCR 120,SCR 120,0.9999608993530273,1,1,1
+SCR 121.jpg,SCR 121,SCR 121,0.9981499910354614,1,1,1
+SCR 122.jpg,SCR 122,SCR 122,0.9980846643447876,1,1,1
+SCR 123.jpg,SCR 123,SCR 123,0.9999986886978149,1,1,1
+SCR 124.jpg,SCR 124,SCR 124,0.9999991655349731,1,1,1
+SCR 125.jpg,SCR 125,SCR 125,0.9999995231628418,1,1,1
+SCR 126.jpg,SCR 126,SCR 126,0.9956316947937012,1,1,1
+SCR 127.jpg,SCR 127,SCR 127,0.9999995231628418,1,1,1
+SCR 128.jpg,SCR 128,SCR 128,0.9939384460449219,1,1,1
+SCR 129.jpg,SCR 129,SCR 129,0.9989566802978516,1,1,1
+SCR 13.jpg,SCR 13,SCR 13,0.9997220635414124,1,1,1
+SCR 130.jpg,SCR 130,SCR 130,0.9999889135360718,1,1,1
+SCR 131.jpg,SCR 131,PRE 94,0.755416214466095,1,0,1
+SCR 132.jpg,SCR 132,PRE 100,0.8683510422706604,1,0,1
+SCR 133.jpg,SCR 133,SCR 133,0.6140420436859131,0,0,0
+SCR 134.jpg,SCR 134,SCR 134,0.9999910593032837,1,1,1
+SCR 135.jpg,SCR 135,SCR 135,0.6434137225151062,0,0,0
+SCR 136.jpg,SCR 136,SCR 136,0.9979808926582336,1,1,1
+SCR 137.jpg,SCR 137,SCR 137,0.9999198913574219,1,1,1
+SCR 138.jpg,SCR 138,SCR 138,0.997295081615448,1,1,1
+SCR 139.jpg,SCR 139,SCR 139,0.9019944667816162,1,1,1
+SCR 14.jpg,SCR 14,SCR 14,0.5322837233543396,0,0,0
+SCR 140.jpg,SCR 140,SCR 140,0.9942569136619568,1,1,1
+SCR 141.jpg,SCR 141,SCR 141,0.9984222650527954,1,1,1
+SCR 142.jpg,SCR 142,SCR 142,0.5888189673423767,0,0,0
+SCR 143.jpg,SCR 143,SCR 143,0.9994325041770935,1,1,1
+SCR 144.jpg,SCR 144,SCR 144,0.9907638430595398,1,1,1
+SCR 145.jpg,SCR 145,SCR 145,0.9997785687446594,1,1,1
+SCR 146.jpg,SCR 146,SCR 146,1.0,1,1,1
+SCR 147.jpg,SCR 147,SCR 147,0.9917837381362915,1,1,1
+SCR 148.jpg,SCR 148,SCR 148,0.9999996423721313,1,1,1
+SCR 149.jpg,SCR 149,SCR 149,0.9976231455802917,1,1,1
+SCR 15.jpg,SCR 15,SCR 15,0.9990352392196655,1,1,1
+SCR 150.jpg,SCR 150,SCR 150,0.9978748559951782,1,1,1
+SCR 151.jpg,SCR 151,SCR 151,0.9995506405830383,1,1,1
+SCR 152.jpg,SCR 152,SCR 152,0.9950429201126099,1,1,1
+SCR 153.jpg,SCR 153,SCR 153,0.9981493949890137,1,1,1
+SCR 154.jpg,SCR 154,SCR 154,0.9999340772628784,1,1,1
+SCR 155.jpg,SCR 155,SCR 155,1.0,1,1,1
+SCR 156.jpg,SCR 156,SCR 156,0.9999727010726929,1,1,1
+SCR 157.jpg,SCR 157,SCR 157,0.9985175728797913,1,1,1
+SCR 158.jpg,SCR 158,SCR 158,0.997347354888916,1,1,1
+SCR 159.jpg,SCR 159,SCR 159,0.9956156015396118,1,1,1
+SCR 16.jpg,SCR 16,SCR 16,0.9988725781440735,1,1,1
+SCR 160.jpg,SCR 160,SCR 160,0.9996503591537476,1,1,1
+SCR 161.jpg,SCR 161,SCR 161,0.999934196472168,1,1,1
+SCR 162.jpg,SCR 162,SCR 162,0.9999940395355225,1,1,1
+SCR 163.jpg,SCR 163,SCR 163,0.9999973773956299,1,1,1
+SCR 164.jpg,SCR 164,SCR 164,0.9999065399169922,1,1,1
+SCR 165.jpg,SCR 165,SCR 165,0.9999405145645142,1,1,1
+SCR 166.jpg,SCR 166,SCR 166,0.9996869564056396,1,1,1
+SCR 167.jpg,SCR 167,SCR 167,0.9998674392700195,1,1,1
+SCR 168.jpg,SCR 168,SCR 168,0.988104522228241,1,1,1
+SCR 169.jpg,SCR 169,SCR 169,0.9998608827590942,1,1,1
+SCR 17.jpg,SCR 17,SCR 17,0.9999533891677856,1,1,1
+SCR 170.jpg,SCR 170,SCR 170,0.9999586343765259,1,1,1
+SCR 171.jpg,SCR 171,SCR 171,0.9983909130096436,1,1,1
+SCR 172.jpg,SCR 172,SCR 172,0.9999991655349731,1,1,1
+SCR 173.jpg,SCR 173,SCR 173,0.5473200082778931,0,0,0
+SCR 174.jpg,SCR 174,SCR 174,0.999987006187439,1,1,1
+SCR 175.jpg,SCR 175,SCR 175,0.9999995231628418,1,1,1
+SCR 18.jpg,SCR 18,SCR 18,0.8889167904853821,1,1,1
+SCR 19.jpg,SCR 19,SCR 19,0.9994155168533325,1,1,1
+SCR 2.jpg,SCR 2,SCR 2,0.9997269511222839,1,1,1
+SCR 20.jpg,SCR 20,SCR 20,0.9997547268867493,1,1,1
+SCR 21.jpg,SCR 21,SCR 21,0.99962317943573,1,1,1
+SCR 22.jpg,SCR 22,SCR 22,0.9999052286148071,1,1,1
+SCR 23.jpg,SCR 23,SCR 23,0.9874310493469238,1,1,1
+SCR 24.jpg,SCR 24,SCR 24,0.9999992847442627,1,1,1
+SCR 25.jpg,SCR 25,SCR 25,0.9994691014289856,1,1,1
+SCR 26.jpg,SCR 26,SCR 26,0.9999605417251587,1,1,1
+SCR 27.jpg,SCR 27,SCR 27,0.9531470537185669,1,1,1
+SCR 28.jpg,SCR 28,SCR 28,0.9997671246528625,1,1,1
+SCR 29.jpg,SCR 29,SCR 29,0.999790608882904,1,1,1
+SCR 3.jpg,SCR 3,SCR 3,0.9996614456176758,1,1,1
+SCR 30.jpg,SCR 30,SCR 30,0.5123990178108215,0,0,0
+SCR 31.jpg,SCR 31,SCR 31,0.9967799782752991,1,1,1
+SCR 32.jpg,SCR 32,SCR 32,0.9974700212478638,1,1,1
+SCR 33.jpg,SCR 33,SCR 33,0.9962159991264343,1,1,1
+SCR 34.jpg,SCR 34,SCR 34,0.9997269511222839,1,1,1
+SCR 35.jpg,SCR 35,SCR 35,0.9996871948242188,1,1,1
+SCR 36.jpg,SCR 36,SCR 36,0.9999994039535522,1,1,1
+SCR 37.jpg,SCR 37,SCR 37,0.9731125831604004,1,1,1
+SCR 38.jpg,SCR 38,SCR 38,0.9997758269309998,1,1,1
+SCR 39.jpg,SCR 39,SCR 39,0.9868952631950378,1,1,1
+SCR 4.jpg,SCR 4,SCR 4,0.9823154807090759,1,1,1
+SCR 40.jpg,SCR 40,SCR 40,0.9996873140335083,1,1,1
+SCR 41.jpg,SCR 41,SCR 41,0.9999978542327881,1,1,1
+SCR 42.jpg,SCR 42,SCR 42,0.9724676609039307,1,1,1
+SCR 43.jpg,SCR 43,SCR 43,0.9999591112136841,1,1,1
+SCR 44.jpg,SCR 44,SCR 44,0.9999370574951172,1,1,1
+SCR 45.jpg,SCR 45,SCR 45,0.9999880790710449,1,1,1
+SCR 46.jpg,SCR 46,SCR 46,0.991024374961853,1,1,1
+SCR 47.jpg,SCR 47,SCR 47,0.9999774694442749,1,1,1
+SCR 48.jpg,SCR 48,SCR 48,0.745209813117981,1,1,1
+SCR 49.jpg,SCR 49,SCR 49,0.9998977184295654,1,1,1
+SCR 5.jpg,SCR 5,SCR 5,0.9931256771087646,1,1,1
+SCR 50.jpg,SCR 50,SCR 50,0.9905093908309937,1,1,1
+SCR 51.jpg,SCR 51,SCR 51,0.985538125038147,1,1,1
+SCR 52.jpg,SCR 52,SCR 52,0.989163875579834,1,1,1
+SCR 53.jpg,SCR 53,SCR 53,0.9994944334030151,1,1,1
+SCR 54.jpg,SCR 54,SCR 54,0.9985658526420593,1,1,1
+SCR 55.jpg,SCR 55,SCR 55,0.9994277358055115,1,1,1
+SCR 56.jpg,SCR 56,SCR 56,0.995049774646759,1,1,1
+SCR 57.jpg,SCR 57,SCR 57,0.9939289093017578,1,1,1
+SCR 58.jpg,SCR 58,SCR 58,0.9756494760513306,1,1,1
+SCR 59.jpg,SCR 59,SCR 59,0.9999978542327881,1,1,1
+SCR 6.jpg,SCR 6,SCR 6,0.9999949932098389,1,1,1
+SCR 60.jpg,SCR 60,SCR 60,0.9998847246170044,1,1,1
+SCR 61.jpg,SCR 61,SCR 61,0.9922917485237122,1,1,1
+SCR 62.jpg,SCR 62,SCR 62,0.9991210103034973,1,1,1
+SCR 63.jpg,SCR 63,SCR 63,0.9942008256912231,1,1,1
+SCR 64.jpg,SCR 64,SCR 64,0.984476625919342,1,1,1
+SCR 65.jpg,SCR 65,SCR 65,0.957632839679718,1,1,1
+SCR 66.jpg,SCR 66,SCR 66,0.9950153231620789,1,1,1
+SCR 67.jpg,SCR 67,SCR 67,0.9999747276306152,1,1,1
+SCR 68.jpg,SCR 68,SCR 68,0.99250328540802,1,1,1
+SCR 69.jpg,SCR 69,SCR 69,0.9921906590461731,1,1,1
+SCR 7.jpg,SCR 7,SCR 7,0.9550026655197144,1,1,1
+SCR 70.jpg,SCR 70,SCR 70,0.9998584985733032,1,1,1
+SCR 71.jpg,SCR 71,SCR 71,0.9118850827217102,1,1,1
+SCR 72.jpg,SCR 72,SCR 72,0.9999463558197021,1,1,1
+SCR 73.jpg,SCR 73,SCR 73,0.999262273311615,1,1,1
+SCR 74.jpg,SCR 74,SCR 74,0.9987830519676208,1,1,1
+SCR 75.jpg,SCR 75,SCR 75,0.9999227523803711,1,1,1
+SCR 76.jpg,SCR 76,SCR 76,0.9988445043563843,1,1,1
+SCR 77.jpg,SCR 77,SCR 77,0.9999954700469971,1,1,1
+SCR 78.jpg,SCR 78,SCR 78,0.9971760511398315,1,1,1
+SCR 79.jpg,SCR 79,SCR 79,0.9980301260948181,1,1,1
+SCR 8.jpg,SCR 8,SCR 8,0.9999868869781494,1,1,1
+SCR 80.jpg,SCR 80,SCR 80,0.9999982118606567,1,1,1
+SCR 81.jpg,SCR 81,SCR 81,0.9999918937683105,1,1,1
+SCR 82.jpg,SCR 82,SCR 82,0.9999997615814209,1,1,1
+SCR 83.jpg,SCR 83,SCR 83,0.9995269775390625,1,1,1
+SCR 84.jpg,SCR 84,SCR 84,0.9939883947372437,1,1,1
+SCR 85.jpg,SCR 85,SCR 85,0.9775225520133972,1,1,1
+SCR 86.jpg,SCR 86,SCR 86,0.9784441590309143,1,1,1
+SCR 87.jpg,SCR 87,SCR 87,0.9953033924102783,1,1,1
+SCR 88.jpg,SCR 88,SCR 88,0.9998395442962646,1,1,1
+SCR 89.jpg,SCR 89,SCR 89,0.9792671203613281,1,1,1
+SCR 9.jpg,SCR 9,SCR 9,0.9902688264846802,1,1,1
+SCR 90.jpg,SCR 90,SCR 90,0.9999624490737915,1,1,1
+SCR 91.jpg,SCR 91,SCR 91,0.6385042071342468,0,0,0
+SCR 92.jpg,SCR 92,SCR 92,0.5633853077888489,0,0,0
+SCR 93.jpg,SCR 93,SCR 93,0.9999998807907104,1,1,1
+SCR 94.jpg,SCR 94,SCR 94,0.7014362215995789,1,1,1
+SCR 95.jpg,SCR 95,SCR 95,0.9953892230987549,1,1,1
+SCR 96.jpg,SCR 96,SCR 96,0.999954104423523,1,1,1
+SCR 97.jpg,SCR 97,SCR 97,0.999990701675415,1,1,1
+SCR 98.jpg,SCR 98,SCR 98,0.9994922876358032,1,1,1
+SCR 99.jpg,SCR 99,SCR 99,0.9953741431236267,1,1,1
+SFA 1.jpg,SFA 1,SFA 1,0.9991355538368225,1,1,1
+SFA 10.jpg,SFA 10,SFA 10,0.9885749220848083,1,1,1
+SFA 11.jpg,SFA 11,SFA 11,0.9999935626983643,1,1,1
+SFA 12.jpg,SFA 12,SFA 12,0.9999850988388062,1,1,1
+SFA 13.jpg,SFA 13,SFA 13,0.9999986886978149,1,1,1
+SFA 14.jpg,SFA 14,SFA 14,0.9900151491165161,1,1,1
+SFA 15.jpg,SFA 15,SFA 15,0.9999986886978149,1,1,1
+SFA 16.jpg,SFA 16,SFA 16,1.0,1,1,1
+SFA 17.jpg,SFA 17,SFA 17,0.9999971389770508,1,1,1
+SFA 18.jpg,SFA 18,SFA 18,0.9690762758255005,1,1,1
+SFA 19.jpg,SFA 19,SFA 19,0.9727579355239868,1,1,1
+SFA 2.jpg,SFA 2,SFA 2,0.9999567270278931,1,1,1
+SFA 20.jpg,SFA 20,SFA 20,0.9995357990264893,1,1,1
+SFA 21.jpg,SFA 21,SFA 21,0.9999693632125854,1,1,1
+SFA 22.jpg,SFA 22,SFA 22,0.9999874830245972,1,1,1
+SFA 23.jpg,SFA 23,SFA 23,0.985194742679596,1,1,1
+SFA 24.jpg,SFA 24,SFA 24,0.9996961355209351,1,1,1
+SFA 25.jpg,SFA 25,PRE 54,0.9620921015739441,1,0,1
+SFA 26.jpg,SFA 26,SFA 26,0.9420986175537109,1,1,1
+SFA 27.jpg,SFA 27,SFA 27,0.9998629093170166,1,1,1
+SFA 28.jpg,SFA 28,SFA 28,0.9998998641967773,1,1,1
+SFA 29.jpg,SFA 29,SFA 29,0.9993709921836853,1,1,1
+SFA 3.jpg,SFA 3,SFA 3,0.999396800994873,1,1,1
+SFA 30.jpg,SFA 30,SFA 30,0.8896176815032959,1,1,1
+SFA 31.jpg,SFA 31,SFA 31,0.999904990196228,1,1,1
+SFA 32.jpg,SFA 32,SFA 32,0.9999998807907104,1,1,1
+SFA 33.jpg,SFA 33,SFA 33,0.9997401833534241,1,1,1
+SFA 34.jpg,SFA 34,SFA 34,0.9990230798721313,1,1,1
+SFA 35.jpg,SFA 35,SFA 35,0.9999861717224121,1,1,1
+SFA 36.jpg,SFA 36,SFA 36,0.9999994039535522,1,1,1
+SFA 37.jpg,SFA 37,SFA 37,0.9999979734420776,1,1,1
+SFA 38.jpg,SFA 38,SFA 38,0.9999990463256836,1,1,1
+SFA 39.jpg,SFA 39,SFA 39,0.9999916553497314,1,1,1
+SFA 4.jpg,SFA 4,SFA 4,0.9998923540115356,1,1,1
+SFA 40.jpg,SFA 40,SFA 40,0.9999998807907104,1,1,1
+SFA 41.jpg,SFA 41,SFA 41,0.9977891445159912,1,1,1
+SFA 42.jpg,SFA 42,SFA 42,0.9998939037322998,1,1,1
+SFA 43.jpg,SFA 43,SFA 43,0.9999997615814209,1,1,1
+SFA 44.jpg,SFA 44,SFA 44,0.9994822144508362,1,1,1
+SFA 45.jpg,SFA 45,SFA 45,0.9999997615814209,1,1,1
+SFA 46.jpg,SFA 46,SFA 46,0.9985499978065491,1,1,1
+SFA 47.jpg,SFA 47,SFA 47,0.9991950392723083,1,1,1
+SFA 48.jpg,SFA 48,SFA 48,0.9999974966049194,1,1,1
+SFA 49.jpg,SFA 49,SFA 49,0.9793201684951782,1,1,1
+SFA 5.jpg,SFA 5,SFA 5,0.9997614026069641,1,1,1
+SFA 50.jpg,SFA 50,SFA 50,0.994202196598053,1,1,1
+SFA 51.jpg,SFA 51,SFA 51,0.9975453019142151,1,1,1
+SFA 52.jpg,SFA 52,SFA 52,0.97440105676651,1,1,1
+SFA 53.jpg,SFA 53,SFA 53,1.0,1,1,1
+SFA 54.jpg,SFA 54,SFA 54,0.8492022752761841,1,1,1
+SFA 55.jpg,SFA 55,SFA 55,0.9999034404754639,1,1,1
+SFA 56.jpg,SFA 56,SFA 56,0.9999430179595947,1,1,1
+SFA 57.jpg,SFA 57,SFA 57,1.0,1,1,1
+SFA 58.jpg,SFA 58,SFA 58,0.5917597413063049,0,0,0
+SFA 59.jpg,SFA 59,SFA 59,0.9991912245750427,1,1,1
+SFA 6.jpg,SFA 6,SFA 6,0.9642341732978821,1,1,1
+SFA 60.jpg,SFA 60,SFA 60,0.8976158499717712,1,1,1
+SFA 61.jpg,SFA 61,SFA 61,0.9999998807907104,1,1,1
+SFA 62.jpg,SFA 62,SFA 62,0.8931307196617126,1,1,1
+SFA 63.jpg,SFA 63,SFA 63,0.999971866607666,1,1,1
+SFA 64.jpg,SFA 64,SFA 64,0.9999873638153076,1,1,1
+SFA 65.jpg,SFA 65,SFA 65,0.9999998807907104,1,1,1
+SFA 66.jpg,SFA 66,SFA 66,0.9999915361404419,1,1,1
+SFA 67.jpg,SFA 67,SFA 67,0.9990575909614563,1,1,1
+SFA 68.jpg,SFA 68,SFA 68,1.0,1,1,1
+SFA 69.jpg,SFA 69,SFA 69,1.0,1,1,1
+SFA 7.jpg,SFA 7,SFA 7,0.9996843338012695,1,1,1
+SFA 70.jpg,SFA 70,SFA 70,0.9985390901565552,1,1,1
+SFA 71.jpg,SFA 71,SFA 71,0.9829410910606384,1,1,1
+SFA 72.jpg,SFA 72,SFA 72,1.0,1,1,1
+SFA 73.jpg,SFA 73,SFA 73,0.9999984502792358,1,1,1
+SFA 74.jpg,SFA 74,SFA 74,0.9999997615814209,1,1,1
+SFA 75.jpg,SFA 75,SFA 75,1.0,1,1,1
+SFA 76.jpg,SFA 76,SFA 76,1.0,1,1,1
+SFA 77.jpg,SFA 77,SFA 77,1.0,1,1,1
+SFA 78.jpg,SFA 78,SFA 78,1.0,1,1,1
+SFA 79.jpg,SFA 79,SFA 79,1.0,1,1,1
+SFA 8.jpg,SFA 8,SFA 8,0.9997110962867737,1,1,1
+SFA 80.jpg,SFA 80,SFA 80,0.9994614720344543,1,1,1
+SFA 81.jpg,SFA 81,SFA 81,0.9999992847442627,1,1,1
+SFA 82.jpg,SFA 82,SFA 82,1.0,1,1,1
+SFA 83.jpg,SFA 83,SFA 83,1.0,1,1,1
+SFA 84.jpg,SFA 84,SFA 84,0.9999997615814209,1,1,1
+SFA 85.jpg,SFA 85,SFA 85,0.998387336730957,1,1,1
+SFA 86.jpg,SFA 86,SFA 86,1.0,1,1,1
+SFA 87.jpg,SFA 87,SFA 87,1.0,1,1,1
+SFA 88.jpg,SFA 88,SFA 88,0.9998098015785217,1,1,1
+SFA 89.jpg,SFA 89,SFA 89,0.9999998807907104,1,1,1
+SFA 9.jpg,SFA 9,SFA 9,1.0,1,1,1
+SFA 90.jpg,SFA 90,SFA 90,1.0,1,1,1
+SFA 91.jpg,SFA 91,SFA 91,1.0,1,1,1
+SFA 92.jpg,SFA 92,SFA 92,1.0,1,1,1
+SFA 93.jpg,SFA 93,SFA 93,1.0,1,1,1
+SFA 94.jpg,SFA 94,SFA 94,0.999991774559021,1,1,1
+SFA 95.jpg,SFA 95,SFA 95,0.9967592358589172,1,1,1
+SFA 96.jpg,SFA 96,SFA 96,0.999778687953949,1,1,1
+SFA 97.jpg,SFA 97,SFA 97,0.9999823570251465,1,1,1
+SFA 98.jpg,SFA 98,SFA 98,1.0,1,1,1
+SFA 99.jpg,SFA 99,SFA 99,0.9996432065963745,1,1,1
+SSP 1.jpg,SSP 1,SSP 1,0.988889217376709,1,1,1
+SSP 10.jpg,SSP 10,SSP 10,0.9999918937683105,1,1,1
+SSP 100.jpg,SSP 100,SSP 100,0.9989773035049438,1,1,1
+SSP 101.jpg,SSP 101,SSP 101,0.9999995231628418,1,1,1
+SSP 102.jpg,SSP 102,SSP 102,0.989544689655304,1,1,1
+SSP 103.jpg,SSP 103,SSP 103,0.9994534850120544,1,1,1
+SSP 104.jpg,SSP 104,SSP 104,0.9998955726623535,1,1,1
+SSP 105.jpg,SSP 105,SSP 105,0.9399795532226562,1,1,1
+SSP 106.jpg,SSP 106,SSP 106,1.0,1,1,1
+SSP 107.jpg,SSP 107,SSP 107,0.9977391958236694,1,1,1
+SSP 108.jpg,SSP 108,SSP 108,0.9986394047737122,1,1,1
+SSP 109.jpg,SSP 109,SSP 109,0.9999698400497437,1,1,1
+SSP 11.jpg,SSP 11,SSP 11,0.9999111890792847,1,1,1
+SSP 110.jpg,SSP 110,SSP 110,0.9999754428863525,1,1,1
+SSP 111.jpg,SSP 111,SSP 111,0.9999779462814331,1,1,1
+SSP 112.jpg,SSP 112,SSP 112,0.999997615814209,1,1,1
+SSP 113.jpg,SSP 113,SSP 113,0.999976396560669,1,1,1
+SSP 114.jpg,SSP 114,SSP 114,0.9998699426651001,1,1,1
+SSP 115.jpg,SSP 115,SSP 115,0.9993497729301453,1,1,1
+SSP 116.jpg,SSP 116,SSP 116,0.9999995231628418,1,1,1
+SSP 117.jpg,SSP 117,SSP 117,0.9998852014541626,1,1,1
+SSP 118.jpg,SSP 118,SSP 118,0.9996495246887207,1,1,1
+SSP 119.jpg,SSP 119,SSP 119,0.9999958276748657,1,1,1
+SSP 12.jpg,SSP 12,SSP 12,0.9993849992752075,1,1,1
+SSP 120.jpg,SSP 120,SSP 120,0.6761751174926758,0,0,0
+SSP 121.jpg,SSP 121,SSP 121,0.9999977350234985,1,1,1
+SSP 122.jpg,SSP 122,SSP 122,0.9999687671661377,1,1,1
+SSP 123.jpg,SSP 123,SSP 123,0.9999370574951172,1,1,1
+SSP 124.jpg,SSP 124,SSP 124,0.9991379976272583,1,1,1
+SSP 125.jpg,SSP 125,SSP 125,0.9999953508377075,1,1,1
+SSP 126.jpg,SSP 126,SSP 126,0.9999257326126099,1,1,1
+SSP 127.jpg,SSP 127,SSP 127,0.9992033839225769,1,1,1
+SSP 128.jpg,SSP 128,SSP 128,0.9999938011169434,1,1,1
+SSP 129.jpg,SSP 129,SSP 129,0.9999998807907104,1,1,1
+SSP 13.jpg,SSP 13,SSP 13,0.9080199599266052,1,1,1
+SSP 130.jpg,SSP 130,SSP 130,0.9997190833091736,1,1,1
+SSP 131.jpg,SSP 131,SSP 131,0.9998181462287903,1,1,1
+SSP 132.jpg,SSP 132,SSP 132,0.9997501969337463,1,1,1
+SSP 133.jpg,SSP 133,SSP 133,0.9995611310005188,1,1,1
+SSP 134.jpg,SSP 134,SSP 134,0.9976949095726013,1,1,1
+SSP 135.jpg,SSP 135,SSP 135,0.9999990463256836,1,1,1
+SSP 136.jpg,SSP 136,SSP 136,0.9999834299087524,1,1,1
+SSP 137.jpg,SSP 137,SSP 137,0.9993842840194702,1,1,1
+SSP 138.jpg,SSP 138,SSP 138,0.9998500347137451,1,1,1
+SSP 139.jpg,SSP 139,SSP 139,0.9953837990760803,1,1,1
+SSP 14.jpg,SSP 14,SSP 14,0.9999785423278809,1,1,1
+SSP 140.jpg,SSP 140,SSP 140,0.9936733245849609,1,1,1
+SSP 141.jpg,SSP 141,SSP 141,0.9996817111968994,1,1,1
+SSP 142.jpg,SSP 142,SSP 142,0.9999977350234985,1,1,1
+SSP 143.jpg,SSP 143,SSP 143,0.8539602756500244,1,1,1
+SSP 144.jpg,SSP 144,SSP 144,0.9959512948989868,1,1,1
+SSP 145.jpg,SSP 145,SSP 145,0.9396417140960693,1,1,1
+SSP 146.jpg,SSP 146,SSP 146,0.9938670992851257,1,1,1
+SSP 147.jpg,SSP 147,SSP 147,0.9999791383743286,1,1,1
+SSP 148.jpg,SSP 148,SSP 148,0.9824544787406921,1,1,1
+SSP 149.jpg,SSP 149,SSP 149,0.998289167881012,1,1,1
+SSP 15.jpg,SSP 15,SSP 15,1.0,1,1,1
+SSP 150.jpg,SSP 150,SSP 150,0.8673884868621826,1,1,1
+SSP 151.jpg,SSP 151,SSP 151,0.999962568283081,1,1,1
+SSP 152.jpg,SSP 152,SSP 152,0.999932050704956,1,1,1
+SSP 153.jpg,SSP 153,SSP 153,0.9996706247329712,1,1,1
+SSP 154.jpg,SSP 154,SSP 154,0.9951391220092773,1,1,1
+SSP 155.jpg,SSP 155,SSP 155,0.9998134970664978,1,1,1
+SSP 156.jpg,SSP 156,SSP 156,0.9999871253967285,1,1,1
+SSP 157.jpg,SSP 157,SSP 157,0.9998947381973267,1,1,1
+SSP 158.jpg,SSP 158,SSP 158,0.9999271631240845,1,1,1
+SSP 159.jpg,SSP 159,SSP 159,0.9999946355819702,1,1,1
+SSP 16.jpg,SSP 16,JTG 66,0.7346277832984924,1,0,1
+SSP 160.jpg,SSP 160,SSP 160,0.9999891519546509,1,1,1
+SSP 161.jpg,SSP 161,SSP 161,0.999998927116394,1,1,1
+SSP 162.jpg,SSP 162,PRE 116,0.5565009713172913,0,0,0
+SSP 163.jpg,SSP 163,SSP 163,0.9862352013587952,1,1,1
+SSP 164.jpg,SSP 164,SSP 164,0.6164115071296692,0,0,0
+SSP 165.jpg,SSP 165,SSP 165,0.9972846508026123,1,1,1
+SSP 166.jpg,SSP 166,SSP 166,0.9749456644058228,1,1,1
+SSP 167.jpg,SSP 167,SSP 167,0.9984866380691528,1,1,1
+SSP 168.jpg,SSP 168,SSP 168,0.9996968507766724,1,1,1
+SSP 169.jpg,SSP 169,SSP 169,1.0,1,1,1
+SSP 17.jpg,SSP 17,SSP 17,0.9997275471687317,1,1,1
+SSP 170.jpg,SSP 170,SSP 170,0.9998983144760132,1,1,1
+SSP 171.jpg,SSP 171,SSP 171,0.999897837638855,1,1,1
+SSP 172.jpg,SSP 172,SSP 172,0.9851638078689575,1,1,1
+SSP 173.jpg,SSP 173,SSP 173,0.9999799728393555,1,1,1
+SSP 174.jpg,SSP 174,SSP 174,0.999756395816803,1,1,1
+SSP 175.jpg,SSP 175,SSP 175,1.0,1,1,1
+SSP 176.jpg,SSP 176,SSP 176,0.9349191784858704,1,1,1
+SSP 177.jpg,SSP 177,SSP 177,0.999650239944458,1,1,1
+SSP 178.jpg,SSP 178,SSP 178,0.9407501816749573,1,1,1
+SSP 179.jpg,SSP 179,SSP 179,0.9810211658477783,1,1,1
+SSP 18.jpg,SSP 18,SSP 18,0.9999970197677612,1,1,1
+SSP 180.jpg,SSP 180,SSP 180,0.998578667640686,1,1,1
+SSP 181.jpg,SSP 181,SSP 181,0.999976634979248,1,1,1
+SSP 182.jpg,SSP 182,SSP 182,0.8373736143112183,1,1,1
+SSP 183.jpg,SSP 183,SSP 183,0.9571195244789124,1,1,1
+SSP 184.jpg,SSP 184,SSP 184,0.8812501430511475,1,1,1
+SSP 185.jpg,SSP 185,SSP 185,0.9998319149017334,1,1,1
+SSP 186.jpg,SSP 186,SSP 186,0.6728823781013489,0,0,0
+SSP 187.jpg,SSP 187,SSP 187,0.9992389678955078,1,1,1
+SSP 188.jpg,SSP 188,SSP 188,0.9988007545471191,1,1,1
+SSP 189.jpg,SSP 189,SSP 189,0.999568521976471,1,1,1
+SSP 19.jpg,SSP 19,SSP 19,0.8859802484512329,1,1,1
+SSP 190.jpg,SSP 190,SSP 190,0.9996960163116455,1,1,1
+SSP 191.jpg,SSP 191,SSP 191,0.9999951124191284,1,1,1
+SSP 192.jpg,SSP 192,SSP 192,0.9991258978843689,1,1,1
+SSP 193.jpg,SSP 193,SSP 193,0.9999783039093018,1,1,1
+SSP 194.jpg,SSP 194,SSP 194,1.0,1,1,1
+SSP 195.jpg,SSP 195,SSP 195,0.9999438524246216,1,1,1
+SSP 196.jpg,SSP 196,SSP 196,1.0,1,1,1
+SSP 197.jpg,SSP 197,SSP 197,1.0,1,1,1
+SSP 198.jpg,SSP 198,SSP 198,0.9999810457229614,1,1,1
+SSP 199.jpg,SSP 199,SSP 199,0.9972643852233887,1,1,1
+SSP 2.jpg,SSP 2,SSP 2,0.9998568296432495,1,1,1
+SSP 20.jpg,SSP 20,SSP 20,0.9999593496322632,1,1,1
+SSP 200.jpg,SSP 200,SSP 200,0.999876856803894,1,1,1
+SSP 201.jpg,SSP 201,SSP 201,0.9495911002159119,1,1,1
+SSP 202.jpg,SSP 202,SSP 202,0.9999963045120239,1,1,1
+SSP 203.jpg,SSP 203,SSP 203,0.9988272786140442,1,1,1
+SSP 204.jpg,SSP 204,SSP 204,1.0,1,1,1
+SSP 205.jpg,SSP 205,SSP 205,0.9997020363807678,1,1,1
+SSP 206.jpg,SSP 206,SSP 206,1.0,1,1,1
+SSP 207.jpg,SSP 207,SSP 207,0.9999992847442627,1,1,1
+SSP 208.jpg,SSP 208,SSP 208,0.9999972581863403,1,1,1
+SSP 209.jpg,SSP 209,SSP 209,0.9999837875366211,1,1,1
+SSP 21.jpg,SSP 21,SSP 21,0.9997691512107849,1,1,1
+SSP 210.jpg,SSP 210,SSP 210,0.9993880987167358,1,1,1
+SSP 211.jpg,SSP 211,SSP 211,0.999715268611908,1,1,1
+SSP 212.jpg,SSP 212,SSP 212,0.9997249245643616,1,1,1
+SSP 213.jpg,SSP 213,SSP 213,0.9999985694885254,1,1,1
+SSP 214.jpg,SSP 214,SSP 214,0.9491154551506042,1,1,1
+SSP 215.jpg,SSP 215,SSP 215,0.9998750686645508,1,1,1
+SSP 216.jpg,SSP 216,SSP 216,1.0,1,1,1
+SSP 217.jpg,SSP 217,SSP 217,0.9997407793998718,1,1,1
+SSP 218.jpg,SSP 218,SSP 218,0.9998456239700317,1,1,1
+SSP 219.jpg,SSP 219,SSP 219,0.9999997615814209,1,1,1
+SSP 22.jpg,SSP 22,SSP 22,0.9980192184448242,1,1,1
+SSP 220.jpg,SSP 220,SSP 220,0.9995940327644348,1,1,1
+SSP 221.jpg,SSP 221,SSP 221,0.9997228980064392,1,1,1
+SSP 222.jpg,SSP 222,SSP 222,0.9960516095161438,1,1,1
+SSP 223.jpg,SSP 223,SSP 223,0.9998346567153931,1,1,1
+SSP 224.jpg,SSP 224,SSP 224,0.9990205764770508,1,1,1
+SSP 225.jpg,SSP 225,SSP 225,0.9998487234115601,1,1,1
+SSP 226.jpg,SSP 226,SSP 226,0.9977042078971863,1,1,1
+SSP 227.jpg,SSP 227,SSP 227,1.0,1,1,1
+SSP 228.jpg,SSP 228,SSP 228,0.9999229907989502,1,1,1
+SSP 229.jpg,SSP 229,SSP 229,0.9999992847442627,1,1,1
+SSP 23.jpg,SSP 23,SSP 23,0.9999997615814209,1,1,1
+SSP 230.jpg,SSP 230,SSP 230,1.0,1,1,1
+SSP 231.jpg,SSP 231,SSP 231,0.9999998807907104,1,1,1
+SSP 232.jpg,SSP 232,SSP 232,0.9999996423721313,1,1,1
+SSP 233.jpg,SSP 233,SSP 233,0.9990994930267334,1,1,1
+SSP 234.jpg,SSP 234,SSP 234,0.9986984729766846,1,1,1
+SSP 235.jpg,SSP 235,SSP 235,0.9999991655349731,1,1,1
+SSP 236.jpg,SSP 236,SSP 236,0.9999884366989136,1,1,1
+SSP 237.jpg,SSP 237,SSP 237,0.9998877048492432,1,1,1
+SSP 238.jpg,SSP 238,SSP 238,0.9987792372703552,1,1,1
+SSP 239.jpg,SSP 239,SSP 239,0.9999980926513672,1,1,1
+SSP 24.jpg,SSP 24,SSP 24,0.9999841451644897,1,1,1
+SSP 240.jpg,SSP 240,SSP 240,0.9999897480010986,1,1,1
+SSP 241.jpg,SSP 241,SSP 241,0.9999996423721313,1,1,1
+SSP 242.jpg,SSP 242,SSP 242,0.9999654293060303,1,1,1
+SSP 243.jpg,SSP 243,SSP 243,0.9999020099639893,1,1,1
+SSP 244.jpg,SSP 244,SSP 244,0.9999998807907104,1,1,1
+SSP 245.jpg,SSP 245,SSP 245,0.9998514652252197,1,1,1
+SSP 246.jpg,SSP 246,SSP 246,0.9997904896736145,1,1,1
+SSP 247.jpg,SSP 247,SSP 247,0.999993085861206,1,1,1
+SSP 248.jpg,SSP 248,SSP 248,0.9887552857398987,1,1,1
+SSP 249.jpg,SSP 249,SSP 249,1.0,1,1,1
+SSP 25.jpg,SSP 25,SSP 25,0.9996232986450195,1,1,1
+SSP 250.jpg,SSP 250,SSP 250,1.0,1,1,1
+SSP 251.jpg,SSP 251,SSP 251,0.9970430731773376,1,1,1
+SSP 252.jpg,SSP 252,SSP 252,1.0,1,1,1
+SSP 26.jpg,SSP 26,SSP 26,0.9924184083938599,1,1,1
+SSP 27.jpg,SSP 27,SSP 27,0.9998915195465088,1,1,1
+SSP 28.jpg,SSP 28,SSP 28,0.9798954725265503,1,1,1
+SSP 29.jpg,SSP 29,SSP 29,0.999942421913147,1,1,1
+SSP 3.jpg,SSP 3,SSP 3,0.9441186785697937,1,1,1
+SSP 30.jpg,SSP 30,SSP 30,0.9889839291572571,1,1,1
+SSP 31.jpg,SSP 31,SSP 31,0.9994798302650452,1,1,1
+SSP 32.jpg,SSP 32,SSP 32,0.9999985694885254,1,1,1
+SSP 33.jpg,SSP 33,SSP 33,0.9999970197677612,1,1,1
+SSP 34.jpg,SSP 34,SSP 34,0.999537467956543,1,1,1
+SSP 35.jpg,SSP 35,SSP 35,0.9999946355819702,1,1,1
+SSP 36.jpg,SSP 36,SSP 36,0.9999998807907104,1,1,1
+SSP 37.jpg,SSP 37,SSP 37,0.991557240486145,1,1,1
+SSP 38.jpg,SSP 38,SSP 38,0.9938527345657349,1,1,1
+SSP 39.jpg,SSP 39,SSP 39,0.9999691247940063,1,1,1
+SSP 4.jpg,SSP 4,SSP 4,0.9999754428863525,1,1,1
+SSP 40.jpg,SSP 40,SSP 40,0.999991774559021,1,1,1
+SSP 41.jpg,SSP 41,SSP 41,0.9794948101043701,1,1,1
+SSP 42.jpg,SSP 42,SSP 42,0.9999971389770508,1,1,1
+SSP 43.jpg,SSP 43,SSP 43,0.9999818801879883,1,1,1
+SSP 44.jpg,SSP 44,SSP 44,0.9964742064476013,1,1,1
+SSP 45.jpg,SSP 45,SSP 45,1.0,1,1,1
+SSP 46.jpg,SSP 46,SSP 46,0.8687843680381775,1,1,1
+SSP 47.jpg,SSP 47,SSP 47,0.9972701668739319,1,1,1
+SSP 48.jpg,SSP 48,SSP 48,1.0,1,1,1
+SSP 49.jpg,SSP 49,SSP 49,0.9998010993003845,1,1,1
+SSP 5.jpg,SSP 5,SSP 5,0.9997087121009827,1,1,1
+SSP 50.jpg,SSP 50,SSP 50,0.9999972581863403,1,1,1
+SSP 51.jpg,SSP 51,SSP 51,0.9978926777839661,1,1,1
+SSP 52.jpg,SSP 52,SSP 52,0.999718964099884,1,1,1
+SSP 53.jpg,SSP 53,SSP 53,0.9999998807907104,1,1,1
+SSP 54.jpg,SSP 54,SSP 54,0.9999902248382568,1,1,1
+SSP 55.jpg,SSP 55,SSP 55,0.9999514818191528,1,1,1
+SSP 56.jpg,SSP 56,SSP 56,0.9974460601806641,1,1,1
+SSP 57.jpg,SSP 57,SSP 57,0.9995765089988708,1,1,1
+SSP 58.jpg,SSP 58,SSP 58,0.9903097748756409,1,1,1
+SSP 59.jpg,SSP 59,SSP 59,0.9996722936630249,1,1,1
+SSP 6.jpg,SSP 6,SSP 6,1.0,1,1,1
+SSP 60.jpg,SSP 60,SSP 60,0.9998331069946289,1,1,1
+SSP 61.jpg,SSP 61,SSP 61,0.9327324628829956,1,1,1
+SSP 62.jpg,SSP 62,SSP 62,0.9999407529830933,1,1,1
+SSP 63.jpg,SSP 63,SSP 63,0.9991531372070312,1,1,1
+SSP 64.jpg,SSP 64,SSP 64,0.9999167919158936,1,1,1
+SSP 65.jpg,SSP 65,SSP 65,0.9984877109527588,1,1,1
+SSP 66.jpg,SSP 66,SSP 66,0.9998199343681335,1,1,1
+SSP 67.jpg,SSP 67,SSP 67,0.9996576309204102,1,1,1
+SSP 68.jpg,SSP 68,SSP 68,0.9999936819076538,1,1,1
+SSP 69.jpg,SSP 69,SSP 69,0.9894202947616577,1,1,1
+SSP 7.jpg,SSP 7,SSP 7,0.9998779296875,1,1,1
+SSP 70.jpg,SSP 70,SSP 70,0.9969757795333862,1,1,1
+SSP 71.jpg,SSP 71,SSP 71,0.8263360261917114,1,1,1
+SSP 72.jpg,SSP 72,SSP 72,0.9977414608001709,1,1,1
+SSP 73.jpg,SSP 73,SSP 73,0.9999173879623413,1,1,1
+SSP 74.jpg,SSP 74,SSP 74,0.9962533712387085,1,1,1
+SSP 75.jpg,SSP 75,SSP 75,0.9988549947738647,1,1,1
+SSP 76.jpg,SSP 76,SSP 76,0.9999691247940063,1,1,1
+SSP 77.jpg,SSP 77,SSP 77,0.9999871253967285,1,1,1
+SSP 78.jpg,SSP 78,SSP 78,0.9879865050315857,1,1,1
+SSP 79.jpg,SSP 79,SSP 79,0.9999032020568848,1,1,1
+SSP 8.jpg,SSP 8,SSP 8,0.999927282333374,1,1,1
+SSP 80.jpg,SSP 80,SSP 80,0.9998880624771118,1,1,1
+SSP 81.jpg,SSP 81,SSP 81,0.9999833106994629,1,1,1
+SSP 82.jpg,SSP 82,SSP 82,0.957964301109314,1,1,1
+SSP 83.jpg,SSP 83,SSP 83,0.9999980926513672,1,1,1
+SSP 84.jpg,SSP 84,SSP 84,0.9993195533752441,1,1,1
+SSP 85.jpg,SSP 85,SSP 85,0.9992029070854187,1,1,1
+SSP 86.jpg,SSP 86,SSP 86,0.9999856948852539,1,1,1
+SSP 87.jpg,SSP 87,SSP 87,0.999549925327301,1,1,1
+SSP 88.jpg,SSP 88,SSP 88,0.9839047789573669,1,1,1
+SSP 89.jpg,SSP 89,SSP 89,0.9998565912246704,1,1,1
+SSP 9.jpg,SSP 9,SSP 9,0.9999967813491821,1,1,1
+SSP 90.jpg,SSP 90,SSP 90,0.9997710585594177,1,1,1
+SSP 91.jpg,SSP 91,SSP 91,0.7357125878334045,1,1,1
+SSP 92.jpg,SSP 92,SSP 92,0.9999903440475464,1,1,1
+SSP 93.jpg,SSP 93,SSP 93,0.9993425011634827,1,1,1
+SSP 94.jpg,SSP 94,SSP 94,0.9983944296836853,1,1,1
+SSP 95.jpg,SSP 95,SSP 95,0.9998880624771118,1,1,1
+SSP 96.jpg,SSP 96,SSP 96,0.9990112781524658,1,1,1
+SSP 97.jpg,SSP 97,SSP 97,0.9999998807907104,1,1,1
+SSP 98.jpg,SSP 98,SSP 98,0.9847533702850342,1,1,1
+SSP 99.jpg,SSP 99,SSP 99,0.9999890327453613,1,1,1
+</file>
+
+<file path="batch_test.py">
+import os
+import csv
+from datetime import datetime
+from keras.preprocessing import image
+import numpy as np
+from config import IMG_SIZE, CONFIDENCE_THRESHOLD
+from predict import predict_card
+
+
+def preprocess_image(filepath):
+    img = image.load_img(filepath, target_size=IMG_SIZE)
+    arr = image.img_to_array(img) / 255.0
+    return np.expand_dims(arr, axis=0)
+
+
+def run_batch_test(model, training_set, folder_path):
+
+    results = []
+
+    for root, dirs, files in os.walk(folder_path):
+        for file in files:
+            if file.lower().endswith((".jpg", ".jpeg", ".png")):
+
+                filepath = os.path.join(root, file)
+                true_label = os.path.basename(root)
+
+                processed = preprocess_image(filepath)
+
+                prediction, confidence, top_k_labels, _ = predict_card(
+                    model,
+                    training_set,
+                    processed
+                )
+
+                # -----------------------------
+                # Statistical evaluation logic
+                # -----------------------------
+
+                if confidence < CONFIDENCE_THRESHOLD:
+                    accepted = 0
+                    correct = 0
+                    top3_correct = 0
+                else:
+                    accepted = 1
+                    correct = 1 if prediction == true_label else 0
+                    top3_correct = 1 if true_label in top_k_labels else 0
+
+                results.append([
+                    file,
+                    true_label,
+                    prediction,
+                    confidence,
+                    accepted,
+                    correct,
+                    top3_correct
+                ])
+
+    # Save CSV
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_file = f"batch_results_{timestamp}.csv"
+
+    with open(output_file, mode="w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            "filename",
+            "true_label",
+            "predicted_label",
+            "confidence",
+            "accepted",
+            "top1_correct",
+            "top3_correct"
+        ])
+        writer.writerows(results)
+
+    return output_file, len(results)
+</file>
+
+<file path="generate_evaluation_set.py">
+import os
+import random
+import shutil
+from pathlib import Path
+
+from train import get_training_set
+
+BASE_DIR = Path(__file__).resolve().parent
+TRAIN_DIR = BASE_DIR / "trainingassets"
+EVAL_DIR = BASE_DIR / "evaluation_set"
+
+IMAGES_PER_CLASS = 1  # change to 2 or 3 if desired
+
+# Clear old evaluation folder if it exists
+if EVAL_DIR.exists():
+    shutil.rmtree(EVAL_DIR)
+
+EVAL_DIR.mkdir()
+
+print("\nGenerating evaluation set from training assets...\n")
+
+training_set = get_training_set()
+class_labels = list(training_set.class_indices.keys())
+
+total_images = 0
+
+for label in class_labels:
+    source_folder = TRAIN_DIR / label
+    dest_folder = EVAL_DIR / label
+    dest_folder.mkdir(parents=True, exist_ok=True)
+
+    images = [f for f in os.listdir(source_folder)
+              if f.lower().endswith((".jpg", ".jpeg", ".png"))]
+
+    if not images:
+        continue
+
+    selected = random.sample(
+        images,
+        min(IMAGES_PER_CLASS, len(images))
+    )
+
+    for img in selected:
+        shutil.copy(
+            source_folder / img,
+            dest_folder / img
+        )
+        total_images += 1
+
+print("Done.")
+print(f"Total images copied: {total_images}")
+print(f"Evaluation folder created at:\n{EVAL_DIR}")
+</file>
+
+<file path=".gitignore">
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+
+# ========================
+# Virtual environments
+# ========================
+venv/
+.venv/
+
+# ========================
+# Environment variables
+# ========================
+.env
+
+# ========================
+# OS junk
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Runtime output
+# ========================
+captures/
+
+# ========================
+# Training data
+# ========================
+trainingassets/
+SCR Training set/
+
+# ========================
+# Build artifacts (later)
+# ========================
+dist/
+build/
+*.spec
+</file>
+
+<file path="camera_capture.py">
+import cv2
+import tkinter as tk
+from tkinter import ttk
+
+
+def capture_image_with_buttons():
+    """
+    Opens a webcam preview window and a small Tkinter control window.
+    Returns a captured frame (numpy array) or None if cancelled.
+    """
+    cap = cv2.VideoCapture(0)
+    if not cap.isOpened():
+        return None
+
+    captured_frame = {"image": None}
+    running = True
+
+    # -------------------------
+    # Control window
+    # -------------------------
+    control_root = tk.Tk()
+    control_root.title("Camera Controls")
+    control_root.geometry("220x120")
+    control_root.resizable(False, False)
+
+    def on_capture():
+        nonlocal running
+        captured_frame["image"] = current_frame.copy()
+        running = False
+        control_root.destroy()
+
+    def on_cancel():
+        nonlocal running
+        running = False
+        control_root.destroy()
+
+    ttk.Label(control_root, text="Align card, then capture").pack(pady=8)
+    ttk.Button(control_root, text="Capture", command=on_capture).pack(pady=5)
+    ttk.Button(control_root, text="Cancel", command=on_cancel).pack(pady=5)
+
+    # -------------------------
+    # Camera loop
+    # -------------------------
+    current_frame = None
+
+    while running:
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        current_frame = frame
+
+        # Draw a guide rectangle (centered)
+        h, w, _ = frame.shape
+        box_w, box_h = int(w * 0.6), int(h * 0.9)
+        x1 = (w - box_w) // 2
+        y1 = (h - box_h) // 2
+        x2 = x1 + box_w
+        y2 = y1 + box_h
+        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+
+        cv2.imshow("Camera Preview", frame)
+
+        # Allow Tkinter + OpenCV to coexist
+        control_root.update()
+        cv2.waitKey(1)
+
+    cap.release()
+    cv2.destroyAllWindows()
+
+    return captured_frame["image"]
+</file>
+
+<file path="database.py">
+from supabase import create_client, Client
+from config import SUPABASE_URL, SUPABASE_KEY
+
+
+def lookup_card(prediction):
+    supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+    set_code, card_number_str = prediction.split()
+    card_number = int(card_number_str)
+
+    response = supabase.table("card_instances").select(
+        "set_code, card_number, name, rarity"
+    ).eq("set_code", set_code).eq("card_number", card_number).execute()
+
+    return response.data[0] if response.data else None
+</file>
+
+<file path="README.txt">
+# Pokémon Card Scanner
+
+Desktop application for identifying Pokémon cards using a convolutional neural network.
+
+> README will be expanded once the GUI and model workflow are finalized.
+</file>
+
+<file path="requirements.txt">
+tensorflow
+opencv-python
+numpy
+keras
+supabase
+python-dotenv
+scipy
+</file>
+
+<file path="config.py">
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# ==================================================
+# Resolve project root (same folder as this file)
+# ==================================================
+BASE_DIR = Path(__file__).resolve().parent
+
+# ==================================================
+# Explicitly load .env from project root
+# ==================================================
+ENV_PATH = BASE_DIR / ".env"
+
+if not ENV_PATH.exists():
+    raise RuntimeError(f".env file not found at: {ENV_PATH}")
+
+load_dotenv(dotenv_path=ENV_PATH)
+
+# ==================================================
+# Supabase configuration
+# ==================================================
+SUPABASE_URL = "https://ihamwjmbxcjzmpeyaehd.supabase.co"
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+if not SUPABASE_KEY:
+    raise RuntimeError(
+        f"SUPABASE_KEY not found in .env\n"
+        f"Expected line:\nSUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImloYW13am1ieGNqem1wZXlhZWhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY3NTEwNzgsImV4cCI6MjA2MjMyNzA3OH0.YSt-yp0vQkemlYepXkL-90SC7V-C8fjHU0BK1A4m9FE"
+    )
+
+# ==================================================
+# Application paths
+# ==================================================
+TRAINING_DIR = BASE_DIR / "trainingassets"
+CAPTURE_DIR = BASE_DIR / "captures"
+CAPTURE_PATH = CAPTURE_DIR / "inventory_1.jpg"
+
+# ==================================================
+# Model configuration
+# ==================================================
+IMG_SIZE = (64, 64)
+BATCH_SIZE = 12
+EPOCHS = 25
+CONFIDENCE_THRESHOLD = 0.70
+
+# Pokémon card aspect ratio
+CARD_ASPECT = 88 / 63
+</file>
+
+<file path="gui_app.py">
+import tkinter as tk
+from tkinter import ttk, filedialog
+import numpy as np
+from keras.preprocessing import image
+import cv2
+
+from batch_test import run_batch_test
+from predict import predict_card, load_trained_model
+from train import get_training_set
+from database import lookup_card
+from config import IMG_SIZE, CONFIDENCE_THRESHOLD
+from camera_capture import capture_image_with_buttons
+
+
+class CardScannerApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Pokémon Card Scanner")
+        self.root.geometry("520x420")
+        self.root.resizable(False, False)
+
+        main_frame = ttk.Frame(root, padding=20)
+        main_frame.pack(fill="both", expand=True)
+
+        ttk.Label(
+            main_frame,
+            text="Pokémon Card Scanner",
+            font=("Segoe UI", 16, "bold")
+        ).pack(pady=(0, 20))
+
+        self.status_label = ttk.Label(
+            main_frame,
+            text="Loading model...",
+            font=("Segoe UI", 11)
+        )
+        self.status_label.pack(pady=(0, 10))
+        self.root.update()
+
+        self.model = load_trained_model()
+        self.training_set = get_training_set()
+
+        self.status_label.config(text="Model ready. Choose input method.")
+
+        button_frame = ttk.Frame(main_frame)
+        button_frame.pack(pady=10)
+
+        ttk.Button(
+            button_frame,
+            text="Capture Image",
+            command=self.on_capture_clicked
+        ).grid(row=0, column=0, padx=10)
+
+        ttk.Button(
+            button_frame,
+            text="Upload Image",
+            command=self.on_upload_clicked
+        ).grid(row=0, column=1, padx=10)
+
+        ttk.Button(
+            button_frame,
+            text="Batch Test Folder",
+            command=self.on_batch_test_clicked
+        ).grid(row=1, column=0, columnspan=2, pady=10)
+
+        result_frame = ttk.LabelFrame(main_frame, text="Result", padding=15)
+        result_frame.pack(fill="both", expand=True, pady=20)
+
+        self.result_label = ttk.Label(
+            result_frame,
+            text="Waiting for input...",
+            font=("Segoe UI", 11),
+            wraplength=460,
+            justify="center"
+        )
+        self.result_label.pack()
+
+    def preprocess_image(self, filepath):
+        img = image.load_img(filepath, target_size=IMG_SIZE)
+        arr = image.img_to_array(img) / 255.0
+        return np.expand_dims(arr, axis=0)
+
+    def preprocess_cv_frame(self, frame):
+        frame_rgb = frame[:, :, ::-1]
+        resized = cv2.resize(frame_rgb, IMG_SIZE)
+        arr = resized / 255.0
+        return np.expand_dims(arr, axis=0)
+
+    def on_upload_clicked(self):
+        file_path = filedialog.askopenfilename(
+            title="Select card image",
+            filetypes=[("Image files", "*.jpg *.jpeg *.png")]
+        )
+
+        if not file_path:
+            return
+
+        self.result_label.config(text="Running prediction...")
+        self.root.update()
+
+        processed = self.preprocess_image(file_path)
+        prediction, confidence, _, _ = predict_card(
+            self.model,
+            self.training_set,
+            processed
+        )
+
+        self.display_result(prediction, confidence)
+
+    def on_capture_clicked(self):
+        self.result_label.config(text="Opening camera...")
+        self.root.update()
+
+        frame = capture_image_with_buttons()
+
+        if frame is None:
+            self.result_label.config(text="Capture cancelled.")
+            return
+
+        self.result_label.config(text="Running prediction...")
+        self.root.update()
+
+        processed = self.preprocess_cv_frame(frame)
+        prediction, confidence, _, _ = predict_card(
+            self.model,
+            self.training_set,
+            processed
+        )
+
+        self.display_result(prediction, confidence, _, _)
+
+    def on_batch_test_clicked(self):
+        folder_path = filedialog.askdirectory(
+            title="Select folder containing test images"
+        )
+
+        if not folder_path:
+            return
+
+        self.result_label.config(text="Running batch test...")
+        self.root.update()
+
+        output_file, count = run_batch_test(
+            self.model,
+            self.training_set,
+            folder_path
+        )
+
+        self.result_label.config(
+            text=(
+                f"Batch complete.\n\n"
+                f"Images processed: {count}\n"
+                f"Results saved to:\n{output_file}"
+            )
+        )
+
+    def display_result(self, prediction, confidence):
+        confidence_pct = confidence * 100
+
+        if confidence < CONFIDENCE_THRESHOLD:
+            self.result_label.config(
+                text=f"No card detected\n\nConfidence: {confidence_pct:.1f}%"
+            )
+            return
+
+        card_info = lookup_card(prediction)
+
+        if card_info:
+            text = (
+                f"Predicted Card: {prediction}\n"
+                f"Confidence: {confidence_pct:.1f}%\n\n"
+                f"Name: {card_info['name']}\n"
+                f"Set: {card_info['set_code']}\n"
+                f"Number: {card_info['card_number']}\n"
+                f"Rarity: {card_info['rarity']}"
+            )
+        else:
+            text = (
+                f"Predicted Card: {prediction}\n"
+                f"Confidence: {confidence_pct:.1f}%\n\n"
+                "No database entry found."
+            )
+
+        self.result_label.config(text=text)
+
+
+def main():
+    root = tk.Tk()
+    app = CardScannerApp(root)
+    root.mainloop()
+
+
+if __name__ == "__main__":
+    main()
+</file>
+
+<file path="predict.py">
+import numpy as np
+from tensorflow.keras.models import load_model
+from pathlib import Path
+
+MODEL_PATH = Path("card_model.keras")
+
+
+def load_trained_model():
+    if not MODEL_PATH.exists():
+        raise RuntimeError("Trained model not found. Train the model first.")
+    return load_model(MODEL_PATH)
+
+
+def predict_card(model, training_set, processed_image, top_k=3):
+    """
+    Returns:
+        predicted_label (str)
+        confidence (float)
+        top_k_labels (list)
+        raw_probabilities (np.array)
+    """
+
+    result = model.predict(processed_image, verbose=0)
+
+    probabilities = result[0]
+    predicted_index = np.argmax(probabilities)
+    confidence = float(np.max(probabilities))
+
+    class_labels = {v: k for k, v in training_set.class_indices.items()}
+
+    predicted_label = class_labels[predicted_index]
+
+    # Top-k predictions
+    top_indices = np.argsort(probabilities)[-top_k:][::-1]
+    top_k_labels = [class_labels[i] for i in top_indices]
+
+    return predicted_label, confidence, top_k_labels, probabilities
+</file>
+
+<file path="train.py">
+import tensorflow as tf
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Input, Conv2D
+from config import TRAINING_DIR, IMG_SIZE, BATCH_SIZE, EPOCHS
+
+
+MODEL_PATH = "card_model.keras"
+
+
+def train_model():
+    """
+    Trains CNN using strong augmentation to simulate
+    real-world capture variability.
+    """
+
+    # ==============================
+    # Enhanced augmentation strategy
+    # ==============================
+    train_datagen = ImageDataGenerator(
+        rescale=1.0 / 255,
+        rotation_range=10,
+        width_shift_range=0.1,
+        height_shift_range=0.1,
+        zoom_range=0.2,
+        brightness_range=[0.7, 1.3],
+        shear_range=0.1,
+        fill_mode="nearest"
+    )
+
+    training_set = train_datagen.flow_from_directory(
+        TRAINING_DIR,
+        target_size=IMG_SIZE,
+        batch_size=BATCH_SIZE,
+        class_mode="sparse"
+    )
+
+    # ==============================
+    # CNN Architecture
+    # ==============================
+    cnn = Sequential([
+        Input(shape=(IMG_SIZE[0], IMG_SIZE[1], 3)),
+
+        Conv2D(32, 3, activation="relu"),
+        tf.keras.layers.MaxPool2D(2, 2),
+
+        Conv2D(32, 3, activation="relu"),
+        tf.keras.layers.MaxPool2D(2, 2),
+
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(128, activation="relu"),
+        tf.keras.layers.Dense(training_set.num_classes, activation="softmax")
+    ])
+
+    cnn.compile(
+        optimizer="adam",
+        loss="sparse_categorical_crossentropy",
+        metrics=["accuracy"]
+    )
+
+    print("\n===== TRAINING MODEL =====\n")
+
+    cnn.fit(training_set, epochs=EPOCHS)
+    cnn.save(MODEL_PATH)
+
+    return cnn, training_set
+
+
+def get_training_set():
+    """
+    Loads training set without augmentation.
+    Used for class index mapping.
+    """
+    datagen = ImageDataGenerator(rescale=1.0 / 255)
+
+    training_set = datagen.flow_from_directory(
+        TRAINING_DIR,
+        target_size=IMG_SIZE,
+        batch_size=BATCH_SIZE,
+        class_mode="sparse",
+        shuffle=False
+    )
+
+    return training_set
+</file>
+
+</files>
