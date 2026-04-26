@@ -5,3 +5,6 @@ keras
 supabase
 python-dotenv
 scipy
+customtkinter
+requests
+Pillow
