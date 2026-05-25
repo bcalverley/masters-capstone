@@ -47,15 +47,15 @@ KEY FILES
   audit_training_data.py     Reports training data coverage per set
   batch_test.py              Batch prediction engine (used by batch_review.py)
 
-  build.bat                  PyInstaller build script
-  PokemonCardScanner.spec    PyInstaller spec file
-
 
 ARCHITECTURE
 ------------
 - Model:       MobileNetV2 pretrained on ImageNet, fine-tuned on 13,440 augmented
                card images across 896 classes (5 target sets)
-- Validation:  99.33% accuracy on held-out 15% validation split
+- Validation:  99.33% accuracy on the augmented validation set (15% held-out split).
+               Real-world accuracy on physical cards varies by set — SFA and SSP
+               both achieved ~90% on accepted predictions, while JTG performed poorly
+               due to reverse holo card finishes not present in the API training images.
 - Pricing:     PokemonTCG API -> TCGPlayer market data, cached per session
 - Database:    Supabase (optional) for card metadata lookup; app runs without it
 - UI:          CustomTkinter dark mode, 960x660 two-panel layout
