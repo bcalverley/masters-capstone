@@ -20,7 +20,7 @@ def _make_datagen(subset):
         zoom_range=0.12,
         brightness_range=[0.85, 1.15],
         shear_range=0.08,
-        # horizontal_flip intentionally off — card orientation is meaningful
+        # horizontal flip off — a mirrored card is a different card visually
         fill_mode="nearest",
         validation_split=0.15,
     )
@@ -40,7 +40,7 @@ def _build_model(num_classes):
         include_top=False,
         weights="imagenet",
     )
-    base.trainable = False  # frozen during phase 1
+    base.trainable = False  # keep the pretrained weights frozen during phase 1
 
     model = Sequential([
         base,
@@ -62,8 +62,8 @@ def train_model():
 
     model, base = _build_model(num_classes)
 
-    # ── Phase 1: train classification head, base frozen ───────────────
-    print("\n===== PHASE 1: Training head (base frozen) =====\n")
+    # Phase 1 — train just the new classification head, base weights stay frozen
+    print("\nPhase 1: training classification head (base frozen)\n")
     model.compile(
         optimizer=tf.keras.optimizers.Adam(1e-3),
         loss="sparse_categorical_crossentropy",
@@ -79,14 +79,14 @@ def train_model():
         ],
     )
 
-    # ── Phase 2: unfreeze top 30 layers and fine-tune ─────────────────
-    print("\n===== PHASE 2: Fine-tuning top 30 base layers =====\n")
+    # Phase 2 — unfreeze the top 30 layers and fine-tune at a lower learning rate
+    print("\nPhase 2: fine-tuning top 30 base layers\n")
     base.trainable = True
     for layer in base.layers[:-30]:
         layer.trainable = False
 
     model.compile(
-        optimizer=tf.keras.optimizers.Adam(1e-4),  # lower LR to avoid destroying pretrained weights
+        optimizer=tf.keras.optimizers.Adam(1e-4),  # lower learning rate so we don't overwrite the pretrained weights
         loss="sparse_categorical_crossentropy",
         metrics=["accuracy"],
     )
@@ -106,7 +106,7 @@ def train_model():
 
 
 def get_training_set():
-    """Returns a generator used only for class-index mapping (export_labels.py)."""
+    # used by export_labels.py to get the class index mapping
     datagen = ImageDataGenerator(preprocessing_function=preprocess_input)
     return datagen.flow_from_directory(
         TRAINING_DIR,

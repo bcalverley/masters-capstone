@@ -25,15 +25,34 @@ Thumbs.db
 # Runtime output
 # ========================
 captures/
+scan_log.csv
+batch_results_*.csv
+batch_review_*.csv
+batch_results/
+receipts/
 
 # ========================
-# Training data
+# Office temp / Excel
+# ========================
+~$*
+*.xlsx
+
+# ========================
+# Training data & generated assets
 # ========================
 trainingassets/
 SCR Training set/
+evaluation_set/
 
 # ========================
-# Build artifacts (later)
+# Model artifacts
+# (large binaries — retrain locally or obtain separately)
+# ========================
+card_model.keras
+class_labels.json
+
+# ========================
+# Build artifacts
 # ========================
 dist/
 build/

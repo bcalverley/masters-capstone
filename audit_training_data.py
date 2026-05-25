@@ -45,23 +45,23 @@ def audit():
         if n < MIN_IMAGES:
             set_stats[set_code]["low"].append((card_dir.name, n))
 
-    print("\n══ Training Data Audit ════════════════════════════════")
+    print("\n== Training Data Audit ================================")
     total_cards = total_images = 0
 
     for code in sorted(target_set_codes):
         s = set_stats[code]
         if s["cards"] == 0:
-            print(f"  ✗  {code}: NOT FOUND — run download_training_data.py")
+            print(f"  MISSING  {code}: NOT FOUND - run download_training_data.py")
             continue
 
         avg = s["images"] / s["cards"]
-        flag = "⚠" if avg < MIN_IMAGES else "✓"
-        print(f"  {flag}  {code}: {s['cards']} cards, {s['images']} images  ({avg:.1f} avg/card)")
+        flag = "LOW" if avg < MIN_IMAGES else "OK "
+        print(f"  [{flag}] {code}: {s['cards']} cards, {s['images']} images  ({avg:.1f} avg/card)")
 
         if s["low"]:
-            sample = ", ".join(f"{n}×{name}" for name, n in s["low"][:5])
+            sample = ", ".join(f"{n}x{name}" for name, n in s["low"][:5])
             tail = f"  +{len(s['low'])-5} more" if len(s["low"]) > 5 else ""
-            print(f"       Low-image cards: {sample}{tail}")
+            print(f"        Low-image cards: {sample}{tail}")
 
         total_cards  += s["cards"]
         total_images += s["images"]
@@ -71,7 +71,7 @@ def audit():
     if other_sets:
         print(f"\n  Other sets present (not targeted): {', '.join(sorted(other_sets))}")
 
-    print("═══════════════════════════════════════════════════════\n")
+    print("=======================================================\n")
 
 
 if __name__ == "__main__":

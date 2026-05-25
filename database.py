@@ -3,6 +3,9 @@ from config import SUPABASE_URL, SUPABASE_KEY
 
 
 def lookup_card(prediction):
+    if not SUPABASE_KEY:
+        return None
+
     supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
     set_code, card_number_str = prediction.split()

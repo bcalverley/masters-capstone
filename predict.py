@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 
 
 def _resolve(filename):
-    """Return the correct path whether running live or frozen by PyInstaller."""
+    # returns the right path whether running normally or packaged with PyInstaller
     if getattr(sys, "frozen", False):
         return Path(sys._MEIPASS) / filename
     return Path(__file__).resolve().parent / filename
@@ -16,7 +16,7 @@ def _resolve(filename):
 MODEL_PATH  = _resolve("card_model.keras")
 LABELS_PATH = _resolve("class_labels.json")
 
-_class_labels = None  # module-level cache
+_class_labels = None  # cached after first load so we don't re-read the file every prediction
 
 
 def _load_class_labels():
@@ -26,8 +26,8 @@ def _load_class_labels():
             "Run export_labels.py before packaging."
         )
     with open(LABELS_PATH) as f:
-        class_indices = json.load(f)  # {class_name: int_index}
-    return {v: k for k, v in class_indices.items()}  # {int_index: class_name}
+        class_indices = json.load(f)
+    return {v: k for k, v in class_indices.items()}  # flip to {index: class_name}
 
 
 def load_trained_model():
@@ -37,18 +37,12 @@ def load_trained_model():
 
 
 def predict_card(model, processed_image, top_k=3):
-    """
-    Returns:
-        predicted_label   (str)
-        confidence        (float)
-        top_k_labels      (list[str])
-        raw_probabilities (np.ndarray)
-    """
+    # returns: predicted label, confidence score, top-k labels list, raw probability array
     global _class_labels
     if _class_labels is None:
         _class_labels = _load_class_labels()
 
-    result       = model.predict(processed_image, verbose=0)
+    result          = model.predict(processed_image, verbose=0)
     probabilities   = result[0]
     predicted_index = int(np.argmax(probabilities))
     confidence      = float(np.max(probabilities))

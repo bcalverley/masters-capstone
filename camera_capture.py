@@ -4,10 +4,8 @@ from tkinter import ttk
 
 
 def capture_image_with_buttons():
-    """
-    Opens a webcam preview window and a small Tkinter control window.
-    Returns a captured frame (numpy array) or None if cancelled.
-    """
+    # opens a webcam preview with a capture/cancel control window
+    # returns the captured frame as a numpy array, or None if cancelled
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         return None
@@ -15,9 +13,7 @@ def capture_image_with_buttons():
     captured_frame = {"image": None}
     running = True
 
-    # -------------------------
-    # Control window
-    # -------------------------
+    # control window
     control_root = tk.Tk()
     control_root.title("Camera Controls")
     control_root.geometry("220x120")
@@ -38,9 +34,7 @@ def capture_image_with_buttons():
     ttk.Button(control_root, text="Capture", command=on_capture).pack(pady=5)
     ttk.Button(control_root, text="Cancel", command=on_cancel).pack(pady=5)
 
-    # -------------------------
-    # Camera loop
-    # -------------------------
+    # camera loop
     current_frame = None
 
     while running:
@@ -61,7 +55,7 @@ def capture_image_with_buttons():
 
         cv2.imshow("Camera Preview", frame)
 
-        # Allow Tkinter + OpenCV to coexist
+        # keep both Tkinter and OpenCV responsive
         control_root.update()
         cv2.waitKey(1)
 

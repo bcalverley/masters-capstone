@@ -1,6 +1,6 @@
-tensorflow
+tensorflow==2.15.0
 opencv-python
-numpy
+numpy<2.0
 keras
 supabase
 python-dotenv
@@ -8,3 +8,4 @@ scipy
 customtkinter
 requests
 Pillow
+fpdf2

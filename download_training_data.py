@@ -1,12 +1,6 @@
-"""
-Downloads official card images from the Pokémon TCG API for the 5 target sets,
-then generates 15 webcam-simulating augmented training images per card.
-
-Run once before training (internet connection required):
-    python download_training_data.py
-
-Safe to re-run — folders that already have enough images are skipped.
-"""
+# Downloads card images from the Pokemon TCG API for each target set, then generates
+# 15 augmented training images per card to simulate real webcam conditions.
+# Run once before training. Safe to re-run — cards with enough images are skipped.
 
 import io
 import random
@@ -24,21 +18,14 @@ IMAGES_PER_CARD = 15
 API_BASE = "https://api.pokemontcg.io/v2"
 
 
-# ── Card number normalisation ──────────────────────────────────────────────────
-
 def normalise_number(raw):
-    """
-    API returns zero-padded numbers like '001'. The evaluation set and Supabase
-    use un-padded integers like '1'. Alphanumeric numbers (TG01, SWSH001) are
-    kept as-is since they can't be meaningfully cast to int.
-    """
+    # API returns zero-padded numbers like '001', but we store them as '1'.
+    # Alphanumeric numbers like 'TG01' are left as-is.
     try:
         return str(int(raw))
     except ValueError:
         return raw
 
-
-# ── API helpers ────────────────────────────────────────────────────────────────
 
 def fetch_cards_for_set(api_id):
     cards = []
@@ -66,8 +53,6 @@ def download_image(url):
     return Image.open(io.BytesIO(resp.content)).convert("RGB")
 
 
-# ── Augmentation pipeline ──────────────────────────────────────────────────────
-
 def random_perspective_warp(arr, max_distortion=0.08):
     h, w = arr.shape[:2]
     d = int(min(w, h) * max_distortion)
@@ -83,7 +68,7 @@ def random_perspective_warp(arr, max_distortion=0.08):
 
 
 def augment_for_webcam(source_pil):
-    """Return one augmented PIL image simulating a real webcam capture."""
+    # applies random brightness, contrast, blur, perspective warp, and noise to simulate a webcam photo
     img = ImageEnhance.Brightness(source_pil).enhance(random.uniform(0.55, 1.45))
     img = ImageEnhance.Contrast(img).enhance(random.uniform(0.75, 1.30))
     img = ImageEnhance.Color(img).enhance(random.uniform(0.80, 1.20))
@@ -100,10 +85,8 @@ def augment_for_webcam(source_pil):
     return Image.fromarray(arr)
 
 
-# ── Per-set download ───────────────────────────────────────────────────────────
-
 def process_set(set_code, api_id):
-    print(f"\n── {set_code}  (API id: {api_id}) " + "─" * 40)
+    print(f"\n-- {set_code}  (API id: {api_id}) " + "-" * 40)
     try:
         cards = fetch_cards_for_set(api_id)
     except Exception as e:
@@ -148,8 +131,6 @@ def process_set(set_code, api_id):
 
     print(f"   Done — {downloaded} downloaded, {skipped} already complete, {errors} errors")
 
-
-# ── Entry point ────────────────────────────────────────────────────────────────
 
 def main():
     TRAINING_DIR.mkdir(parents=True, exist_ok=True)
